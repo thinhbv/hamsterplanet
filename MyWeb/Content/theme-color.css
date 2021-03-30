@@ -1,0 +1,472 @@
+/* theme color */
+/*=====================================
+tag element
+======================================*/
+a:hover{
+  color: #fd783e;
+}
+/* button type */
+.btn-style1 {
+  border: 2px solid #1574d0;
+  background-color: #1574d0;
+}
+.btn {
+  background-color: #1574d0;
+}
+
+/*=====================================
+  review start color
+======================================*/
+.spr-icon {
+  color: #fd783e;
+}
+.product-description-tab .description-review-text .spr-container .spr-summary .spr-summary-actions-newreview{
+  background-color: #fd783e;
+}
+/*=====================================
+  scroll up color
+======================================*/
+.scroll{
+  color: #fd783e;
+  border: 2px solid #fd783e;
+}
+.scroll:hover{
+  background-color: #fd783e;
+}
+
+/*=====================================
+  header color
+======================================*/
+.shopping-widget .shopping-cart a > .bigcounter{
+  background-color: #fd783e;
+}
+.header-bottom-area{
+  background-color:  #1574d0;
+}
+@media (max-width: 1199px){
+  .header-bottom-area{
+    background-color:  transparent;
+  }
+}
+@media (max-width: 767px){
+  .header-bottom-area{
+    background-color:  #1574d0;
+  }
+}
+
+/* accout color */
+ul.shop-element .user-wrap .acc-desk .acc a.acc-ti,
+ul.shop-element .user-wrap .acc-desk .acc .acc-re-lo a:hover{
+  color: #fd783e;
+}
+/*=====================================
+  main header color
+======================================*/
+.vegamenu-content .browse-cat{
+  background-color:  #fd783e;
+}
+/*=====================================
+  category menu header color
+======================================*/
+.category-menu{
+  background-color: #fd783e;
+}
+.category-menu .category-menu-area ul li:hover a{
+  color: #fd783e;
+}
+
+/*=====================================
+  main slider color
+======================================*/
+.slider-content .home-slider .owl-nav button:hover{
+  border: 2px solid #fd783e;
+  background-color: #fd783e;
+}
+.testimonial-area .testimonial-slider .owl-dots button span,
+.testimonial-slider.owl-carousel .owl-dots button span,
+.home-slider.owl-carousel .owl-dots button span,
+.home-slider.owl-carousel .owl-dots button span {
+    background-color: #fd783e;
+}
+/*=====================================
+  breadcrumb color
+======================================*/
+  
+
+/*=====================================
+  category-banner color
+======================================*/
+.banner-btn{
+    color: #fd783e;
+}
+/*=====================================
+  product collection color
+======================================*/
+.list-product-collection .grid-gallery ul.masonry-items li .img-block:hover a span.button{
+ background-color: #fd783e;
+}
+/*=====================================
+  product list color.
+======================================*/
+.product-grid-view .shop-product-wrap.grid-1 .st-col-item .single-product-wrap .product-content .product-action a,
+.single-product-wrap .product-image .product-action a{
+  background-color: #1574d0;
+}
+.product-grid-view .shop-product-wrap.grid-1 .st-col-item .single-product-wrap .product-content .product-action a:hover,
+.single-product-wrap .product-image .product-action a:hover{
+  background-color: #fd783e; 
+}
+/*=====================================
+  product quickview color
+======================================*/
+.productmodal .modal-dialog .modal-body .quick-view form .quickview-buttons .quickview-btn-cart button,
+.productmodal .modal-dialog .modal-body .quick-view form .quickview-buttons .quickview-btn-wishlist a{
+  background-color: #fd783e;
+  border: 1px solid #fd783e;
+}
+/*=====================================
+  section  title
+======================================*/
+.section-title p {
+  color: #fd783e;
+}
+/*=====================================
+  deal section  color
+======================================*/
+.deal-products-content .contdown_row .countdown_section{
+  background-color: #fd783e;
+}
+.deal-btn{
+  border: 2px solid #fd783e;
+  background-color: #fd783e;
+}
+/*=====================================
+  sortby css
+======================================*/
+.product-view-mode .change-view.active,
+.product-view-mode .change-view:hover{
+  color: #fd783e;
+}
+
+/*=====================================
+  pagination color
+======================================*/
+.paginatoin-area ul.paginate li.page-numerous ul.pagination-box li.active a{
+    background-color: #fd783e;
+}
+.paginatoin-area ul.paginate li.page-numerous ul.pagination-box li a:hover{
+  background-color: #fd783e;
+}
+
+/*=====================================
+    sidebar css
+======================================*/
+
+/*=====================================
+  product detail color
+======================================*/
+.product_details_info .product-inventory h2 span:last-child{
+  color: #fd783e;
+}
+.product_details_info .stock-inventory span:nth-child(2){
+  color: #fd783e;
+}
+
+
+/* product amazone button color */
+.product_details_info .pro-detail-action .product-actions a.affiliate-product{
+  color: #fd783e;
+}
+
+/* product quantity color */
+.product_details_info .pro-detail-action .product-actions .pro-detail-button a:hover,
+.product-cart-action button.ajax-spin-cart:hover{
+  background-color: #fd783e;
+}
+.product-service-content .product-service .iconbox-inner .icon{
+    color: #fd783e;
+}
+/* tab  color */
+.tab ul.nav-tabs li a:hover,
+.tab ul.nav-tabs li a.active {
+    color:#fd783e;
+}
+
+/*=====================================
+  cart color
+======================================*/
+.cart-page .item-wrap ul li.item-qty .item-remove .remove-wrap a,
+.cart-page .cart-buttons input,
+.cart-page .cart-buttons a,
+.cart-page .cart-total-wrap .culculate-shipping .shipping-info a,
+.cart-page .cart-total-wrap .cart-total .proceed-to-checkout a{
+  color: #fd783e;
+}
+
+/*=====================================
+  flag color
+======================================*/
+.product-label .percent-count, .product-label .sale-title{
+  background-color: #fd783e;
+}
+
+
+/*=====================================
+  wishlist color
+======================================*/
+.wishlist-page ul li.item-add-remove .item-add a.add-to-cart .cart-title,
+.wishlist-page ul li.item-add-remove .item-buy a span,
+.wishlist-page .wishlist-buttons a,
+.login-wishlist ul li a{
+  color: #fd783e;
+}
+/*=====================================
+  cart and wishlist empty color
+======================================*/
+.cart-page .empty-cart-page h2 span:nth-child(even),
+.wishlist-page .wishlist-grid-empty-list .empty-list-info h2 span:nth-child(even),
+.cart-page .empty-cart-page p a,
+.wishlist-page .wishlist-grid-empty-list .empty-list-info p a{
+  color: #fd783e;
+}
+
+/*=====================================
+  blog color
+======================================*/
+
+.blog-slider .blog-post .blog-post-content h2.blog-title a:hover,
+.blog-slider .blog-post .blog-post-content a.read-btn:hover{
+  color: #fd783e;
+}
+.blog-post .blog-img .blogicons a:hover,
+.blog-post .blog-img .blog-publish{
+  background-color: #fd783e;
+}
+/*=====================================
+  blog content color
+======================================*/
+
+
+/*=====================================
+  blog article color
+======================================*/
+.single-blog-area .blog-revert ul.blogger-info li span.blog-author span:last-child,
+.single-blog-area .blog-revert ul.blogger-info li span.blog-comment span:last-child,
+.single-blog-area .blog-content .blog-wrap-desc blockquote,
+.single-blog-area .post-info blockquote span,
+.single-blog-area .cmt-tit-count h2 span.cmt-count,
+.single-blog-area .cmt-info-wrap .comment-info .comment-content .review_info p span.cmt-authr{
+  color: #fd783e;
+}
+.single-blog-area .post-info-tag ul li a{
+  border: 2px solid #fd783e; 
+}
+.single-blog-area .post-info-tag ul li a,
+.single-blog-area .cmt-info-wrap .comment-info .comment-avtar .avtar-cmt .cmt-auth{
+  background-color: #fd783e;
+}
+.single-blog-area .blog-comment-form .comments-reply-area .form-wrap .form-filed input:focus,
+.single-blog-area .blog-comment-form .comments-reply-area .form-wrap .form-filed textarea:focus{
+  border: 1px solid #fd783e;
+}
+
+/*=====================================
+    testimonial css
+======================================*/
+.testi-content .review-content span.content-quote{
+  color: #fd783e;
+}
+.testi-content .author-detail a{
+  border: 2px solid #fd783e;
+}
+.testi-content .author-detail a img{
+  border: 1px solid #fd783e;
+}
+.testi-content .author-detail a i{
+  background-color: #fd783e;
+  border: 1px solid #fd783e;
+}
+.testimonial-area .testimonial-slider .testi-content:before{
+   background-color: #fd783e;
+}
+.testimonial-area .testimonial-slider .testi-content:after{
+  border-color: #fd783e;
+}
+/*=====================================
+  instagram color
+======================================*/
+.instagram-warp .insta-wrap .insta-follow a.insta-icon,
+.instagram-warp .insta-wrap .insta-follow h2 span:first-child{
+  color: #fd783e;
+}
+.instagram-warp .insta-slider .owl-nav button,
+.instagram-warp .insta-wrap .insta-follow p::after{
+  background-color: #fd783e;
+}
+.instagram-warp .insta-slider .owl-nav button:hover{
+  color: #fd783e;
+}
+.blog-slider.owl-theme .owl-nav button,
+#feture_pro_tab .swiper-button-prev,
+#feture_pro_tab .swiper-button-next,
+.cat-slider.owl-theme .owl-nav button,
+.product-related-slider.owl-theme .owl-nav button,
+.brand-logo.owl-theme .owl-nav button,
+.blog-slider .owl-nav button, 
+.collection-category .collection-slider .owl-nav button{
+  background-color: #fd783e;
+}
+.blog-slider.owl-theme .owl-nav button:hover,
+#feture_pro_tab .swiper-button-prev:hover,
+#feture_pro_tab .swiper-button-next:hover,
+.cat-slider.owl-theme .owl-nav button:hover,
+.product-related-slider.owl-theme .owl-nav button:hover,
+.brand-logo.owl-theme .owl-nav button:hover,
+.blog-slider .owl-nav button:hover, 
+.collection-category .collection-slider .owl-nav button:hover{
+  background-color: #1574d0;
+}
+/*=====================================
+  our service color
+======================================*/
+
+/*=====================================
+  footer color
+======================================*/
+.footer-top-area .footer-info .social-icon a:hover{
+  background-color: #fd783e;
+}
+.news-letter .subscribe-content button {
+  background-color: #fd783e;
+}
+@media (max-width : 767px){
+  .footer-top-area .footer-list-wrap ul.footer-list li.ftlink-li a.ft-title{
+    color: #fd783e;
+  }
+}
+
+/*=====================================
+  footer copyright color
+======================================*/
+
+/*=====================================
+  Log in and Register color
+======================================*/
+.customer-page .log-acc-page .login-form-container .form-action-button a,
+.customer-page .log-acc-page .acc-page .side-form-wrap .term-privacy p a,
+.customer-page .log-acc-page .login-form-container .title-text input{
+  color: #fd783e;
+}
+.customer-page .log-acc-page .acc-page .side-form-wrap .acc-title a{
+  color: #fd783e;
+  border: 2px solid #fd783e;
+}
+.customer-page .log-acc-page .acc-page .side-form-wrap .acc-title a:hover::after{
+  background-color: #fd783e;
+}
+
+/*=====================================
+  shopify challenge color
+======================================*/
+.shopify-challenge__container .shopify-challenge__button{
+  color: #fd783e;
+}
+
+/*=====================================
+  my account color
+======================================*/
+/* address css */
+.my-account-page .account-history ul li .acc-info-wrap a{
+  color: #fd783e;
+}
+
+/* order css */
+.my-account-page .order-history-wrap .order-wrap ul li span a{
+  color: #fd783e;
+}
+
+/*=====================================
+  my account address color
+======================================*/
+.my-account-page .return-acc-detail a,
+.my-account-page .address-wrap ul.cust-address-wrap li.cust-address:hover a.add-more-add{
+  color: #fd783e;
+}
+
+/* adress form css */
+.my-account-page .address-form p.my-account-checkbox label input:checked ~ .checkmark {
+  background-color: #fd783e;
+  border: 1px solid #fd783e;
+}
+.my-account-page .address-form p.update-cancel-btn input,
+.my-account-page .address-form p.update-cancel-btn a{
+  color: #fd783e;
+}
+
+/*=====================================
+  my account order color
+======================================*/
+/* order-ocerview css */
+.my-account-page .order-overview ul.order-product li .order-overview-wrap .order-item span a{
+  color: #fd783e;
+}
+
+/*=====================================
+  payment & return & shipping page color
+======================================*/
+.other-page .que-ans ul li h6{
+  background-color: #fd783e;
+}
+
+/*=====================================
+  faq page color
+======================================*/
+.other-page .que-ans ul li a{
+  background-color: #fd783e;
+}
+
+/*=====================================
+  search page color
+======================================*/
+.search-page .page-search-bar form button.page-search-button{
+  background-color: #fd783e;
+  border: 1px solid #fd783e;
+}
+.search-page .search-list .search-item .search-item-content .search-price .new-price{
+  color: #fd783e;
+}
+ul.shop-element .user-wrap .acc-desk:hover i{
+  color: #fd783e;
+}
+.sidebar-search-input .form-search button:hover{
+   background-color: #fd783e;
+}
+
+/*=====================================
+  404 page color
+======================================*/
+.page-not-found .search-error-wrapper h1 span:nth-child(odd),
+.page-not-found .search-error-wrapper h2 span:nth-child(even),
+.page-not-found .search-error-wrapper a{
+  color: #fd783e;
+}
+
+/*=====================================
+  sitemap page color
+======================================*/
+.sitemap ul.sitemap-wrap li.sitemap-wrapper a.sitemap-title-link,
+.sitemap ul.sitemap-subwrap li.sitemap-subwrapper a.sitemap-title-subtitle{
+  color: #fd783e;
+}
+.sitemap ul.sitemap-wrap li.sitemap-wrapper a.sitemap-title-link::before,
+.sitemap ul.sitemap-subwrap li.sitemap-subwrapper a.sitemap-title-subtitle::before,
+.sitemap ul.sitemap-subwrap li.sitemap-sub-wrapper a.sitemap-title-sublink::before,
+.sitemap ul.sitemap-supwrap li.sitemap-sup-wrapper a.sitemap-title-suplink::before{
+  background-color: #fd783e;
+}
+/*=====================================
+  About page color
+======================================*/
+.content-main-title h2:before{
+  border-bottom: 2px solid #fd783e;
+}

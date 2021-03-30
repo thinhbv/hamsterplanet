@@ -1,0 +1,65 @@
+﻿@using Libs.Utils
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-sm-7 col-xs-12">
+            <div class="headers-left">
+                <div class="headers-left-text">
+                    <div class="headers-left-icon">
+                        <i class="fa fa-phone-square"></i>
+                    </div>
+                    <div class="headers-left-text">
+                        <p>@Model.support.Phone</p>
+                    </div>
+                </div>
+                <div class="headers-left-text">
+                    <div class="headers-left-icon">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="headers-left-text">
+                        <p>@Html.Raw(Model.config.Contact)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-5  col-xs-12">
+            <div class="header-rights">
+                <a href="/">Khách hàng là tài sản lớn nhất</a>
+            </div>
+        </div>
+        @*<div class="col-lg-3 col-md-3 col-sm-3 site-branding col-xs-12">
+            <div class="header-logo">
+                <a href="/"><img src="@StringClass.OriginalImage(Model.logoUrl)" alt="" /></a>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-7 col-sm-10 hidden-xs">
+            <div class="header-left">
+                <div class="header-text">
+                    <div class="header-icon">
+                        <i class="fa fa-phone"></i>
+                        <i class="paint-roller"></i>
+                    </div>
+                    <div class="header-info">
+                        <span class="phone">@Model.support.Phone</span>
+                        <span class="gmail">@Model.support.Email</span>
+                    </div>
+                </div>
+                <div class="header-text">
+                    <div class="header-icon">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="header-info">
+                        <span class="phone">@Html.Raw(Model.config.Contact)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-2 hidden-sm col-xs-12">
+            <div class="header-left-icon">
+                @foreach (MyWeb.Entities.Page item in Model.menuTop)
+                {
+                    <a href="@item.Link" title="@item.Name">@item.Name</a>
+                }
+            </div>
+        </div>*@
+    </div>
+</div>

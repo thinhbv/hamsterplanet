@@ -1,0 +1,65 @@
+﻿@using Libs.Utils
+@model IEnumerable<MyWeb.Entities.Page>
+<div class="header-bottom-area">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="menu-area">
+                    <div class="main-menu-area">
+                        <nav class="main-navigation navbar-expand-xl">
+                            <div class="box-header">
+                                <button class="close-box" type="button"><i class="ti-close"></i></button>
+                            </div>
+                            <div class="navbar-collapse" id="navbarContent">
+                                <div class="megamenu-content">
+                                    <a href="#main-collapse" class="browse-cat" data-toggle="collapse">
+                                        <i class="ti-menu"></i>
+                                        <span>Menu</span>
+                                    </a>
+                                    <div class="mainwrap collapse" id="main-collapse">
+                                        <ul class="main-menu">
+                                            @foreach (var item in Model.Where(r => r.Level.Length == 5).ToList())
+                                            {
+                                                <li class="menu-link parant">
+                                                    <a class="link-title" href="@item.Link">
+                                                        <span>@item.Name</span>
+                                                    </a>
+                                                    <a data-toggle="collapse" href="@item.Link" class="link-title link-title-lg">
+                                                        <span>@item.Name</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                        <script>
+                                                    $('.megamenu-li').parent('ul').addClass('mega-menu');
+                                                    $('.menu-banner').parent('ul').addClass('banner-menu');
+                                                    $('.submenu-li').parent('ul').addClass('sub-menu');
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="search-wrap">
+                    <!-- /snippets/search-bar.liquid -->
+
+                    <a href="#search-wrap" class="search-wrap collapsed" data-toggle="collapse" aria-expanded="false">
+                        <i class="ti-search"></i>
+                    </a>
+                    <div class="wrap-search collapse" id="search-wrap">
+                        <form action="/search" method="get" class="search-bar" role="search">
+                            <div class="form-search">
+                                <input type="hidden" name="type" value="product">
+                                <input type="hidden" name="options[unavailable_products]" value="show">
+                                <input type="hidden" name="options[prefix]" value="last">
+                                <input type="search" name="q" value="" placeholder="Search here" id="search" class="input-text" aria-label="Search our store">
+                                <button class="search-btn" type="submit"><i class="ti-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

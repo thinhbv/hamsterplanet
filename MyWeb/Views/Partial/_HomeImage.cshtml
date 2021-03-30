@@ -1,0 +1,73 @@
+﻿@using Libs.Utils
+@model IEnumerable<MyWeb.Entities.Images>
+@if (Model != null)
+{
+    <div id="shopify-section-1594545773709" class="shopify-section">
+        <!-- Browuse categoryies -->
+        <section class="slider-category-two" style="background-image: url('./banner/Canva-Syrian-hamster-1-scaled.jpg?v=1594547056');">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="category-slider-two owl-carousel owl-theme">
+                            @{ foreach (var item in Model)
+                                {
+                                    <div class="item">
+                                        <div class="category-wrap">
+                                            <div class="category-image">
+                                                <a href="" class="cat-img">
+                                                    <img class="lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src=""@StringClass.OriginalImage(item.Image)">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            $('.category-slider-two').owlCarousel({
+                loop: true,
+                rewind: true,
+                dots: false,
+                nav: false,
+                margin: 0, rtl: true, autoplay: true,
+                sautoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    479: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    979: {
+                        items: 4
+                    },
+                    1199: {
+                        items: 4
+                    }
+                }
+            });
+        </script>
+
+        <style>
+                .slider-category-two {
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                }
+
+                @media (max-width: 767px) {
+                    .slider-category-two {
+                        padding-top: 40px;
+                        padding-bottom: 40px;
+                    }
+                }
+        </style>
+    </div>
+}

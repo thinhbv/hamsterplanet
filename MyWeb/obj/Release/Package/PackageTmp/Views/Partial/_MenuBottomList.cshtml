@@ -1,0 +1,8 @@
+﻿@model MyWeb.Models.MenuModel
+<h2 class="footer-section">@Model.parent.Name</h2>
+<ul class="footer-menu">
+    @foreach (var item in Model.childs)
+    {
+        <li><a href="@item.Link" title="@item.Name"><i class="fa fa-handshake-o" aria-hidden="true"></i> @item.Name</a></li>
+    }
+</ul>

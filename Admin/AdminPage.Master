@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPage.master.cs" Inherits="Admin.AdminPage" %>
+
+<%@ Register Src="~/Controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="~/Controls/LeftMenu.ascx" TagPrefix="uc1" TagName="LeftMenu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta charset="utf-8">
+	<title>Dehun Admin | Công ty cổ phần Dehun Việt Nam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="/img/favicon.ico" sizes="32x32">
+	<!-- Bootstrap core CSS -->
+	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Pace -->
+	<link href="/css/pace.css" rel="stylesheet">
+
+	<!-- Chosen -->
+	<link href="/css/chosen/chosen.min.css" rel="stylesheet" />
+
+	<!-- Datepicker -->
+	<link href="/css/datepicker.css" rel="stylesheet" />
+
+	<!-- Timepicker -->
+	<link href="/css/bootstrap-timepicker.css" rel="stylesheet" />
+
+	<!-- Slider -->
+	<link href="/css/slider.css" rel="stylesheet" />
+
+	<!-- Tag input -->
+	<link href="/css/jquery.tagsinput.css" rel="stylesheet" />
+
+	<!-- WYSIHTML5 -->
+	<link href="/css/bootstrap-wysihtml5.css" rel="stylesheet" />
+
+	<!-- Dropzone -->
+	<link href='/css/dropzone/dropzone.css' rel="stylesheet" />
+	
+	<!-- Datatable -->
+	<link href="/css/jquery.dataTables_themeroller.css" rel="stylesheet">
+
+	<!-- Endless -->
+	<link href="/css/endless.min.css" rel="stylesheet">
+	<link href="/css/endless-skin.css" rel="stylesheet">
+	
+	<!-- Jquery -->
+	<script src="/js/jquery-1.10.2.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body class="overflow-hidden">
+	<form id="form1" runat="server">
+    <asp:ToolkitScriptManager runat="server"></asp:ToolkitScriptManager>
+		<!-- Overlay Div -->
+		<div id="overlay" class="transparent"></div>
+		<a href="" id="theme-setting-icon"><i class="fa fa-cog fa-lg"></i></a>
+		<div id="theme-setting">
+			<div class="title">
+				<strong class="no-margin">Skin Color</strong>
+			</div>
+			<div class="theme-box">
+				<a class="theme-color" style="background: #323447" id="default"></a>
+				<a class="theme-color" style="background: #efefef" id="skin-1"></a>
+				<a class="theme-color" style="background: #a93922" id="skin-2"></a>
+				<a class="theme-color" style="background: #3e6b96" id="skin-3"></a>
+				<a class="theme-color" style="background: #635247" id="skin-4"></a>
+				<a class="theme-color" style="background: #3a3a3a" id="skin-5"></a>
+				<a class="theme-color" style="background: #495B6C" id="skin-6"></a>
+			</div>
+			<div class="title">
+				<strong class="no-margin">Sidebar Menu</strong>
+			</div>
+			<div class="theme-box">
+				<label class="label-checkbox">
+					<input type="checkbox" checked id="fixedSidebar">
+					<span class="custom-checkbox"></span>
+					Fixed Sidebar
+		
+				</label>
+			</div>
+		</div>
+		<!-- /theme-setting -->
+		<div id="wrapper" class="preload">
+			<div id="top-nav" class="skin-6 fixed">
+				<uc1:Header runat="server" id="Header" />
+			</div>
+			<!--#top-nav-->
+			<aside class="fixed skin-6">
+				<div class="sidebar-inner scrollable-sidebar">
+					<uc1:LeftMenu runat="server" id="LeftMenu" />
+				</div>
+				<!-- /sidebar-inner scrollable-sidebar -->
+			</aside>
+			<div id="main-container">
+				<%--<div id="breadcrumb">
+					<ul class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+						<li>Form</li>
+						<li class="active">Form Element</li>
+					</ul>
+				</div>--%>
+				<!--breadcrumb-->
+				<asp:ContentPlaceHolder ID="MainContent" runat="server">
+				</asp:ContentPlaceHolder>
+			</div>
+		</div>
+		<!--#wrapper-->
+		<!-- Logout confirmation -->
+		<div class="custom-popup width-50" id="logoutConfirm">
+			<div class="padding-md">
+				<h4 class="m-top-none">Bạn có muốn thoát?</h4>
+			</div>
+
+			<div class="text-center">
+				<a class="btn btn-success m-right-sm" href="/login">Đăng xuất</a>
+				<a class="btn btn-danger logoutConfirm_close">Hủy bỏ</a>
+			</div>
+		</div>
+	</form>
+
+	<!-- Chosen -->
+	<script src='/js/chosen.jquery.min.js'></script>
+
+	<!-- Mask-input -->
+	<script src='/js/jquery.maskedinput.min.js'></script>
+
+	<!-- Datepicker -->
+	<script src='/js/bootstrap-datepicker.min.js'></script>
+
+	<!-- Timepicker -->
+	<script src='/js/bootstrap-timepicker.min.js'></script>
+
+	<!-- Slider -->
+	<script src='/js/bootstrap-slider.min.js'></script>
+
+	<!-- Tag input -->
+	<script src='/js/jquery.tagsinput.min.js'></script>
+
+	<!-- Dropzone -->
+	<script src='/js/dropzone.min.js'></script>
+
+	<!-- Modernizr -->
+	<script src='/js/modernizr.min.js'></script>
+
+	<!-- Pace -->
+	<script src='/js/pace.min.js'></script>
+
+	<!-- Popup Overlay -->
+	<script src='/js/jquery.popupoverlay.min.js'></script>
+
+	<!-- Slimscroll -->
+	<script src='/js/jquery.slimscroll.min.js'></script>
+
+	<!-- Cookie -->
+	<script src='/js/jquery.cookie.min.js'></script>
+ 
+	<!-- Datatable -->
+	<script src='/js/jquery.dataTables.min.js'></script>	
+
+	<!-- Endless -->
+	<script src="/js/endless/endless_form.js"></script>
+	<script src="/js/endless/endless.js"></script>
+	<script>
+		$(function	()	{
+			$('#dataTable').dataTable( {
+				"bJQueryUI": true,
+				"sPaginationType": "full_numbers"
+			});
+			
+			$('#chk-all').click(function()	{
+				if($(this).is(':checked'))	{
+					$('#dataTable').find('.chk-row').each(function () {
+						$(this).prop('checked', true);
+						$(this).parent().parent().parent().addClass('selected');
+					});
+				}
+				else	{
+					$('#dataTable').find('.chk-row').each(function () {
+						$(this).prop('checked' , false);
+						$(this).parent().parent().parent().removeClass('selected');
+					});
+				}
+			});
+			$(".btn-add").on('click', function () {
+				$("#pnView").hide();
+				$("#pnInfo").show();
+			});
+		});
+	</script>
+</body>
+</html>

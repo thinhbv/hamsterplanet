@@ -1,0 +1,123 @@
+﻿@using Libs.Utils
+@model MyWeb.Models.ServiceDetailModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- breadcrumb-banner-area -->
+<div class="breadcrumb-banner-area ptb-120 gray-bg-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-text text-center">
+                    <h2>@Model.product.Name</h2>
+                    @*<p>@Html.Raw(Model.product.Content)</p>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-banner-area-end -->
+<!-- project-details-area-start -->
+<div class="project-details-area pt-120">
+    <div class="container">
+        <div class="row">
+            <div class="project-details-active owl-carousel">
+
+                @if (Model.product.Image2.Trim() != string.Empty)
+                {
+                    <div class="col-md-12">
+                        <div class="project-details-img-wrapper">
+                            <img src="@StringClass.OriginalImage(Model.product.Image2)" alt="@Model.product.Name" />
+                        </div>
+                    </div>
+                }
+                @if (Model.product.Image3.Trim() != string.Empty)
+                {
+                    <div class="col-md-12">
+                        <div class="project-details-img-wrapper">
+                            <img src="@StringClass.OriginalImage(Model.product.Image3)" alt="@Model.product.Name" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- project-details-area-start -->
+<!-- project-details-3-start -->
+<div class="project-details-3 pt-40 pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-text">
+                    @*<h3>@Model.product.Name</h3>*@
+                    @Html.Raw(Model.product.Detail)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- project-details-3-end -->
+
+@if (Model.newsRelate.Count > 0)
+{
+    <!-- recent-work-area-start -->
+    <div class="recent-work-area pb-120">
+        <div class="container">
+            <div class="section-title mb-60 text-center">
+                <h2>Tin liên quan</h2>
+            </div>
+            <div class="row">
+                <div class="works-active owl-carousel">
+                    @foreach (MyWeb.Entities.News item in Model.newsRelate)
+                    {
+                        <div class="col-md-12">
+                            <div class="work-wrapper">
+                                <div class="work-img">
+                                    <a href="@StringClass.GeneralDetailUrl(Consts.TIN_TUC, item.GroupName, item.Id.ToString(), item.Name)"><img src="@StringClass.ThumbImage(item.Image)" alt="@item.Name" class="img-resize" /></a>
+                                </div>
+                                <div class="related-post-title">
+                                    <h3><a href="@StringClass.GeneralDetailUrl(Consts.TIN_TUC, item.GroupName, item.Id.ToString(), item.Name)" title="@item.Name">@item.Name</a></h3>
+                                    <p style="max-width:320px">@StringClass.FormatContentNews(item.Content, 150)</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recent-work-area-end -->
+}
+@if (Model.productRelate.Count > 0)
+    {
+        <!-- recent-work-area-start -->
+        <div class="recent-work-area pb-120">
+            <div class="container">
+                <div class="section-title mb-60 text-center">
+                    <h2>Dịch vụ khác</h2>
+                </div>
+                <div class="row">
+                    <div class="works-active owl-carousel">
+                        @foreach (MyWeb.Entities.Product item in Model.productRelate)
+                        {
+                            <div class="col-md-12">
+                                <div class="work-wrapper">
+                                    <div class="work-img">
+                                        <a href="@StringClass.GeneralDetailUrl(Consts.DICH_VU, item.GroupName, item.Id.ToString(), item.Name)"><img src="@StringClass.ThumbImage(item.Image1)" alt="@item.Name" class="img-resize" /></a>
+
+                                    </div>
+                                    <div class="related-post-title">
+                                        <h3><a href="@StringClass.GeneralDetailUrl(Consts.DICH_VU, item.GroupName, item.Id.ToString(), item.Name)" title="@item.Name">@item.Name</a></h3>
+                                        <p style="max-width:320px">@StringClass.FormatContentNews(item.Content, 150)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- recent-work-area-end -->
+    }
+

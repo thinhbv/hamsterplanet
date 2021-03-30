@@ -1,0 +1,171 @@
+﻿@using Libs.Utils
+@model MyWeb.Models.ProductDetailModel
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- breadcrumb-banner-area -->
+<div class="breadcrumb-banner-area ptb-120 gray-bg-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-text text-center">
+                    @if (Model.product.GroupName != null)
+                    {
+                        <h2>@Model.product.GroupName</h2>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-banner-area-end -->
+<!-- blog-right-area-start -->
+<div class="blog-area pt-120 pb-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="portfolio-thumbnil-area">
+                    <div class="product-more-views">
+                        <div class="tab_thumbnail" data-tabs="tabs">
+                            <div class="thumbnail-carousel">
+                                <ul>
+                                    @if (Model.product.Image1 != string.Empty)
+                                    {
+                                        <li class="active">
+                                            <a href="#view11" class="shadow-box" aria-controls="view11" data-toggle="tab"><img src="@StringClass.OriginalImage(Model.product.Image1)" alt="@Model.product.Name" /></a>
+                                        </li>
+                                    }
+                                    @if (Model.product.Image2 != string.Empty)
+                                    {
+                                        <li>
+                                            <a href="#view22" class="shadow-box" aria-controls="view22" data-toggle="tab"><img src="@StringClass.OriginalImage(Model.product.Image2)" alt="@Model.product.Name" /></a>
+                                        </li>
+                                    }
+                                    @if (Model.product.Image3 != string.Empty)
+                                    {
+                                        <li>
+                                            <a href="#view33" class="shadow-box" aria-controls="view33" data-toggle="tab"><img src="@StringClass.OriginalImage(Model.product.Image3)" alt="@Model.product.Name" /></a>
+                                        </li>
+                                    }
+                                    @if (Model.product.Image4 != string.Empty)
+                                    {
+                                        <li>
+                                            <a href="#view44" class="shadow-box" aria-controls="view44" data-toggle="tab"><img src="@StringClass.OriginalImage(Model.product.Image4)" alt="@Model.product.Name" /></a>
+                                        </li>
+                                    }
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content active-portfolio-area pos-rltv">
+                        @if (Model.product.Image1 != string.Empty)
+                        {
+                            <div role="tabpanel" class="tab-pane active" id="view11">
+                                <div class="product-img">
+                                    <a class="fancybox" data-fancybox-group="group" href="@StringClass.ThumbImage(Model.product.Image1)"><img src="@StringClass.OriginalImage(Model.product.Image1)" alt="@Model.product.Name" /></a>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.product.Image2 != string.Empty)
+                        {
+                            <div role="tabpanel" class="tab-pane" id="view22">
+                                <div class="product-img">
+                                    <a class="fancybox" data-fancybox-group="group" href="@StringClass.ThumbImage(Model.product.Image2)"><img src="@StringClass.OriginalImage(Model.product.Image2)" alt="@Model.product.Name" /></a>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.product.Image3 != string.Empty)
+                        {
+                            <div role="tabpanel" class="tab-pane" id="view33">
+                                <div class="product-img">
+                                    <a class="fancybox" data-fancybox-group="group" href="@StringClass.ThumbImage(Model.product.Image3)"><img src="@StringClass.OriginalImage(Model.product.Image3)" alt="@Model.product.Name" /></a>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.product.Image4 != string.Empty)
+                        {
+                            <div role="tabpanel" class="tab-pane" id="view44">
+                                <div class="product-img">
+                                    <a class="fancybox" data-fancybox-group="group" href="@StringClass.ThumbImage(Model.product.Image4)"><img src="@StringClass.OriginalImage(Model.product.Image4)" alt="@Model.product.Name" /></a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="single-product-description">
+                    <div class="sp-top-des">
+                        <h3>@Model.product.Name</h3>
+                        <div class="prodcut-ratting-price">
+                            <div class="prodcut-ratting">
+                                <a href="#" tabindex="0"><i class="fa fa-star-o"></i></a>
+                                <a href="#" tabindex="0"><i class="fa fa-star-o"></i></a>
+                                <a href="#" tabindex="0"><i class="fa fa-star-o"></i></a>
+                                <a href="#" tabindex="0"><i class="fa fa-star-o"></i></a>
+                                <a href="#" tabindex="0"><i class="fa fa-star-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sp-des">
+                        <p>@Model.product.Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--descripton-area start -->
+<div class="descripton-area">
+    <div class="container">
+        <div class="row">
+            <div class="product-area tab-cars-style">
+                <div class="title-tab-product-category">
+                    <div class="col-md-12 text-center">
+                        <ul class="nav mb-40 heading-style-2" role="tablist">
+                            <li role="presentation"><a href="#newarrival" aria-controls="newarrival" role="tab" data-toggle="tab">Chi tiết</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-12">
+                    <div class="content-tab-product-category">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fix fade in active" id="newarrival">
+                                <div class="review-wraper">
+                                    @Html.Raw(Model.product.Detail)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--descripton-area end-->
+@if (Model.productsRelate.Count > 0)
+{
+    <!--new arrival area start-->
+    <div class="new-arrival-area ptb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="section-title mb-60 text-center">
+                        <h2>Sản phẩm liên quan</h2>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="total-new-arrival new-arrival-slider-active carsoule-btn">
+                    @Html.Partial("../Partial/_ProductBox", Model.productsRelate)
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--new arrival area end-->
+}

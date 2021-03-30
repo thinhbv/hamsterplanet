@@ -1,0 +1,33 @@
+﻿@using Libs.Utils
+<!-- blog-area-start -->
+<div class="blog-area pt-120 pb-90">
+    <div class="container">
+        <div class="section-title mb-60 text-center">
+            <h2><span>Tin tức mới nhất</span></h2>
+        </div>
+        <div class="row">
+            @foreach (MyWeb.Entities.News item in Model)
+            {
+                <div class="col-md-4 col-sm-6">
+                    <div class="blog-wrapper mb-30">
+                        <div class="blog-img wow fadeInLeft">
+                            <a href="@StringClass.GeneralDetailUrl(Consts.TIN_TUC, item.GroupName, item.Id.ToString(), item.Name)"><img src="@StringClass.OriginalImage(item.Image)" alt="@item.Name" /></a>
+                        </div>
+                        <div class="blog-text">
+                            <div class="blog-info">
+                                <h3><a href="@StringClass.GeneralDetailUrl(Consts.TIN_TUC, item.GroupName, item.Id.ToString(), item.Name)">@item.Name</a></h3>
+                                <p>@StringClass.FormatContentNews(item.Content,150)</p>
+                            </div>
+                            <div class="blog-date">
+                                <span><i class="fa fa-clock-o"></i>@item.Date.Value.ToString("dd/MM/yyyy") </span>
+                                <span><i class="fa fa-heart"></i>20 lượt thích</span>
+                                <span><i class="fa fa-comment"></i>0 bình luận</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- blog-area-start -->

@@ -1,0 +1,6 @@
+E:\dehun\Libs.Utils\bin\Debug\Libs.Utils.dll
+E:\dehun\Libs.Utils\bin\Debug\Libs.Utils.pdb
+E:\dehun\Libs.Utils\obj\Debug\Libs.Utils.csproj.CoreCompileInputs.cache
+E:\dehun\Libs.Utils\obj\Debug\Libs.Utils.dll
+E:\dehun\Libs.Utils\obj\Debug\Libs.Utils.pdb
+E:\dehun\Libs.Utils\obj\Debug\Libs.Utils.csprojAssemblyReference.cache

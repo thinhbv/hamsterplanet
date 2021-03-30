@@ -1,0 +1,83 @@
+﻿@using Libs.Utils
+@model IEnumerable<MyWeb.Entities.Page>
+<div class="container md-container">
+    <div class="row">
+        <div class="col-md-3 col-sm-4">
+            <div class="logo">
+                <a href="/"><img src="@StringClass.OriginalImage(ViewBag.LogoUrl)" alt="" /></a>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-8">
+            <div class="main-menu">
+                <nav>
+                    <ul>
+                        @foreach (var item in Model.Where(r => r.Level.Length == 5).ToList())
+                        {
+                            if (Model.Where(r => r.Level.Length == 10).Where(r => r.Level.StartsWith(item.Level)).ToList().Count > 0)
+                            {
+
+                                if (Model.Where(r => r.Level.Length == 15).Where(r => r.Level.StartsWith(item.Level)).ToList().Count == 0)
+                                {
+                                    <li>
+                                        <a href="@item.Link" title="@item.Name">@item.Name</a>
+                                        <ul class="sub-menu">
+                                            @foreach (var itemSub in Model.Where(r => r.Level.Length == 10).Where(r => r.Level.StartsWith(item.Level)).ToList())
+                                            {
+                                                <li><a href="@itemSub.Link" title="@itemSub.Name">@itemSub.Name</a></li>
+                                            }
+                                        </ul>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="mega_parent">
+                                        <a href="@item.Link" title="@item.Name">@item.Name</a>
+                                        <ul class="mega_menu">
+                                            @foreach (var itemSub1 in Model.Where(r => r.Level.Length == 10).Where(r => r.Level.StartsWith(item.Level)).ToList())
+                                            {
+                                                <li>
+                                                    <a class="element-title" href="@itemSub1.Link" title="@itemSub1.Name">@itemSub1.Name</a>
+                                                    <ul class="mega-sub-menu">
+                                                        @foreach (var itemSub2 in Model.Where(r => r.Level.Length == 15).Where(r => r.Level.StartsWith(itemSub1.Level)).ToList())
+                                                        {
+                                                            <li><a href="@itemSub2.Link" title="@itemSub2.Name"><i class="fa fa-angle-double-right" aria-hidden="true"></i> @itemSub2.Name</a></li>
+                                                        }
+                                                    </ul>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </li>
+                                }
+                            }
+                            else
+                            {
+                                <li>
+                                    <a href="@item.Link" title="@item.Name">@item.Name</a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        @*<div class="col-md-3 hidden-xs hidden-sm">
+                <div class="header-menu-icon">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-vimeo"></i></a>
+                    <a href="#"><i class="fa fa-tumblr"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                </div>
+            </div>*@
+        <div class="col-xs-12"><div class="mobile-menu"></div></div>
+        @*<div class=" col-lg-12 col-md-10 col-xs-9">
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            @Html.Raw(Model)
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xs-12 ptb-0"><div class="mobile-menu"></div></div>*@
+    </div>
+</div>

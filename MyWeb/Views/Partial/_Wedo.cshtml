@@ -1,0 +1,25 @@
+﻿@using Libs.Utils
+<!-- recent-work-area-start -->
+<div class="recent-work-area ptb-120">
+    <div class="container">
+        <div class="section-title mb-60 text-center">
+            <h2><span>Công nghệ sử dụng</span></h2>
+        </div>
+        <div class="row">
+            <div class="works-active owl-carousel">
+                @foreach (MyWeb.Entities.GroupProduct item in Model)
+                {
+                    <div class="work-wrapper wow fadeInLeft">
+                        <div class="work-img large-img">
+                            <a href="@StringClass.GeneralListUrl(Consts.DICH_VU,item.Name, item.Id.ToString())"><img src="@StringClass.OriginalImage(item.Image)" alt="" /></a>
+                            <div class="work-text">
+                                <h3><a href="#">@item.Name</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- recent-work-area-end -->

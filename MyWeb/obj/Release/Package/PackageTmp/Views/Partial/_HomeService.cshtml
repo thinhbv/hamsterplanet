@@ -1,0 +1,24 @@
+﻿@using Libs.Utils
+@model MyWeb.Entities.Page
+@if (Model != null)
+{
+<!-- home-service-start -->
+<div class="home-service-area gray-bg">
+    <div class="col-md-6 p-0 col-xs-12">
+        <div class="home-service-wrapper ml-20 mr-20 ptb-20">
+            <a href="@Model.Link"><img src="@StringClass.OriginalImage(Model.Image)" alt="@Model.Name" /></a>
+        </div>
+    </div>
+    <div class="col-md-6 p-0 col-xs-12">
+        <div class="home-area-right">
+            <div class="home-section">
+                <h3>@Model.Name</h3>
+                <div class="homes-info">
+                    @Html.Raw(Model.Detail)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- home-service-end -->
+}

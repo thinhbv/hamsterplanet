@@ -1,0 +1,7 @@
+E:\dehun\Libs.Db\bin\Debug\Libs.Db.dll
+E:\dehun\Libs.Db\bin\Debug\Libs.Db.pdb
+E:\dehun\Libs.Db\obj\Debug\Libs.Db.csprojAssemblyReference.cache
+E:\dehun\Libs.Db\obj\Debug\Libs.Db.csproj.CoreCompileInputs.cache
+E:\dehun\Libs.Db\obj\Debug\Libs.Db.csproj.CopyComplete
+E:\dehun\Libs.Db\obj\Debug\Libs.Db.dll
+E:\dehun\Libs.Db\obj\Debug\Libs.Db.pdb

@@ -1,0 +1,66 @@
+﻿<!-- footer-top-area-start -->
+<div class="footer-top-area footer-top pt-100 bg-opacity pb-70" style="background-image:url(/assets/img/bg/footer-bg.jpg)">
+    <div class="container">
+        <div class="row">
+            @*<div class="col-md-3 col-sm-4 pr-0">
+                <div class="footer-wrapper mb-30">
+                    <h2 class="footer-section">@Model.about.Name</h2>
+                    <div class="footer-text">
+                        <p>@Model.about.Description</p>
+                    </div>
+                </div>
+            </div>*@
+            <div class="col-md-4 col-sm-6">
+                <div class="footer-wrapper mb-30">
+                    @if (Model.menuBottom.Count > 0)
+                    {
+                        @Html.Partial("../Partial/_MenuBottomList", (MyWeb.Models.MenuModel)Model.menuBottom[0])
+                    }
+
+                </div>
+            </div>
+            <div class="col-md-4 hidden-sm">
+                <div class="footer-wrapper mb-30">
+                    @if (Model.menuBottom.Count > 1)
+                    {
+                        @Html.Partial("../Partial/_MenuBottomList", (MyWeb.Models.MenuModel)Model.menuBottom[1])
+                    }
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+                <div class="footer-wrapper mb-30">
+                    <h2 class="footer-section">ĐỊA CHỈ</h2>
+                    <ul class="footer-link">
+                        <li><i class="fa fa-address-book"></i><span>@Html.Raw(Model.address)</span></li>
+                        <li><i class="fa fa-phone"></i><span>@Model.support.Phone</span></li>
+                        <li><i class="fa fa-envelope-open"></i><span>@Model.support.Email</span></li>
+                        <li><i class="fa fa-clock-o"></i><a href="/" title="Công ty TNHH Dehun Việt Nam"><span>www.dehun.com.vn</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer-top-area-end -->
+<!-- footer-bottom-area-start -->
+<div class="footer-bottom-area gray-bg-1 ptb-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="copyright">
+                    <p>Copyright © 2019 <a href="https://dehun.com.vn/">Công ty cổ phần Dehun Việt Nam</a> All Right Reserved.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="footer-icon">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-vimeo"></i></a>
+                    <a href="#"><i class="fa fa-tumblr"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer-bottom-area-end -->

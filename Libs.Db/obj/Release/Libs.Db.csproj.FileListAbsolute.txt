@@ -1,0 +1,6 @@
+E:\dehun\Libs.Db\bin\Release\Libs.Db.dll
+E:\dehun\Libs.Db\bin\Release\Libs.Db.pdb
+E:\dehun\Libs.Db\obj\Release\Libs.Db.csprojAssemblyReference.cache
+E:\dehun\Libs.Db\obj\Release\Libs.Db.csproj.CoreCompileInputs.cache
+E:\dehun\Libs.Db\obj\Release\Libs.Db.dll
+E:\dehun\Libs.Db\obj\Release\Libs.Db.pdb

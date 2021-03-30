@@ -1,0 +1,14 @@
+﻿@using Libs.Utils
+@foreach (MyWeb.Entities.Product item in Model)
+{
+    <div class="col-md-4 col-sm-6">
+        <div class="product-wrapper mb-30">
+            <div class="product-img">
+                <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, item.GroupName, item.Id.ToString(), item.Name)" title="@item.Name"><img src="@StringClass.OriginalImage(item.Image1)" alt="@item.Name" /></a>
+            </div>
+            <div class="product-text text-center">
+                <h2><a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, item.GroupName, item.Id.ToString(), item.Name)" title="@item.Name">@item.Name</a></h2>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,142 @@
+﻿@using Libs.Utils
+<!-- home-service-end -->
+<div id="shopify-section-1537092551066" class="shopify-section">
+    <!-- product-area start -->
+    <div class="product-area product-tab-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- section-title start -->
+                    <div class="section-title">
+                        <h2>Tất cả sản phẩm</h2>
+                        <div class="tab">
+                            <ul class="nav nav-tabs" role="tablist">
+                                @{ int i = 0;}
+                                @foreach (MyWeb.Models.ProductsModel item in Model)
+                                {
+                                    if (i == 0)
+                                    {
+                                        <li role="presentation">
+                                            <a class="active show" role="tab" data-toggle="tab" href="#tab-@item.group.Id">@item.group.Name</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li role="presentation">
+                                            <a class="active" role="tab" data-toggle="tab" href="#tab-@item.group.Id">@item.group.Name</a>
+                                        </li>
+                                    }
+
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- section-title end -->
+                    <div class="tab">
+                        <div class="tab-content tabs">
+                            @foreach (MyWeb.Models.ProductsModel item in Model)
+                            {
+                                i = 0;
+                                string className = "";
+                                foreach (var product in item.products)
+                                {
+                                    if (i == 0)
+                                    {
+                                        className = "active show";
+                                    }
+
+                                    <div class="tab-pane fade @className" id="tab-@item.group.Id" role="tabpanel">
+                                        <div class="swiper-container" id="feture_pro_tab">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide product-list-item">
+                                                    <div class="single-product-wrap">
+                                                        <div class="product-image">
+                                                            <a class="pro-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)">
+                                                                <img class="img-fluid img1 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
+                                                                <img class="img-fluid img2 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(product.Image2)" alt="@product.Name" />
+                                                            </a>
+                                                            <div class="product-label">
+                                                                <span class="new-title">New</span>
+                                                                @*<span class="percent-count">-10%</span>*@
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="product-content">
+                                                            <div class="product-ratting">
+                                                                <span class="shopify-product-reviews-badge" data-id="5359972778141"></span>
+                                                            </div>
+                                                            <h3>
+                                                                <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">Tincidunt ut Laoreet</a>
+                                                            </h3>
+
+                                                            <div class="price-box">
+                                                                @*<span class="new-price">€27,00</span>*@
+
+                                                                <span class="old-price">@BizUtils.ConvertPrice(product.Price)</span>
+
+                                                            </div>
+                                                            <div class="product-description pro_details">
+                                                                @BizUtils.SubStringByLength(product.Content, 100)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-buttons">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product-area end -->
+    <script>
+        var swiper = new Swiper('.swiper-container#feture_pro_tab', {
+            slidesPerColumn: 2,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            observer: true,
+            observeParents: true, rtl: true, navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1199: {
+                    slidesPerView: 4
+                }
+            },
+        });
+    </script>
+
+    <style>
+                .product-tab-ptb {
+                    padding-top: 60px;
+                    padding-bottom: 110px;
+                    background-color: rgba(0,0,0,0);
+                }
+
+                @media (max-width: 767px) {
+                    .product-tab-ptb {
+                        padding-top: 40px;
+                    }
+                }
+    </style>
+</div>

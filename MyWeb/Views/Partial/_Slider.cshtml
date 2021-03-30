@@ -1,0 +1,36 @@
+﻿@using Libs.Utils
+<!-- slider-area-start -->
+<!-- BEGIN content_for_index -->
+<div id="shopify-section-1537075194786" class="shopify-section">
+    <div class="slider-main lazyload">
+        <div class="slider-content">
+            <div class="home-slider owl-carousel owl-theme lazyload" id="home-slider">
+
+                @foreach (MyWeb.Entities.Advertise item in Model)
+                {
+                    <div class="item">
+                        <div class="slide-image lazyload" style="background-image: url(@StringClass.OriginalImage(item.Image));">
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+    <script>
+        $('#home-slider').owlCarousel({
+            loop: false,
+            items: 1,
+            rewind: true, rtl: true, margin: 0,
+            dots: false,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            autoplay: true,
+            sautoplayTimeout: 10000,
+            autoplayHoverPause: true
+        });
+    </script>
+</div>
+<!-- slider-area-end -->
+

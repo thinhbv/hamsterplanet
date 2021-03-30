@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Liên hệ với chúng tôi";
+}
+<!-- breadcrumb-banner-area -->
+<div class="breadcrumb-banner-area ptb-120 bg-opacity" style="background:url(assets/img/bg/6.jpg) center center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-text text-center">
+                    <h2>Liên hệ với chúng tôi</h2>
+                    <p>Chúng tôi sẽ cố gắng trả lời bạn trong thời gian sớm nhất. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-banner-area-end -->
+<!-- contact-3-area-start -->
+<div class="contact-3-area contact-2 contact-3 pt-120 pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="contact-wrapper-3 mb-30">
+                    <div class="contact-3-text">
+                        <h3>Vui lòng để lại tin nhắn cho chúng tôi.</h3>
+                    </div>
+                    <form action="/lien-he" id="contact-form">
+                        <div class="col-sm-4">
+                            <input id="name" name="name" type="text" placeholder="Tên của bạn*">
+                        </div>
+                        <div class="col-sm-4">
+                            <input id="email" name="email" type="email" placeholder="Email của bạn">
+                        </div>
+                        <div class="col-sm-4">
+                            <input id="phone" name="phone" type="text" placeholder="Số điện thoại của bạn*">
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea name="detail" cols="30" rows="10" placeholder="Nội dung" id="detail"></textarea>
+                        </div>
+                        <button type="submit">Gửi liên hệ</button>
+                    </form>
+                    <p class="form-message"></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-3-right-wrapper mb-30">
+                    <div class="contact-3-right-info">
+                        <h3>Liên hệ với chúng tôi</h3>
+                        <p>Chúng tôi sẽ tư vấn, cung câp cho các bạn những dịch vụ tốt nhất.</p>
+                    </div>
+                    <div class="contact-3-address">
+                        <div class="contact-3-icon">
+                            <i class="zmdi zmdi-pin"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="location">Địa chỉ :</span>
+                            <span class="USA">@Html.Raw(ViewBag.Location)</span>
+                        </div>
+                    </div>
+                    <div class="contact-3-address">
+                        <div class="contact-3-icon">
+                            <i class="zmdi zmdi-phone"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="location">Điện thoại :</span>
+                            <span class="USA">@ViewBag.Phone</span>
+                        </div>
+                    </div>
+                    <div class="contact-3-address">
+                        <div class="contact-3-icon">
+                            <i class="zmdi zmdi-email"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="location">Email :</span>
+                            <span class="USA">@ViewBag.Email</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact-3-area-end -->

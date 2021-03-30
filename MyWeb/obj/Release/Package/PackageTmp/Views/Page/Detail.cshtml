@@ -1,0 +1,32 @@
+﻿@using Libs.Utils
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- breadcrumb-banner-area -->
+<div class="breadcrumb-banner-area ptb-120 bg-opacity" style="background-image:url(@StringClass.OriginalImage(Model.Image))">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-text text-center">
+                    <h2>@Model.Name</h2>
+                    <p>@Model.Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-banner-area-end -->
+<!-- project-details-3-start -->
+<div class="project-details-3 pt-40 pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-text">
+                    <h3>@Model.Name</h3>
+                    @Html.Raw(Model.Detail)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- project-details-3-end -->

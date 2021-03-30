@@ -1,0 +1,102 @@
+﻿@using Libs.Utils
+@if (Model != null)
+{
+    <div id="shopify-section-1593610049816" class="shopify-section">
+        <section class="collection-category">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="section-title">
+                            <h2>@Model.group.Name</h2>
+                        </div>
+                        <div class="collection-slider owl-carousel owl-theme" id="pro-Best-Seller">
+                            @foreach (MyWeb.Entities.Product item in Model.Products)
+                            {
+                                <div class="item">
+                                    <div class="single-product-wrap">
+                                        <div class="product-image">
+                                            <a class="pro-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, item.GroupName, item.Id.ToString(), item.Name)">
+                                                <img class="img-fluid img1 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(item.Image1)" alt="@item.Name">
+                                                <img class="img-fluid img2 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(item.Image2)" alt="@item.Name"/>
+                                            </a>
+                                            <div class="product-label">
+                                                <span class="new-title">New</span>
+                                                @*<span class="percent-count">-10%</span>*@
+                                            </div>
+
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-ratting">
+                                                <span class="shopify-product-reviews-badge" data-id="5359972778141"></span>
+                                            </div>
+                                            <h3>
+                                                <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, item.GroupName, item.Id.ToString(), item.Name)" title="@item.Name">@item.Name</a>
+                                            </h3>
+
+                                            <div class="price-box">
+
+                                                <span class="old-price">@BizUtils.ConvertPrice(item.Price)</span>
+
+                                            </div>
+                                            <div class="product-description pro_details">
+                                                @BizUtils.SubStringByLength(item.Content, 100)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+                $('#pro-Best-Seller').owlCarousel({
+                    loop: false,
+                    rewind: true,
+                    margin: 30,
+                    nav: true,
+                    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                    dots: false, rtl: true, autoplay: true,
+                    sautoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 2,
+                            margin: 15
+                        },
+                        479: {
+                            items: 2,
+                            margin: 15
+                        },
+                        768: {
+                            items: 3
+                        },
+                        979: {
+                            items: 4
+                        },
+                        1199: {
+                            items: 4
+                        }
+                    }
+                });
+        </script>
+
+
+
+
+        <style>
+                .collection-category {
+                    padding-top: 60px;
+                    padding-bottom: 0px;
+                }
+
+                @media (max-width: 767px) {
+                    .collection-category {
+                        padding-top: 40px;
+                    }
+                }
+        </style>
+    </div>
+}

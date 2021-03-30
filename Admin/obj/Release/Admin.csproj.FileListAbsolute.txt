@@ -1,0 +1,14 @@
+E:\dehun\Admin\bin\Admin.dll.config
+E:\dehun\Admin\bin\Admin.dll
+E:\dehun\Admin\bin\Admin.pdb
+E:\dehun\Admin\bin\Libs.Content.dll
+E:\dehun\Admin\bin\Libs.Utils.dll
+E:\dehun\Admin\bin\Libs.Db.dll
+E:\dehun\Admin\bin\Libs.Content.pdb
+E:\dehun\Admin\bin\Libs.Utils.pdb
+E:\dehun\Admin\bin\Libs.Db.pdb
+E:\dehun\Admin\obj\Release\Admin.csprojAssemblyReference.cache
+E:\dehun\Admin\obj\Release\Admin.csproj.CoreCompileInputs.cache
+E:\dehun\Admin\obj\Release\Admin.csproj.CopyComplete
+E:\dehun\Admin\obj\Release\Admin.dll
+E:\dehun\Admin\obj\Release\Admin.pdb

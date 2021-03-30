@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Công ty cổ phần Dehun Việt Nam</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Nunito+Sans|Roboto+Slab|Taviraj|Open+Sans:400,800|Pathway+Gothic+One&display=swap" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+</head>
+<body>
+    <header>
+        <!-- header-top-area-start -->
+        <div class="header-top-area blue-bg">
+            @{ Html.RenderAction("Header", "Shared"); }
+        </div>
+        <!-- header-top-area-end -->
+        <!-- main-menu-area-start -->
+        <div id="header-sticky" class="main-menu-area menu-style-1 white-header">
+            @{ Html.RenderAction("MenuMain", "Shared"); }
+        </div>
+        <!-- main-menu-area-end -->
+    </header>
+    @RenderBody()
+    <footer>
+        @{ Html.RenderAction("Footer", "Shared"); }
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    @Scripts.Render("~/bundles/othersrcipts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
