@@ -25,7 +25,7 @@
     <link href="/Content/magnific-popup.css?v=5259335330236467550" rel="stylesheet" type="text/css" media="all" />
 
     <link href="/Content/theme-default.css?v=16834706586602401949" rel="stylesheet" type="text/css" media="all" />
-    <link href="/Content/style-rtl.css?v=1193286726291163241" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/style-rtl.css?v=1193286726291163266" rel="stylesheet" type="text/css" media="all" />
     <link href="/Content/theme-custom.css?v=7113697661042905670" rel="stylesheet" type="text/css" media="all" />
     <link href="/Content/theme-responsive.css?v=11883961643139697969" rel="stylesheet" type="text/css" media="all" />
     <link href="/Content/skin-theme.css?v=12050874745568414959" rel="stylesheet" type="text/css" media="all" />
@@ -91,9 +91,7 @@
             }
         </style>
     </div>
-    <main role="main">
-        @RenderBody()
-    </main>
+    @RenderBody()
     @{ Html.RenderAction("Footer", "Shared"); }
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

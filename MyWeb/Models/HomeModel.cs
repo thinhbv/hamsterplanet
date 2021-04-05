@@ -28,6 +28,7 @@ namespace MyWeb.Models
             //CompletedProject = GetCompletedProject();
             ProductsList = new ProductsListModel().productsModel;
             ProductsAllList = new ProductsListModel().productsAllModel;
+            ProductsOther = new ProductsListModel().productsOther;
             ImagesList = new ImagesModel().images;
             //HomeNews = GetHomeNews();
         }

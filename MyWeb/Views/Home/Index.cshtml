@@ -2,9 +2,10 @@
 @{
     ViewBag.Title = "Hamster Planet";
 }
-
-@Html.Partial("../Partial/_Slider", Model.Slider)
-@Html.Partial("../Partial/_HomeProducts", Model.ProductsList)
-@Html.Partial("../Partial/_HomeAll", Model.ProductsAllList)
-@*@Html.Partial("../Partial/_HomeImage", Model.ImagesList)*@
-@*@Html.Partial("../Partial/_HomeOther", Model.ProductsOther)*@
+<main role="main">
+    @Html.Partial("../Partial/_Slider", Model.Slider)
+    @Html.Partial("../Partial/_HomeProducts", Model.ProductsList)
+    @Html.Partial("../Partial/_HomeAll", Model.ProductsAllList)
+    @*@Html.Partial("../Partial/_HomeImage", Model.ImagesList)*@
+    @*@Html.Partial("../Partial/_HomeOther", Model.ProductsAllList)*@
+</main>
