@@ -113,6 +113,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -502,7 +505,9 @@
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\swiper.min.js" />
     <Content Include="Scripts\timber.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -542,6 +547,9 @@
     <Content Include="fonts\open-sans-extrabold.ttf" />
     <Content Include="Content\themify.woff" />
     <Content Include="Content\themify.ttf" />
+    <Content Include="Content\fontawesome-webfont.ttf" />
+    <Content Include="Content\fontawesome-webfont.woff" />
+    <Content Include="Content\fontawesome-webfont.woff2" />
     <None Include="packages.config" />
     <Content Include="Views\Partial\_Header.cshtml" />
     <Content Include="Views\Partial\_MenuMain.cshtml" />
@@ -594,7 +602,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>55183</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:100/</IISUrl>
+          <IISUrl>http://localhost:200/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

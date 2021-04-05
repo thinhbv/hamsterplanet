@@ -5,3 +5,10 @@ E:\dehun\Libs.Db\obj\Debug\Libs.Db.csproj.CoreCompileInputs.cache
 E:\dehun\Libs.Db\obj\Debug\Libs.Db.csproj.CopyComplete
 E:\dehun\Libs.Db\obj\Debug\Libs.Db.dll
 E:\dehun\Libs.Db\obj\Debug\Libs.Db.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\bin\Debug\Libs.Db.dll
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\bin\Debug\Libs.Db.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.csproj.CoreCompileInputs.cache
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.csproj.CopyComplete
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.dll
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.csprojAssemblyReference.cache

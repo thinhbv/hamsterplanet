@@ -13,7 +13,7 @@ namespace MyWeb.Models
         //public List<Page> HomeService { get; set; }
         //public List<Product> OurService { get; set; }
         //public List<ImagesModel> CompletedProject { get; set; }
-        public List<ProductsModel> ProductsList { get; set; }
+        public List<Product> ProductsList { get; set; }
         public List<ProductsModel> ProductsAllList { get; set; }
         public ProductsModel ProductsOther { get; set; }
         public List<Images> ImagesList { get; set; }

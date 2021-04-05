@@ -23,10 +23,10 @@
                                     else
                                     {
                                         <li role="presentation">
-                                            <a class="active" role="tab" data-toggle="tab" href="#tab-@item.group.Id">@item.group.Name</a>
+                                            <a class="" role="tab" data-toggle="tab" href="#tab-@item.group.Id">@item.group.Name</a>
                                         </li>
                                     }
-
+                                    { i++; }
                                 }
                             </ul>
                         </div>
@@ -34,20 +34,20 @@
                     <!-- section-title end -->
                     <div class="tab">
                         <div class="tab-content tabs">
+                            @{i = 0;}
                             @foreach (MyWeb.Models.ProductsModel item in Model)
                             {
-                                i = 0;
                                 string className = "";
-                                foreach (var product in item.products)
+                                if (i == 0)
                                 {
-                                    if (i == 0)
-                                    {
-                                        className = "active show";
-                                    }
+                                    className = "active show";
+                                }
 
-                                    <div class="tab-pane fade @className" id="tab-@item.group.Id" role="tabpanel">
-                                        <div class="swiper-container" id="feture_pro_tab">
-                                            <div class="swiper-wrapper">
+                                <div class="tab-pane fade @className" id="tab-@item.group.Id" role="tabpanel">
+                                    <div class="swiper-container" id="feture_pro_tab">
+                                        <div class="swiper-wrapper">
+                                            @foreach (var product in item.products)
+                                            {
                                                 <div class="swiper-slide product-list-item">
                                                     <div class="single-product-wrap">
                                                         <div class="product-image">
@@ -66,7 +66,7 @@
                                                                 <span class="shopify-product-reviews-badge" data-id="5359972778141"></span>
                                                             </div>
                                                             <h3>
-                                                                <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">Tincidunt ut Laoreet</a>
+                                                                <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">@product.Name</a>
                                                             </h3>
 
                                                             <div class="price-box">
@@ -81,14 +81,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="swiper-buttons">
-                                                <div class="swiper-button-prev"></div>
-                                                <div class="swiper-button-next"></div>
-                                            </div>
+                                            }
+                                        </div>
+                                        <div class="swiper-buttons">
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
                                         </div>
                                     </div>
-                                }
+                                </div>
+                                { i++; }
                             }
                         </div>
                     </div>
@@ -133,7 +134,7 @@
                     background-color: rgba(0,0,0,0);
                 }
 
-                @media (max-width: 767px) {
+                @@media (max-width: 767px) {
                     .product-tab-ptb {
                         padding-top: 40px;
                     }

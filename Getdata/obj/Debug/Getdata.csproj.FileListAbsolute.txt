@@ -1,0 +1,15 @@
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Getdata.exe.config
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Getdata.exe
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Getdata.pdb
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\WebDriver.dll
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\WebDriver.xml
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.csprojAssemblyReference.cache
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.Form1.resources
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.Properties.Resources.resources
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.csproj.GenerateResource.cache
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.csproj.CoreCompileInputs.cache
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.csproj.CopyComplete
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.exe
+C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.pdb
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Libs.Utils.dll
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Libs.Utils.pdb

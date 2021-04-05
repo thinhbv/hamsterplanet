@@ -7,3 +7,12 @@ E:\dehun\Libs.Content\obj\Debug\Libs.Content.csproj.CoreCompileInputs.cache
 E:\dehun\Libs.Content\obj\Debug\Libs.Content.csproj.CopyComplete
 E:\dehun\Libs.Content\obj\Debug\Libs.Content.dll
 E:\dehun\Libs.Content\obj\Debug\Libs.Content.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\bin\Debug\Libs.Content.dll
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\bin\Debug\Libs.Content.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\bin\Debug\Libs.Db.dll
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\bin\Debug\Libs.Db.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\obj\Debug\Libs.Content.csprojAssemblyReference.cache
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\obj\Debug\Libs.Content.csproj.CoreCompileInputs.cache
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\obj\Debug\Libs.Content.csproj.CopyComplete
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\obj\Debug\Libs.Content.dll
+C:\WorkSpace\SURDIAL_M32C\Libs.Content\obj\Debug\Libs.Content.pdb

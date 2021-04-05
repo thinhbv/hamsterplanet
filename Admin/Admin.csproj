@@ -1120,6 +1120,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Images\" />
     <Folder Include="uploads\advertise\" />
     <Folder Include="uploads\files\" />
     <Folder Include="uploads\flash\" />
@@ -1155,7 +1156,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62355</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:199</IISUrl>
+          <IISUrl>http://localhost:100</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

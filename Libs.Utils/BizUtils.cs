@@ -221,6 +221,10 @@ namespace Libs.Utils
 		#region[FormatContentNews]
 		public static string SubStringByLength(string value, int count)
 		{
+            if (string.IsNullOrEmpty(value))
+            {
+                return string.Empty;
+            }
 			string _value = value;
 			if (_value.Length >= count)
 			{

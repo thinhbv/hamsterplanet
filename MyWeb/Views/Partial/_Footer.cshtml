@@ -1,66 +1,106 @@
-﻿<!-- footer-top-area-start -->
-<div class="footer-top-area footer-top pt-100 bg-opacity-1 pb-70" style="background-image:url(/assets/img/bg/footer-bg.jpg)">
-    <div class="container">
-        <div class="row">
-            @*<div class="col-md-3 col-sm-4 pr-0">
-                <div class="footer-wrapper mb-30">
-                    <h2 class="footer-section">@Model.about.Name</h2>
-                    <div class="footer-text">
-                        <p>@Model.about.Description</p>
+﻿<div id="shopify-section-footer" class="shopify-section">
+    <section class="footer-top-area section-ptb">
+        <div class="container">
+            <div class="row footer-list" id="ft-parent">
+                <div class="col-lg-3 col-md-12 col-xs-12 footer-info">
+
+                    <div class="logo">
+                        <a href="/" class="theme-logo">
+                            <img class="img-fluid lazyload" src="https://cdn.shopify.com/s/files/1/0430/9093/5965/files/footer-logo.png?v=1594476459" alt="petymart">
+                        </a>
                     </div>
-                </div>
-            </div>*@
-            <div class="col-md-4 col-sm-6">
-                <div class="footer-wrapper mb-30">
-                    @if (Model.menuBottom.Count > 0)
-                    {
-                        @Html.Partial("../Partial/_MenuBottomList", (MyWeb.Models.MenuModel)Model.menuBottom[0])
-                    }
+                    <div class="footer-contact">
+                        <a data-toggle="collapse" href="#collapse-Contact-Us" class="ft-title">
+                            <span>Contact Us</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="ftsublink-li collapse" id="collapse-Contact-Us" data-parent="#ft-parent">
+                            <p><i class="ti-location-pin"></i>@Html.Raw(Model.address)</p>
+                            <a href="tel:(+33) 111 232 98"><i class="ti-mobile"></i>@Model.support.Phone</a>
+                            <a href="mailto:demo@demo.com"><i class="ti-email"></i>@Model.support.Email</a>
+                        </div>
+                    </div>
 
                 </div>
-            </div>
-            <div class="col-md-4 hidden-sm">
-                <div class="footer-wrapper mb-30">
-                    @if (Model.menuBottom.Count > 1)
-                    {
-                        @Html.Partial("../Partial/_MenuBottomList", (MyWeb.Models.MenuModel)Model.menuBottom[1])
-                    }
+                @for (int i = 0; i < Model.menuBottom.Count; i++)
+                {
+                    @Html.Partial("../Partial/_MenuBottomList", (MyWeb.Models.MenuModel)Model.menuBottom[i])
+                }
+
+                <div class="col-lg-3 col-md-12 ftlink-li news-letter">
+                    <div class="subscribe-block">
+                        <div class="subscribe-title">
+
+                            <h2 class="ft-title">
+                                Newslatter</h2>
+
+
+                                <p class="">and receive $20 coupon for first shopping</p>
+
+                        </div>
+                        <div class="subscribe-content">
+                            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
+                                <input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+
+
+                                <input type="hidden" name="contact[tags]" value="newsletter">
+                                <div class="subscribe-block">
+                                    <input type="email" name="contact[email]" class="email form-control mail text-medium" id="E-mail" value="" placeholder="Enter Your Email Address" autocapitalize="off">
+                                    <button type="submit" class="newsletter-btn" name="commit" id="Subscribe"><i class="fa fa-arrow-right"></i></button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="footer-wrapper mb-30">
-                    <h2 class="footer-section">ĐỊA CHỈ</h2>
-                    <ul class="footer-link">
-                        <li><i class="fa fa-address-book"></i><span>@Html.Raw(Model.address)</span></li>
-                        <li><i class="fa fa-phone"></i><span>@Model.support.Phone</span></li>
-                        <li><i class="fa fa-envelope-open"></i><span>@Model.support.Email</span></li>
-                        <li><i class="fa fa-clock-o"></i><a href="/" title="Công ty TNHH Dehun Việt Nam"><span>www.dehun.com.vn</span></a></li>
+        </div>
+    </section>
+
+    <style>
+        .footer-top-area {
+            background-color: #1574d0;
+        }
+    </style>
+</div>
+<div id="shopify-section-copyright" class="shopify-section">
+    <footer class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="ft-bottom">
+                        <li class="copy-right">
+                            <p>
+                                <span>Copyright</span>
+                                <i class="fa fa-copyright"></i>
+                                <span>2021 - HamsterPlanet™</span>
+                            </p>
+                        </li>
+
+                        <li class="payment-img">
+                            <div class="footer-icon">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-vimeo"></i></a>
+                                <a href="#"><i class="fa fa-tumblr"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
+    <a href="javascript:void(0)" id="top" class="scroll">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+
+    <style>
+        .footer-bottom-area {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            background-color: #1574d0;
+        }
+    </style>
 </div>
-<!-- footer-top-area-end -->
-<!-- footer-bottom-area-start -->
-<div class="footer-bottom-area gray-bg-1 ptb-20">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <div class="copyright">
-                    <p>Copyright © 2019 <a href="https://dehun.com.vn/">Công ty cổ phần Dehun Việt Nam</a> All Right Reserved.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="footer-icon">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-vimeo"></i></a>
-                    <a href="#"><i class="fa fa-tumblr"></i></a>
-                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- footer-bottom-area-end -->

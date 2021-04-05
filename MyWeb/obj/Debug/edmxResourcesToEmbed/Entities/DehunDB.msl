@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dehunModelStoreContainer" CdmEntityContainer="dehunEntities">
+    <EntitySetMapping Name="Advertises">
+      <EntityTypeMapping TypeName="dehunModel.Advertise">
+        <MappingFragment StoreEntitySet="Advertise">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="dehunModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentNews">
+      <EntityTypeMapping TypeName="dehunModel.CommentNew">
+        <MappingFragment StoreEntitySet="CommentNews">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configs">
+      <EntityTypeMapping TypeName="dehunModel.Config">
+        <MappingFragment StoreEntitySet="Config">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mail_Smtp" ColumnName="Mail_Smtp" />
+          <ScalarProperty Name="Mail_Port" ColumnName="Mail_Port" />
+          <ScalarProperty Name="Mail_Info" ColumnName="Mail_Info" />
+          <ScalarProperty Name="Mail_Noreply" ColumnName="Mail_Noreply" />
+          <ScalarProperty Name="Mail_Password" ColumnName="Mail_Password" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="dehunModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupImages">
+      <EntityTypeMapping TypeName="dehunModel.GroupImage">
+        <MappingFragment StoreEntitySet="GroupImages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupNews">
+      <EntityTypeMapping TypeName="dehunModel.GroupNew">
+        <MappingFragment StoreEntitySet="GroupNews">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupProducts">
+      <EntityTypeMapping TypeName="dehunModel.GroupProduct">
+        <MappingFragment StoreEntitySet="GroupProduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Images1">
+      <EntityTypeMapping TypeName="dehunModel.Images">
+        <MappingFragment StoreEntitySet="Images">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="dehunModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Views" ColumnName="Views" />
+          <ScalarProperty Name="GroupNewsId" ColumnName="GroupNewsId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="LinkDemo" ColumnName="LinkDemo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_Detail">
+      <EntityTypeMapping TypeName="dehunModel.Order_Detail">
+        <MappingFragment StoreEntitySet="Order_Detail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="dehunModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pages">
+      <EntityTypeMapping TypeName="dehunModel.Page">
+        <MappingFragment StoreEntitySet="Page">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="dehunModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="IsHot" ColumnName="IsHot" />
+          <ScalarProperty Name="IsPopular" ColumnName="IsPopular" />
+          <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supports">
+      <EntityTypeMapping TypeName="dehunModel.Support">
+        <MappingFragment StoreEntitySet="Support">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Nick" ColumnName="Nick" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tags">
+      <EntityTypeMapping TypeName="dehunModel.Tag">
+        <MappingFragment StoreEntitySet="Tags">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ThongKe">
+      <EntityTypeMapping TypeName="dehunModel.TB_ThongKe">
+        <MappingFragment StoreEntitySet="TB_ThongKe">
+          <ScalarProperty Name="MaTB" ColumnName="MaTB" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="SoTruyCap" ColumnName="SoTruyCap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="dehunModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Advertise_Delete" FunctionName="dehunModel.Store.sp_Advertise_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Advertise_GetByAll" FunctionName="dehunModel.Store.sp_Advertise_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Advertise_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Advertise_GetById" FunctionName="dehunModel.Store.sp_Advertise_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Advertise_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Advertise_GetByTop" FunctionName="dehunModel.Store.sp_Advertise_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Advertise_Insert" FunctionName="dehunModel.Store.sp_Advertise_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Advertise_Update" FunctionName="dehunModel.Store.sp_Advertise_Update" />
+    <FunctionImportMapping FunctionImportName="sp_CommentNews_Delete" FunctionName="dehunModel.Store.sp_CommentNews_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_CommentNews_GetByAll" FunctionName="dehunModel.Store.sp_CommentNews_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_CommentNews_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CommentNews_GetById" FunctionName="dehunModel.Store.sp_CommentNews_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_CommentNews_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CommentNews_GetByTop" FunctionName="dehunModel.Store.sp_CommentNews_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_CommentNews_Insert" FunctionName="dehunModel.Store.sp_CommentNews_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_CommentNews_Update" FunctionName="dehunModel.Store.sp_CommentNews_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Config_Delete" FunctionName="dehunModel.Store.sp_Config_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Config_GetByAll" FunctionName="dehunModel.Store.sp_Config_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Config_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mail_Smtp" ColumnName="Mail_Smtp" />
+          <ScalarProperty Name="Mail_Port" ColumnName="Mail_Port" />
+          <ScalarProperty Name="Mail_Info" ColumnName="Mail_Info" />
+          <ScalarProperty Name="Mail_Noreply" ColumnName="Mail_Noreply" />
+          <ScalarProperty Name="Mail_Password" ColumnName="Mail_Password" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Config_GetById" FunctionName="dehunModel.Store.sp_Config_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Config_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mail_Smtp" ColumnName="Mail_Smtp" />
+          <ScalarProperty Name="Mail_Port" ColumnName="Mail_Port" />
+          <ScalarProperty Name="Mail_Info" ColumnName="Mail_Info" />
+          <ScalarProperty Name="Mail_Noreply" ColumnName="Mail_Noreply" />
+          <ScalarProperty Name="Mail_Password" ColumnName="Mail_Password" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Config_GetByTop" FunctionName="dehunModel.Store.sp_Config_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Config_Insert" FunctionName="dehunModel.Store.sp_Config_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Config_Update" FunctionName="dehunModel.Store.sp_Config_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_Delete" FunctionName="dehunModel.Store.sp_Contact_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_GetByAll" FunctionName="dehunModel.Store.sp_Contact_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Contact_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Contact_GetById" FunctionName="dehunModel.Store.sp_Contact_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Contact_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Contact_GetByTop" FunctionName="dehunModel.Store.sp_Contact_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_Insert" FunctionName="dehunModel.Store.sp_Contact_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_Update" FunctionName="dehunModel.Store.sp_Contact_Update" />
+    <FunctionImportMapping FunctionImportName="sp_GroupImages_Delete" FunctionName="dehunModel.Store.sp_GroupImages_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_GroupImages_GetByAll" FunctionName="dehunModel.Store.sp_GroupImages_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_GroupImages_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupImages_GetById" FunctionName="dehunModel.Store.sp_GroupImages_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_GroupImages_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupImages_GetByTop" FunctionName="dehunModel.Store.sp_GroupImages_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_GroupImages_Insert" FunctionName="dehunModel.Store.sp_GroupImages_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_GroupImages_Update" FunctionName="dehunModel.Store.sp_GroupImages_Update" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_Delete" FunctionName="dehunModel.Store.sp_GroupNews_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_GetByAll" FunctionName="dehunModel.Store.sp_GroupNews_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_GroupNews_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_GetById" FunctionName="dehunModel.Store.sp_GroupNews_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_GroupNews_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_GetByTop" FunctionName="dehunModel.Store.sp_GroupNews_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_Insert" FunctionName="dehunModel.Store.sp_GroupNews_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_Update" FunctionName="dehunModel.Store.sp_GroupNews_Update" />
+    <FunctionImportMapping FunctionImportName="sp_GroupProduct_Delete" FunctionName="dehunModel.Store.sp_GroupProduct_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_GroupProduct_GetByAll" FunctionName="dehunModel.Store.sp_GroupProduct_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_GroupProduct_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupProduct_GetById" FunctionName="dehunModel.Store.sp_GroupProduct_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_GroupProduct_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupProduct_GetByTop" FunctionName="dehunModel.Store.sp_GroupProduct_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_GroupProduct_Insert" FunctionName="dehunModel.Store.sp_GroupProduct_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_GroupProduct_Update" FunctionName="dehunModel.Store.sp_GroupProduct_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Images_Delete" FunctionName="dehunModel.Store.sp_Images_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Images_GetByAll" FunctionName="dehunModel.Store.sp_Images_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Images_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Images_GetById" FunctionName="dehunModel.Store.sp_Images_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Images_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Images_GetByTop" FunctionName="dehunModel.Store.sp_Images_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Images_Insert" FunctionName="dehunModel.Store.sp_Images_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Images_Update" FunctionName="dehunModel.Store.sp_Images_Update" />
+    <FunctionImportMapping FunctionImportName="sp_News_Delete" FunctionName="dehunModel.Store.sp_News_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_News_GetByAll" FunctionName="dehunModel.Store.sp_News_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_News_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Views" ColumnName="Views" />
+          <ScalarProperty Name="GroupNewsId" ColumnName="GroupNewsId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="LinkDemo" ColumnName="LinkDemo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_News_GetById" FunctionName="dehunModel.Store.sp_News_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_News_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Views" ColumnName="Views" />
+          <ScalarProperty Name="GroupNewsId" ColumnName="GroupNewsId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="LinkDemo" ColumnName="LinkDemo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_News_GetByTop" FunctionName="dehunModel.Store.sp_News_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_News_GetCount" FunctionName="dehunModel.Store.sp_News_GetCount" />
+    <FunctionImportMapping FunctionImportName="sp_News_Insert" FunctionName="dehunModel.Store.sp_News_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_News_Update" FunctionName="dehunModel.Store.sp_News_Update" />
+    <FunctionImportMapping FunctionImportName="sp_OrderDetail_Delete" FunctionName="dehunModel.Store.sp_OrderDetail_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_OrderDetail_GetById" FunctionName="dehunModel.Store.sp_OrderDetail_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_OrderDetail_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_OrderDetail_GetByTop" FunctionName="dehunModel.Store.sp_OrderDetail_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_OrderDetail_Insert" FunctionName="dehunModel.Store.sp_OrderDetail_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_OrderDetail_Update" FunctionName="dehunModel.Store.sp_OrderDetail_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Orders_Delete" FunctionName="dehunModel.Store.sp_Orders_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Orders_GetById" FunctionName="dehunModel.Store.sp_Orders_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Orders_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Orders_GetByTop" FunctionName="dehunModel.Store.sp_Orders_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Orders_Insert" FunctionName="dehunModel.Store.sp_Orders_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Orders_Update" FunctionName="dehunModel.Store.sp_Orders_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Page_Delete" FunctionName="dehunModel.Store.sp_Page_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Page_GetByAll" FunctionName="dehunModel.Store.sp_Page_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Page_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Page_GetById" FunctionName="dehunModel.Store.sp_Page_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Page_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Page_GetByTop" FunctionName="dehunModel.Store.sp_Page_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Page_Insert" FunctionName="dehunModel.Store.sp_Page_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Page_Update" FunctionName="dehunModel.Store.sp_Page_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Product_Delete" FunctionName="dehunModel.Store.sp_Product_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Product_GetByAll" FunctionName="dehunModel.Store.sp_Product_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Product_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="IsHot" ColumnName="IsHot" />
+          <ScalarProperty Name="IsPopular" ColumnName="IsPopular" />
+          <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Product_GetById" FunctionName="dehunModel.Store.sp_Product_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Product_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="IsHot" ColumnName="IsHot" />
+          <ScalarProperty Name="IsPopular" ColumnName="IsPopular" />
+          <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Product_GetByTop" FunctionName="dehunModel.Store.sp_Product_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Product_GetCount" FunctionName="dehunModel.Store.sp_Product_GetCount" />
+    <FunctionImportMapping FunctionImportName="sp_Product_GetCountByGroupId" FunctionName="dehunModel.Store.sp_Product_GetCountByGroupId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Product_GetCountByGroupId_Result">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Product_Insert" FunctionName="dehunModel.Store.sp_Product_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Product_Update" FunctionName="dehunModel.Store.sp_Product_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Support_Delete" FunctionName="dehunModel.Store.sp_Support_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Support_GetByAll" FunctionName="dehunModel.Store.sp_Support_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Support_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Nick" ColumnName="Nick" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Support_GetById" FunctionName="dehunModel.Store.sp_Support_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Support_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Nick" ColumnName="Nick" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Support_GetByTop" FunctionName="dehunModel.Store.sp_Support_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Support_Insert" FunctionName="dehunModel.Store.sp_Support_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Support_Update" FunctionName="dehunModel.Store.sp_Support_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Tags_GetByAll" FunctionName="dehunModel.Store.sp_Tags_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Tags_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Tags_GetById" FunctionName="dehunModel.Store.sp_Tags_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_Tags_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Tags_GetByTop" FunctionName="dehunModel.Store.sp_Tags_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Tags_Insert" FunctionName="dehunModel.Store.sp_Tags_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Tags_Update" FunctionName="dehunModel.Store.sp_Tags_Update" />
+    <FunctionImportMapping FunctionImportName="sp_User_Delete" FunctionName="dehunModel.Store.sp_User_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_User_GetByAll" FunctionName="dehunModel.Store.sp_User_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_User_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_User_GetById" FunctionName="dehunModel.Store.sp_User_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.sp_User_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_User_GetByTop" FunctionName="dehunModel.Store.sp_User_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_User_Insert" FunctionName="dehunModel.Store.sp_User_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_User_Update" FunctionName="dehunModel.Store.sp_User_Update" />
+    <FunctionImportMapping FunctionImportName="spNews_PhanTrang" FunctionName="dehunModel.Store.spNews_PhanTrang">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.spNews_PhanTrang_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="GroupNewsId" ColumnName="GroupNewsId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spProduct_PhanTrang" FunctionName="dehunModel.Store.spProduct_PhanTrang">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.spProduct_PhanTrang_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spProductSearch_Paging" FunctionName="dehunModel.Store.spProductSearch_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.spProductSearch_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spThongKe_Edit" FunctionName="dehunModel.Store.spThongKe_Edit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dehunModel.spThongKe_Edit_Result">
+          <ScalarProperty Name="HomNay" ColumnName="HomNay" />
+          <ScalarProperty Name="HomQua" ColumnName="HomQua" />
+          <ScalarProperty Name="TuanNay" ColumnName="TuanNay" />
+          <ScalarProperty Name="TuanTruoc" ColumnName="TuanTruoc" />
+          <ScalarProperty Name="ThangNay" ColumnName="ThangNay" />
+          <ScalarProperty Name="ThangTruoc" ColumnName="ThangTruoc" />
+          <ScalarProperty Name="TatCa" ColumnName="TatCa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
