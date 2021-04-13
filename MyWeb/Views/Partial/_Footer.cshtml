@@ -6,12 +6,15 @@
 
                     <div class="logo">
                         <a href="/" class="theme-logo">
-                            <img class="img-fluid lazyload" src="https://cdn.shopify.com/s/files/1/0430/9093/5965/files/footer-logo.png?v=1594476459" alt="petymart">
+                            <img class="img-fluid lazyload" src="~/Content/logo.png?v=1594475023" alt="Hamster Planet">
                         </a>
                     </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12 col-xs-12 footer-info">
                     <div class="footer-contact">
                         <a data-toggle="collapse" href="#collapse-Contact-Us" class="ft-title">
-                            <span>Contact Us</span>
+                            <span>Liên hệ với chúng tôi</span>
                             <i class="fa fa-angle-down"></i>
                         </a>
                         <div class="ftsublink-li collapse" id="collapse-Contact-Us" data-parent="#ft-parent">
@@ -22,37 +25,7 @@
                     </div>
 
                 </div>
-                @for (int i = 0; i < Model.menuBottom.Count; i++)
-                {
-                    @Html.Partial("../Partial/_MenuBottomList", (MyWeb.Models.MenuModel)Model.menuBottom[i])
-                }
-
-                <div class="col-lg-3 col-md-12 ftlink-li news-letter">
-                    <div class="subscribe-block">
-                        <div class="subscribe-title">
-
-                            <h2 class="ft-title">
-                                Newslatter</h2>
-
-
-                                <p class="">and receive $20 coupon for first shopping</p>
-
-                        </div>
-                        <div class="subscribe-content">
-                            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
-                                <input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
-
-
-                                <input type="hidden" name="contact[tags]" value="newsletter">
-                                <div class="subscribe-block">
-                                    <input type="email" name="contact[email]" class="email form-control mail text-medium" id="E-mail" value="" placeholder="Enter Your Email Address" autocapitalize="off">
-                                    <button type="submit" class="newsletter-btn" name="commit" id="Subscribe"><i class="fa fa-arrow-right"></i></button>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                @Html.Partial("../Partial/_MenuBottomList", (List<MyWeb.Entities.Page>)Model.menuBottom)
             </div>
         </div>
     </section>
@@ -60,6 +33,9 @@
     <style>
         .footer-top-area {
             background-color: #1574d0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
         }
     </style>
 </div>

@@ -439,14 +439,17 @@
     <Content Include="assets\img\work\9.jpg" />
     <Content Include="Content\bold-currency-picker.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\facebook.png" />
     <Content Include="Content\flags.min.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\ionicons.min.css" />
     <Content Include="Content\jquery.mCustomScrollbar.css" />
+    <Content Include="Content\logo.png" />
     <Content Include="Content\magnific-popup.css" />
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\owl.theme.default.min.css" />
     <Content Include="Content\plugins.css" />
+    <Content Include="Content\shopee.png" />
     <Content Include="Content\simple-line-icons.css" />
     <Content Include="Content\skin-theme.css" />
     <Content Include="Content\style-rtl.css" />
@@ -457,6 +460,7 @@
     <Content Include="Content\theme-responsive.css" />
     <Content Include="Content\themify-icons.css" />
     <Content Include="Content\timber.scss.css" />
+    <Content Include="Content\title_img.png" />
     <Content Include="Demo.html" />
     <Content Include="Entities\DehunDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -483,6 +487,7 @@
     <Content Include="Entities\DehunDB.edmx.diagram">
       <DependentUpon>DehunDB.edmx</DependentUpon>
     </Content>
+    <Content Include="Scripts\ajax-mail.js" />
     <Content Include="Scripts\bold-currency-bootstrap.js" />
     <Content Include="Scripts\bold.multicurrency.js" />
     <Content Include="Scripts\bootstrap.min.js" />

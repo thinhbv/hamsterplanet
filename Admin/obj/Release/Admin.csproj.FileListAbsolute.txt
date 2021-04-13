@@ -12,3 +12,17 @@ E:\dehun\Admin\obj\Release\Admin.csproj.CoreCompileInputs.cache
 E:\dehun\Admin\obj\Release\Admin.csproj.CopyComplete
 E:\dehun\Admin\obj\Release\Admin.dll
 E:\dehun\Admin\obj\Release\Admin.pdb
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Admin.dll.config
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Admin.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Admin.pdb
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Libs.Content.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Libs.Utils.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Libs.Db.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Libs.Content.pdb
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Libs.Utils.pdb
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Libs.Db.pdb
+C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.csprojAssemblyReference.cache
+C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.csproj.CoreCompileInputs.cache
+C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.csproj.CopyComplete
+C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.pdb

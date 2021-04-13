@@ -64,6 +64,7 @@ namespace MyWeb.Controllers
             {
                 using (var entity = new dehunEntities())
                 {
+                    contact.Date = DateTime.Now;
                     entity.Contacts.Add(contact);
                     entity.SaveChanges();
 

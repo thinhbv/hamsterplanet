@@ -28,7 +28,7 @@
 				<li><a href="ContactList.aspx"><span class="submenu-label">Liên hệ, Phản hồi</span></a></li>
 			</ul>
 		</li>
-		<li class="openable">
+		<%--<li class="openable">
 			<a href="#">
 				<span class="menu-icon">
 					<i class="fa fa-tag fa-lg"></i>
@@ -42,7 +42,7 @@
 				<li><a href="GroupImageList.aspx"><span class="submenu-label">Nhóm hình ảnh</span></a></li>
 				<li><a href="ImagesList.aspx"><span class="submenu-label">Danh sách hình ảnh</span></a></li>
 			</ul>
-		</li>
+		</li>--%>
         <li class="openable">
 			<a href="#">
 				<span class="menu-icon">
@@ -56,7 +56,7 @@
 				<li><a href="ProductList.aspx"><span class="submenu-label">Danh sách sản phẩm</span></a></li>
 			</ul>
 		</li>
-		<li class="openable">
+		<%--<li class="openable">
 			<a href="#">
 				<span class="menu-icon">
 					<i class="fa fa-tag fa-lg"></i>
@@ -68,7 +68,7 @@
 				<li><a href="GroupNewsList.aspx"><span class="submenu-label">Nhóm tin tức</span></a></li>
 				<li><a href="NewsList.aspx"><span class="submenu-label">Danh sách tin tức</span></a></li>
 			</ul>
-		</li>
+		</li>--%>
 		<li class="openable">
 			<a href="#">
 				<span class="menu-icon">

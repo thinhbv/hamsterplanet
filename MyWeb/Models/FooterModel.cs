@@ -10,7 +10,7 @@ namespace MyWeb.Models
     public partial class FooterModel
     {
         public Page about { get; set; }
-        public List<MenuModel> menuBottom { get; set; }
+        public List<Page> menuBottom { get; set; }
         public string address { get; set; }
         public Support support { get; set; }
 
@@ -25,23 +25,14 @@ namespace MyWeb.Models
                               where p.Active == (int)Active.Show && p.Position.Contains(((int)PagePosition.Menu_Bottom).ToString())
                               orderby p.Level
                               select p).ToList();
-                menuBottom = new List<MenuModel>();
-                foreach (Page item in pages.Where(r => r.Level.Length == 10).ToList())
+                menuBottom = new List<Page>();
+                foreach (Page item in pages.Where(r => r.Level.Length == 5).ToList())
                 {
-                    MenuModel model = new MenuModel();
-                    model.parent = item;
-                    model.childs = pages.Where(r => r.Level.Length > 10).Where(r => r.Level.StartsWith(item.Level)).ToList();
-                    menuBottom.Add(model);
+                    menuBottom.Add(item);
                 }
                 address = ((Config)HttpContext.Current.Session["config"]).Contact;
                 support = ((Support)HttpContext.Current.Session["support"]);
             }
         }
-    }
-
-    public class MenuModel
-    {
-        public Page parent { get; set; }
-        public List<Page> childs { get; set; }
     }
 }

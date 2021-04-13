@@ -28,205 +28,236 @@
 </div>
 <!-- breadcrumb-area end -->
 <main role="main">
-<div class="container">
-    <div class="row left-side">
-        <div class="col-xl-12 col-lg-12">
-            <div id="shopify-section-product-template" class="shopify-section">
-                <section class="main-content-wrap section-ptb product-details-page product-details">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-5 product_details lazyloaded">
-                            <div class="product_detail_img">
-                                <!-- product_big_images start -->
-                                <div class="product_img_top">
-                                    <button class="full-view">
-                                        <i class="ion-android-expand"></i>
-                                    </button><div style="height:553px;width:466px;" class="zoomWrapper"><div style="height:553px;width:466px;" class="zoomWrapper"><img id="zoom_mw" class="product-zoom img-fluid lazyloaded" src="@StringClass.OriginalImage(Model.product.Image1)" data-src="@StringClass.OriginalImage(Model.product.Image1)" alt="@Model.product.Name" data-zoom-image="@StringClass.OriginalImage(Model.product.Image1)" style="position: absolute;"></div></div>
-                                </div>
-                                <!-- product_big_images end -->
-                                <!-- Start Small images -->
-                                <ul class="owl-carousel owl-theme pro-detail-slider owl-loaded owl-drag" id="pro-detail-slider">
-                                    <div class="owl-stage-outer">
-                                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 391px;">
-                                            @if (!string.IsNullOrEmpty(Model.product.Image1))
-                                            {
-                                                <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
-                                                    <li id="gallery_01" role="presentation" class="item ">
-                                                        <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image1)" data-image="@StringClass.OriginalImage(Model.product.Image1)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image1)" data-image-id="17842908102813">
-                                                            <img src="@StringClass.ThumbImage(Model.product.Image1)" alt="@Model.product.Name" class="img-fluid">
-                                                        </a>
-                                                    </li>
-                                                </div>
-                                            }
-                                            @if (!string.IsNullOrEmpty(Model.product.Image2))
-                                            {
-                                                <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
-                                                    <li id="gallery_01" role="presentation" class="item ">
-                                                        <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image2)" data-image="@StringClass.OriginalImage(Model.product.Image2)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image2)" data-image-id="17842908102813">
-                                                            <img src="@StringClass.ThumbImage(Model.product.Image2)" alt="@Model.product.Name" class="img-fluid">
-                                                        </a>
-                                                    </li>
-                                                </div>
-                                            }
-                                            @if (!string.IsNullOrEmpty(Model.product.Image3))
-                                            {
-                                                <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
-                                                    <li id="gallery_01" role="presentation" class="item ">
-                                                        <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image3)" data-image="@StringClass.OriginalImage(Model.product.Image3)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image3)" data-image-id="17842908102813">
-                                                            <img src="@StringClass.ThumbImage(Model.product.Image3)" alt="@Model.product.Name" class="img-fluid">
-                                                        </a>
-                                                    </li>
-                                                </div>
-                                            }
-
+    <div class="container">
+        <div class="row left-side">
+            <div class="col-xl-12 col-lg-12">
+                <div id="shopify-section-product-template" class="shopify-section">
+                    <section class="main-content-wrap section-ptb product-details-page product-details">
+                        <div class="row">
+                            <div class="col-md-6 col-xl-5 product_details lazyloaded">
+                                <div class="product_detail_img">
+                                    <!-- product_big_images start -->
+                                    <div class="product_img_top">
+                                        @*<button class="full-view">
+                                            <i class="ion-android-expand"></i>
+                                        </button>*@
+                                        <div style="height:466px;width:466px;">
+                                            <img id="zoom_mw" class="product-zoom img-fluid lazyloaded" src="@StringClass.OriginalImage(Model.product.Image1)" data-src="@StringClass.ThumbImage(Model.product.Image1)" alt="@Model.product.Name" data-zoom-image="@StringClass.OriginalImage(Model.product.Image1)" style="position: absolute;">
                                         </div>
                                     </div>
-                                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><i class="fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next disabled"><i class="fa fa-angle-right"></i></button></div>
-                                    <div class="owl-dots disabled"></div>
-                                </ul>
-                                <!-- End Small images -->
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-7 product_details">
-                            <div class="product_details_info">
-                                <div class="product-title">
-                                    <h2>@Model.product.Name</h2>
-                                </div><div class="product-ratting">
-                                    <span class="spr-badge" id="spr_badge_5359972253853" data-rating="0.0">
-                                        <span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i></span><span class="spr-badge-caption">No reviews</span>
-                                    </span>
-
-                                </div><div class="product-inventory">
-                                    <h2>
-                                        <span>Nhóm sản phẩm:</span>
-                                        <span id="variant-inventory" class="in-stock">@Model.product.GroupName</span>
-                                    </h2>
-                                </div>
-                                <div class="product-description">
-                                    @Model.product.Content
-                                </div>
-                                <div class="pro-detail-action">
-
-                                    <!-- Share -->
-                                    <div class="share-icons">
-                                        <h2>Share:</h2>
-                                        <ul class="pro_social_link">
-                                            <li>
-                                                <a target="_blank" href="//www.facebook.com/sharer.php?u=@HttpContext.Current.Request.Url.AbsoluteUri" title="Share on Facebook" tabindex="0"><i class="ion-social-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="//twitter.com/share?text=Shrinking%20from%20toil&amp;url=@HttpContext.Current.Request.Url.AbsoluteUri" title="Share on Twitter" tabindex="0"><i class="ion-social-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="//plus.google.com/share?url=@HttpContext.Current.Request.Url.AbsoluteUri" title="Share on Google+" tabindex="0"><i class="ion-social-googleplus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            @if (Model.productsRelate.Count > 0)
-            {
-                <div id="shopify-section-related-product" class="shopify-section">
-                    <!-- PRODUCT SECTION START -->
-                    <section class="related-product">
-                        <div class="row">
-                            <div class="col">
-                                <!-- section-title start -->
-                                <div class="section-title">
-                                    <h2 class="heading-home">Sản phẩm liên quan</h2>
-                                </div>
-                                <!-- section-title end -->
-                                <div class="product-related-slider owl-carousel owl-theme owl-loaded owl-drag" id="related-slider">
-                                    <div class="owl-stage-outer">
-                                        <div class="owl-stage" style="transform: translate3d(-3000px, 0px, 0px); transition: all 0.25s ease 0s; width: 5100px;">
-                                            @foreach (MyWeb.Entities.Product product in Model.productsRelate)
-                                            {
-                                                <div class="owl-item" style="width: 270px; margin-right: 30px;">
-                                                    <div class="item">
-                                                        <div class="single-product-wrap">
-                                                            <div class="product-image">
-                                                                <a class="pro-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)">
-                                                                    <img class="img-fluid img1 ls-is-cached lazyloaded" src="@StringClass.OriginalImage(product.Image1)" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
-                                                                    <img class="img-fluid img2 lazyloaded" src="@StringClass.OriginalImage(product.Image1)" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
-                                                                </a>
-                                                                <div class="product-label">
-                                                                    <span class="new-title">New</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-content">
-                                                                <div class="product-ratting">
-                                                                    <span class="spr-badge" id="spr_badge_5359972581533" data-rating="4.5">
-                                                                        <span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i></span><span class="spr-badge-caption">No reviews</span>
-                                                                    </span>
-                                                                </div>
-                                                                <h3>
-                                                                    <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">@product.Name</a>
-                                                                </h3>
-
-                                                                <div class="price-box">
-                                                                    <span class="new-price">@product.Price</span>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                    <!-- product_big_images end -->
+                                    <!-- Start Small images -->
+                                    <ul class="owl-carousel owl-theme pro-detail-slider owl-loaded owl-drag" id="pro-detail-slider">
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 391px;">
+                                                @if (!string.IsNullOrEmpty(Model.product.Image1))
+                                                {
+                                                    <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
+                                                        <li id="gallery_01" role="presentation" class="item ">
+                                                            <a class="product-single__thumbnail active" href="@StringClass.ThumbImage(Model.product.Image1)" data-image="@StringClass.ThumbImage(Model.product.Image1)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image1)" data-image-id="17842908102813">
+                                                                <img src="@StringClass.ThumbImage(Model.product.Image1)" alt="@Model.product.Name" class="img-fluid">
+                                                            </a>
+                                                        </li>
                                                     </div>
-                                                </div>
-                                            }
+                                                }
+                                                @if (!string.IsNullOrEmpty(Model.product.Image2))
+                                                {
+                                                    <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
+                                                        <li id="gallery_01" role="presentation" class="item ">
+                                                            <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image2)" data-image="@StringClass.OriginalImage(Model.product.Image2)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image2)" data-image-id="17842908102813">
+                                                                <img src="@StringClass.ThumbImage(Model.product.Image2)" alt="@Model.product.Name" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                }
+                                                @if (!string.IsNullOrEmpty(Model.product.Image3))
+                                                {
+                                                    <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
+                                                        <li id="gallery_01" role="presentation" class="item ">
+                                                            <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image3)" data-image="@StringClass.OriginalImage(Model.product.Image3)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image3)" data-image-id="17842908102813">
+                                                                <img src="@StringClass.ThumbImage(Model.product.Image3)" alt="@Model.product.Name" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                }
+
+                                            </div>
+                                        </div>
+                                        <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><i class="fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next disabled"><i class="fa fa-angle-right"></i></button></div>
+                                        <div class="owl-dots disabled"></div>
+                                    </ul>
+                                    <!-- End Small images -->
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-7 product_details">
+                                <div class="product_details_info">
+                                    <div class="product-title">
+                                        <h2>@Model.product.Name</h2>
+                                    </div>
+                                    <div class="product-inventory">
+                                        <h2>
+                                            <span>Nhóm sản phẩm:</span>
+                                            <span id="variant-inventory" class="in-stock">@Model.product.GroupName</span>
+                                        </h2>
+                                    </div>
+                                    <div class="pro-price-label">
+                                        <div class="price-box" id="ProductPrice"><span class="new-price">@Model.product.Price</span></div>
+                                    </div>
+                                    <div class="product-description">
+                                        @Model.product.Content
+                                    </div>
+                                    <div class="pro-detail-action">
+                                        <!-- Share -->
+                                        <div class="share-icons">
+                                            <h2>Share:</h2>
+                                            <ul class="pro_social_link">
+                                                <li>
+                                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=@HttpContext.Current.Request.Url.AbsoluteUri" title="Share on Facebook" tabindex="0"><i class="ion-social-facebook"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="//twitter.com/share?text=Shrinking%20from%20toil&amp;url=@HttpContext.Current.Request.Url.AbsoluteUri" title="Share on Twitter" tabindex="0"><i class="ion-social-twitter"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="//plus.google.com/share?url=@HttpContext.Current.Request.Url.AbsoluteUri" title="Share on Google+" tabindex="0"><i class="ion-social-googleplus"></i></a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- PRODUCT SECTION END -->
                     <script>
-                        $('#related-slider').owlCarousel({
+                          $('#pro-detail-slider').owlCarousel({
                             loop: false,
-                            rewind: true,
-                            margin: 30,
+                            margin: 15,
                             nav: true,
-                            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-                            dots: false, autoplay: true,
-                            sautoplayTimeout: 5000,
-                            autoplayHoverPause: true,
-                            responsive: {
-                                0: {
-                                    items: 2,
-                                    margin: 15
-                                },
-                                480: {
-                                    items: 2
-                                },
-                                768: {
-                                    items: 2
-                                },
-                                979: {
-                                    items: 3
-                                },
-                                1199: {
-                                    items: 4
+                            navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots: false,
+                            responsive:{
+                              0:{
+                                items:3
+                              },
+                              600:{
+                                items:2
+                              },
+                              1000:{
+                                items:3
+                              }
+                            }
+                          });
+                            $(window).resize(function(){
+                              var imageElement = $('#zoom_mw');
+	                          $('.zoomContainer').remove();
+                              imageElement.removeData('elevateZoom');
+	                          $('.zoomWrapper img.zoomed').unwrap();
+                                $('.zoomContainer').remove();
+                                $("#zoom_mw").unbind("touchmove");
+		                        $("#zoom_mw").elevateZoom({gallery:'gallery_01', zoomType: 'inner', responsive:true, cursor: 'crosshair', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: ''});
+                            });
+                            $("#zoom_mw").elevateZoom({gallery:'gallery_01', zoomType: 'inner', responsive:true, cursor: 'crosshair', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: ''});
+                            //pass the images to Fancybox
+                            $("#zoom_mw").bind("click", function (e) {
+                              var ez = $('#zoom_mw').data('elevateZoom');
+                              //$.fancybox(ez.getGalleryList());
+                              return false;
+                            });
+                    </script>
+                </div>
+                @if (Model.productsRelate.Count > 0)
+                {
+                    <div id="shopify-section-related-product" class="shopify-section">
+                        <!-- PRODUCT SECTION START -->
+                        <section class="related-product">
+                            <div class="row">
+                                <div class="col">
+                                    <!-- section-title start -->
+                                    <div class="section-title">
+                                        <h2 class="heading-home">Sản phẩm liên quan</h2>
+                                    </div>
+                                    <!-- section-title end -->
+                                    <div class="product-related-slider owl-carousel owl-theme owl-loaded owl-drag" id="related-slider">
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage" style="transform: translate3d(-3000px, 0px, 0px); transition: all 0.25s ease 0s; width: 5100px;">
+                                                @foreach (MyWeb.Entities.Product product in Model.productsRelate)
+                                                {
+                                                    <div class="owl-item" style="width: 270px; margin-right: 30px;">
+                                                        <div class="item">
+                                                            <div class="single-product-wrap">
+                                                                <div class="product-image">
+                                                                    <a class="pro-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)">
+                                                                        <img class="img-fluid img1 ls-is-cached lazyloaded" src="@StringClass.OriginalImage(product.Image1)" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
+                                                                        <img class="img-fluid img2 lazyloaded" src="@StringClass.OriginalImage(product.Image1)" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
+                                                                    </a>
+                                                                    <div class="product-label">
+                                                                        <span class="new-title">New</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-content">
+                                                                    <h3>
+                                                                        <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">@product.Name</a>
+                                                                    </h3>
+
+                                                                    <div class="price-box">
+                                                                        <span class="new-price">@product.Price</span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- PRODUCT SECTION END -->
+                        <script>
+                            $('#related-slider').owlCarousel({
+                                loop: false,
+                                rewind: true,
+                                margin: 30,
+                                nav: true,
+                                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                                dots: false, autoplay: true,
+                                sautoplayTimeout: 5000,
+                                autoplayHoverPause: true,
+                                responsive: {
+                                    0: {
+                                        items: 2,
+                                        margin: 15
+                                    },
+                                    480: {
+                                        items: 2
+                                    },
+                                    768: {
+                                        items: 2
+                                    },
+                                    979: {
+                                        items: 3
+                                    },
+                                    1199: {
+                                        items: 4
+                                    }
+                                }
+                            });
+                        </script>
+                        <style>
+                            .related-product {
+                                padding-top: 0px;
+                                padding-bottom: 60px;
+                            }
+
+                            @@media (max-width : 767px) {
+                                .related-product {
+                                    padding-bottom: 40px;
                                 }
                             }
-                        });
-                    </script>
-                    <style>
-                        .related-product {
-                            padding-top: 0px;
-                            padding-bottom: 60px;
-                        }
-
-                        @@media (max-width : 767px) {
-                            .related-product {
-                                padding-bottom: 40px;
-                            }
-                        }
-                    </style>
-                </div>
-            }
+                        </style>
+                    </div>
+                }
+            </div>
         </div>
     </div>
-</div>
 </main>

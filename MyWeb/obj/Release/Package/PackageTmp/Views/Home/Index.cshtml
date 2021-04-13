@@ -1,17 +1,11 @@
 ﻿@model MyWeb.Models.HomeModel
 @{
-    ViewBag.Title = "Quan hệ, Hợp tác, Phát triển";
+    ViewBag.Title = "Hamster Planet";
 }
-
-@Html.Partial("../Partial/_Slider", Model.Slider)
-@Html.Partial("../Partial/_OurService", Model.OurService)
-@Html.Partial("../Partial/_Wedo", Model.Wedo)
-@if (Model.HomeService != null)
-{
-    @Html.Partial("../Partial/_HomeService", Model.HomeService)
-}
-
-@*@Html.Partial("../Partial/_CommentCustomer")*@
-@*@Html.Partial("../Partial/_Counter")*@
-@Html.Partial("../Partial/_CompletedProject", Model.CompletedProject)
-@Html.Partial("../Partial/_HomeNews", Model.HomeNews)
+<main role="main">
+    @Html.Partial("../Partial/_Slider", Model.Slider)
+    @Html.Partial("../Partial/_HomeProducts", Model.ProductsList)
+    @Html.Partial("../Partial/_HomeAll", Model.ProductsAllList)
+    @*@Html.Partial("../Partial/_HomeImage", Model.ImagesList)*@
+    @*@Html.Partial("../Partial/_HomeOther", Model.ProductsAllList)*@
+</main>

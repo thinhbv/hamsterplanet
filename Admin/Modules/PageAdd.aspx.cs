@@ -76,22 +76,22 @@ namespace Admin.Modules
 			//ddlLink.Items.Add(new ListItem("■Dịch vụ", "#"));
             for (int i = 0; i < lstGr.Count; i++)
             {
-                ddlLink.Items.Add(new ListItem(StringClass.ShowNameLevel("■" + lstGr[i].Name, lstGr[i].Level), "/" + Consts.DICH_VU + "/" + lstGr[i].Id + "/" + StringClass.NameToTag(lstGr[i].Name)));
-                List<Product> pro = Product.SelectByTop("", "Active=1 AND GroupId=" + lstGr[i].Id, "Ord");
-                for (int j = 0; j < pro.Count; j++)
-                {
-                    ddlLink.Items.Add(new ListItem(StringClass.ShowNameLevel(pro[j].Name, lstGr[i].Level + "00000"), StringClass.GeneralDetailUrl(Consts.DICH_VU, pro[j].GroupName, pro[j].Id.ToString(), pro[j].Name)));
-                }
+                ddlLink.Items.Add(new ListItem(StringClass.ShowNameLevel("■" + lstGr[i].Name, lstGr[i].Level), "/" + Consts.SAN_PHAM + "/" + lstGr[i].Id + "/" + StringClass.NameToTag(lstGr[i].Name)));
+                //List<Product> pro = Product.SelectByTop("", "Active=1 AND GroupId=" + lstGr[i].Id, "Ord");
+                //for (int j = 0; j < pro.Count; j++)
+                //{
+                //    ddlLink.Items.Add(new ListItem(StringClass.ShowNameLevel(pro[j].Name, lstGr[i].Level + "00000"), StringClass.GeneralDetailUrl(Consts.SAN_PHAM, pro[j].GroupName, pro[j].Id.ToString(), pro[j].Name)));
+                //}
             }
             List<GroupNews> listN = GroupNews.SelectByTop("", "Active=1", "Level, Ord");
-			ddlLink.Items.Add(new ListItem("■Tin tức", "#"));
-            if (listN.Count > 0)
-            {
-                for (int i = 0; i < listN.Count; i++)
-                {
-					ddlLink.Items.Add(new ListItem(StringClass.ShowNameLevel(listN[i].Name, listN[i].Level + "00000"), "/" + Consts.TIN_TUC + "/" + listN[i].Id + "/" + StringClass.NameToTag(listN[i].Name)));
-                }
-            }
+			//ddlLink.Items.Add(new ListItem("■Tin tức", "#"));
+   //         if (listN.Count > 0)
+   //         {
+   //             for (int i = 0; i < listN.Count; i++)
+   //             {
+			//		ddlLink.Items.Add(new ListItem(StringClass.ShowNameLevel(listN[i].Name, listN[i].Level + "00000"), "/" + Consts.TIN_TUC + "/" + listN[i].Id + "/" + StringClass.NameToTag(listN[i].Name)));
+   //             }
+   //         }
 			ddlLink.Items.Add(new ListItem("■Liên hệ", "/lien-he"));
 			ddlLink.DataBind();
 		}

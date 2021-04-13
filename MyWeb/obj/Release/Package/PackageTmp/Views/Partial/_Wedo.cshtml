@@ -1,56 +1,25 @@
 ﻿@using Libs.Utils
-<!-- what-we-do-start -->
-<div class="what-we-do ptb-120">
+<!-- recent-work-area-start -->
+<div class="recent-work-area ptb-120">
     <div class="container">
         <div class="section-title mb-60 text-center">
-            <h2><span>Công nghệ</span> sử dụng</h2>
+            <h2><span>Công nghệ sử dụng</span></h2>
         </div>
         <div class="row">
-            <div class="col-md-6 p-r">
-                <div>
-                    <!-- Nav tabs -->
-                    <ul class="offer-tab" role="tablist">
-                        @foreach (MyWeb.Models.ServicesModel item in Model)
-                        {
-                            <li role="presentation" class="@item.classname">
-                                <a href="#@item.group.Id" aria-controls="home" role="tab" data-toggle="tab">
-                                    <div class="offer-list">
-                                        <div class="offer-icon">
-                                            <i class="@item.group.Keywords"></i>
-                                        </div>
-                                        <div class="offer-text">
-                                            <span>@item.group.Name</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        }
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 p-t">
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    @foreach (MyWeb.Models.ServicesModel item in Model)
-                    {
-                        <div role="tabpanel" class="tab-pane @item.classname" id="@item.group.Id">
-                            <div class="offer-wrapper" style="background-image:url(@StringClass.OriginalImage(item.group.Image))">
-                                <div class="offer-content">
-                                    <p>@item.group.Description</p>
-                                    <ul class="tab-menu">
-                                        @foreach (MyWeb.Entities.Product itemPro in item.products)
-                                        {
-                                            <li><a href="@StringClass.GeneralDetailUrl(Consts.DICH_VU, itemPro.GroupName, itemPro.Id.ToString(), itemPro.Name)" title="@itemPro.Name">@itemPro.Name</a></li>
-                                        }
-                                    </ul>
-                                    <a href="/lien-he">Liên hệ ngay</a>
-                                </div>
+            <div class="works-active owl-carousel">
+                @foreach (MyWeb.Entities.GroupProduct item in Model)
+                {
+                    <div class="work-wrapper wow fadeInLeft">
+                        <div class="work-img large-img">
+                            <a href="@StringClass.GeneralListUrl(Consts.DICH_VU,item.Name, item.Id.ToString())"><img src="@StringClass.OriginalImage(item.Image)" alt="" /></a>
+                            <div class="work-text">
+                                <h3><a href="#">@item.Name</a></h3>
                             </div>
                         </div>
-                    }
-                </div>
+                    </div>
+                }
             </div>
         </div>
     </div>
 </div>
-<!-- what-we-do-end -->
+<!-- recent-work-area-end -->

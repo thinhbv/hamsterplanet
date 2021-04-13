@@ -6,338 +6,338 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>E:\PublicWeb\Dehun</_PublishTargetUrl>
+    <_PublishTargetUrl>E:\PublicWeb\HamsterPlanet\Website</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="assets/img/about/1.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/about/2.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/about/3.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/5.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/6.jpg">
-      <publishTime>10/21/2019 22:44:00</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/7.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/7.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/About-Us-Block.jpg">
-      <publishTime>10/27/2019 10:14:24</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/about-us.png">
-      <publishTime>10/27/2019 10:38:18</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/animated_text_fill.png">
-      <publishTime>11/10/2019 01:36:17</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/cong-nghe-thong-tin-1-590x333.jpg">
-      <publishTime>11/06/2019 23:57:13</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/bg/footer-bg.jpg">
-      <publishTime>11/09/2019 15:21:52</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/001.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/002.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/003.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/004.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/005.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/006.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/10.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/11.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/111.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/112.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/113.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/114.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/12.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/13.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/14.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/15.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/16.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/6.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/7.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/8.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/9.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/Blog-1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/blog1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/blog2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/blog3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/blog4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/blog5.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/blog6.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/blog/blog7.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/brand/1.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/brand/2.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/brand/3.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/brand/4.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/brand/5.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/counter/1.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/counter/2.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/counter/3.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/counter/4.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/logo/1.png">
-      <publishTime>11/07/2019 00:02:58</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/logo/2.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/logo/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/logo/4.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/logo/5.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/logo/6.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/logo/section.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/project/1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/project/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/project/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/project/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/project/5.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/1.jpg">
-      <publishTime>10/27/2019 10:49:33</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/1.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/2.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/3.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/4.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/5.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/service/6.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/slider/1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/slider/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/slider/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/tab/1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/tab/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/tab/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/tab/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/team/1.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/team/2.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/team/3.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/team/4.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/testimonial/1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/testimonial/1.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/testimonial/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/testimonial/2.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/testimonial/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/testimonial/3.png">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/testimonial/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/title.jpg">
-      <publishTime>11/08/2019 20:32:54</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/1.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/10.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/11.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/2.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/3.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/4.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/5.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/6.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/7.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/8.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="assets/img/work/9.jpg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>09/10/2013 16:29:20</publishTime>
@@ -352,10 +352,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/23/2017 13:15:20</publishTime>
     </File>
     <File Include="bin/Libs.Utils.dll">
-      <publishTime>11/10/2019 10:02:01</publishTime>
+      <publishTime>04/11/2021 06:40:22</publishTime>
     </File>
     <File Include="bin/Libs.Utils.pdb">
-      <publishTime>11/10/2019 10:02:01</publishTime>
+      <publishTime>04/11/2021 06:40:22</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>05/24/2018 13:38:22</publishTime>
@@ -364,10 +364,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/MyWeb.dll">
-      <publishTime>11/10/2019 14:22:09</publishTime>
+      <publishTime>04/13/2021 21:47:58</publishTime>
     </File>
     <File Include="bin/MyWeb.pdb">
-      <publishTime>11/10/2019 14:22:09</publishTime>
+      <publishTime>04/13/2021 21:47:58</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>02/18/2018 09:44:54</publishTime>
@@ -531,32 +531,62 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Web.WebPages.Razor.dll">
       <publishTime>02/01/2018 12:20:56</publishTime>
     </File>
+    <File Include="bin/WebDriver.dll">
+      <publishTime>10/31/2018 09:53:56</publishTime>
+    </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
     </File>
     <File Include="Content/animate.min.css">
       <publishTime>10/16/2019 22:09:04</publishTime>
     </File>
+    <File Include="Content/bold-currency-picker.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>10/16/2019 22:09:04</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Content/bundle.css">
       <publishTime>11/10/2019 00:55:05</publishTime>
+    </File>
+    <File Include="Content/facebook.png">
+      <publishTime>04/10/2021 10:59:53</publishTime>
+    </File>
+    <File Include="Content/flags.min.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Content/flaticon.css">
       <publishTime>10/16/2019 22:09:04</publishTime>
     </File>
     <File Include="Content/font-awesome.min.css">
-      <publishTime>10/16/2019 22:09:04</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/fontawesome-webfont.ttf">
+      <publishTime>04/04/2021 13:10:50</publishTime>
+    </File>
+    <File Include="Content/fontawesome-webfont.woff">
+      <publishTime>04/04/2021 13:10:50</publishTime>
+    </File>
+    <File Include="Content/fontawesome-webfont.woff2">
+      <publishTime>04/04/2021 13:10:50</publishTime>
     </File>
     <File Include="Content/headline.css">
       <publishTime>10/16/2019 22:09:04</publishTime>
     </File>
     <File Include="Content/ionicons.min.css">
-      <publishTime>10/16/2019 22:09:04</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/ionicons.ttf">
+      <publishTime>04/06/2021 00:24:00</publishTime>
+    </File>
+    <File Include="Content/jquery.mCustomScrollbar.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/logo.png">
+      <publishTime>04/10/2021 22:53:09</publishTime>
     </File>
     <File Include="Content/magnific-popup.css">
-      <publishTime>10/16/2019 22:09:04</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Content/material-design-iconic-font.min.css">
       <publishTime>10/16/2019 22:09:04</publishTime>
@@ -565,118 +595,208 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2019 13:53:57</publishTime>
     </File>
     <File Include="Content/owl.carousel.min.css">
-      <publishTime>10/16/2019 22:09:04</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/owl.theme.default.min.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Content/Pe-icon-7-stroke.css">
       <publishTime>10/16/2019 22:09:04</publishTime>
     </File>
+    <File Include="Content/plugins.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
     <File Include="Content/responsive.css">
       <publishTime>11/10/2019 02:04:08</publishTime>
+    </File>
+    <File Include="Content/shopee.png">
+      <publishTime>04/10/2021 10:56:37</publishTime>
+    </File>
+    <File Include="Content/simple-line-icons.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/skin-theme.css">
+      <publishTime>04/07/2021 22:01:31</publishTime>
+    </File>
+    <File Include="Content/style-rtl.css">
+      <publishTime>04/11/2021 14:33:02</publishTime>
     </File>
     <File Include="Content/style.css">
       <publishTime>11/10/2019 14:21:28</publishTime>
     </File>
+    <File Include="Content/swiper.min.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/theme-color.css">
+      <publishTime>04/11/2021 14:16:50</publishTime>
+    </File>
+    <File Include="Content/theme-custom.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/theme-default.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/theme-responsive.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/themify-icons.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/themify.ttf">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/themify.woff">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/timber.scss.css">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Content/title_img.png">
+      <publishTime>04/05/2021 20:47:51</publishTime>
+    </File>
+    <File Include="Demo.html">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
     <File Include="Entities/DehunDB.edmx.diagram">
-      <publishTime>10/16/2019 22:09:04</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>10/27/2019 10:29:23</publishTime>
+      <publishTime>04/10/2021 23:09:51</publishTime>
     </File>
     <File Include="fonts/Flaticon.eot">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/flaticon.html">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Flaticon.svg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Flaticon.ttf">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Flaticon.woff">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.eot">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.svg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.ttf">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff2">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/FontAwesome.otf">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/ionicons.eot">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/ionicons.svg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/ionicons.ttf">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/ionicons.woff">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Material-Design-Iconic-Font.eot">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Material-Design-Iconic-Font.svg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Material-Design-Iconic-Font.ttf">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Material-Design-Iconic-Font.woff">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Material-Design-Iconic-Font.woff2">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/open-sans-extrabold.ttf">
-      <publishTime>11/10/2019 00:49:51</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Pe-icon-7-stroke.svg">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Pe-icon-7-stroke.ttf">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Pe-icon-7-stroke.woff">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="fonts/Roboto-Bold.ttf">
-      <publishTime>10/27/2019 10:29:23</publishTime>
+      <publishTime>04/02/2021 22:13:09</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Scripts/ajax-mail.js">
-      <publishTime>10/17/2019 21:28:00</publishTime>
+      <publishTime>04/11/2021 07:40:08</publishTime>
+    </File>
+    <File Include="Scripts/bold-currency-bootstrap.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/bold.multicurrency.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/currencies.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/elevatezoom.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/fastclick.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Scripts/headline.js">
       <publishTime>10/16/2019 22:09:05</publishTime>
     </File>
     <File Include="Scripts/imagesloaded.pkgd.min.js">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/instafeed.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Scripts/isotope.pkgd.min.js">
       <publishTime>10/16/2019 22:09:05</publishTime>
     </File>
+    <File Include="Scripts/jquery-1.12.0.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
     <File Include="Scripts/jquery.counterup.min.js">
       <publishTime>10/16/2019 22:09:05</publishTime>
     </File>
+    <File Include="Scripts/jquery.currencies.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.elevateZoom-3.0.8.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.isotope.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.lazyload.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
     <File Include="Scripts/jquery.magnific-popup.min.js">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mCustomScrollbar.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Scripts/jquery.meanmenu.js">
       <publishTime>10/16/2019 22:09:05</publishTime>
@@ -688,13 +808,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/16/2019 22:09:05</publishTime>
     </File>
     <File Include="Scripts/main.js">
-      <publishTime>11/10/2019 01:58:03</publishTime>
+      <publishTime>04/13/2021 21:42:09</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Scripts/owl.carousel.min.js">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Scripts/plugins.js">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/swiper.min.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Scripts/timber.js">
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Scripts/vendor/bootstrap.min.js">
       <publishTime>10/16/2019 22:09:05</publishTime>
@@ -709,79 +841,100 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/16/2019 22:09:05</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>10/21/2019 22:44:54</publishTime>
+      <publishTime>04/11/2021 07:41:54</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>11/10/2019 10:21:46</publishTime>
+      <publishTime>04/05/2021 23:58:36</publishTime>
     </File>
     <File Include="Views/News/Details.cshtml">
-      <publishTime>11/06/2019 22:48:45</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/News/List.cshtml">
-      <publishTime>11/06/2019 22:48:45</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Page/Detail.cshtml">
-      <publishTime>10/27/2019 10:30:07</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Partial/_CommentCustomer.cshtml">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Partial/_CompletedProject.cshtml">
-      <publishTime>11/06/2019 22:48:45</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Partial/_Counter.cshtml">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Partial/_Footer.cshtml">
-      <publishTime>10/27/2019 10:29:23</publishTime>
+      <publishTime>04/11/2021 14:31:18</publishTime>
     </File>
     <File Include="Views/Partial/_Header.cshtml">
-      <publishTime>11/09/2019 14:43:54</publishTime>
+      <publishTime>04/11/2021 14:35:45</publishTime>
+    </File>
+    <File Include="Views/Partial/_HomeAll.cshtml">
+      <publishTime>04/11/2021 14:37:43</publishTime>
+    </File>
+    <File Include="Views/Partial/_HomeImage.cshtml">
+      <publishTime>04/04/2021 13:04:17</publishTime>
     </File>
     <File Include="Views/Partial/_HomeNews.cshtml">
-      <publishTime>11/10/2019 01:12:03</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Views/Partial/_HomeOther.cshtml">
+      <publishTime>04/05/2021 21:07:44</publishTime>
+    </File>
+    <File Include="Views/Partial/_HomeProducts.cshtml">
+      <publishTime>04/11/2021 14:41:52</publishTime>
     </File>
     <File Include="Views/Partial/_HomeService.cshtml">
       <publishTime>11/10/2019 10:17:51</publishTime>
     </File>
     <File Include="Views/Partial/_MenuBottomList.cshtml">
-      <publishTime>11/08/2019 20:32:54</publishTime>
+      <publishTime>04/10/2021 23:07:17</publishTime>
     </File>
     <File Include="Views/Partial/_MenuMain.cshtml">
-      <publishTime>11/10/2019 13:40:44</publishTime>
+      <publishTime>04/11/2021 14:27:00</publishTime>
     </File>
     <File Include="Views/Partial/_OurService.cshtml">
       <publishTime>11/10/2019 00:56:55</publishTime>
     </File>
+    <File Include="Views/Partial/_ProductBox.cshtml">
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
     <File Include="Views/Partial/_Slider.cshtml">
-      <publishTime>11/08/2019 20:32:54</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Partial/_Wedo.cshtml">
-      <publishTime>11/10/2019 14:22:00</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
+    </File>
+    <File Include="Views/Product/Detail.cshtml">
+      <publishTime>04/13/2021 21:35:36</publishTime>
+    </File>
+    <File Include="Views/Product/List.cshtml">
+      <publishTime>04/11/2021 15:30:28</publishTime>
     </File>
     <File Include="Views/Service/Details.cshtml">
-      <publishTime>11/09/2019 15:51:48</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Service/List.cshtml">
-      <publishTime>11/07/2019 00:32:59</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>11/10/2019 11:32:52</publishTime>
+      <publishTime>04/13/2021 21:42:16</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>10/16/2019 22:09:05</publishTime>
+      <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/07/2019 00:22:11</publishTime>
+      <publishTime>04/11/2021 06:45:31</publishTime>
     </File>
   </ItemGroup>
 </Project>

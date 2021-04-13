@@ -3,14 +3,14 @@
 <div class="blog-area pt-120 pb-90">
     <div class="container">
         <div class="section-title mb-60 text-center">
-            <h2><span>Tin tức</span> mới nhất</h2>
+            <h2><span>Tin tức mới nhất</span></h2>
         </div>
         <div class="row">
             @foreach (MyWeb.Entities.News item in Model)
             {
                 <div class="col-md-4 col-sm-6">
                     <div class="blog-wrapper mb-30">
-                        <div class="blog-img">
+                        <div class="blog-img wow fadeInLeft">
                             <a href="@StringClass.GeneralDetailUrl(Consts.TIN_TUC, item.GroupName, item.Id.ToString(), item.Name)"><img src="@StringClass.OriginalImage(item.Image)" alt="@item.Name" /></a>
                         </div>
                         <div class="blog-text">

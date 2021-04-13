@@ -1,42 +1,89 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Công ty cổ phần Dehun Việt Nam</title>
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Nunito+Sans|Roboto+Slab|Taviraj|Open+Sans:400,800|Pathway+Gothic+One&display=swap" rel="stylesheet">
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <!-- Basic and Helper page needs -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#fd783e">
+    <link rel="canonical" href="https://hamsterplanet.vn/"><!-- Title and description -->
+    <title>@ViewBag.Title - Hamster Planet</title>
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    <!-- CSS -->
+    <link href="/Content/timber.scss.css?v=16100130305421559479" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/bootstrap.min.css?v=12128791072025208527" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/font-awesome.min.css?v=2186963269736709578" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/owl.carousel.min.css?v=7051608981761278196" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/owl.theme.default.min.css?v=13504611835828271336" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/swiper.min.css?v=16895457234086373678" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/jquery.mCustomScrollbar.css?v=8594164602724665162" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/themify-icons.css?v=1782837867860931872" rel="stylesheet" type="text/css" media="all" />
+    @*<link href="/Content/simple-line-icons.css?v=4940251124770059982" rel="stylesheet" type="text/css" media="all" />*@
+    <link href="/Content/ionicons.min.css?v=18436430612067519620" rel="stylesheet" type="text/css" media="all" />
+    @*<link href="/Content/plugins.css?v=10451640942466937240" rel="stylesheet" type="text/css" media="all" />*@
+    @*<link href="/Content/magnific-popup.css?v=5259335330236467550" rel="stylesheet" type="text/css" media="all" />*@
+
+    <link href="/Content/theme-default.css?v=16834706586602401949" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/style-rtl.css?v=11932864562911632332" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/theme-custom.css?v=7113697661042905670" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/theme-responsive.css?v=11883961643139697969" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/skin-theme.css?v=12050874745568414958" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/theme-color.css?v=13229134526152056342" rel="stylesheet" type="text/css" media="all" />
+
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <!-- JS -->
+    <script src="/Scripts/modernizr-2.8.3.min.js?v=17472752542221191523"></script>
+    <script src="/Scripts/jquery-1.12.0.min.js?v=18030333829914722022"></script>
+    @*<script src="/Scripts/popper.min.js?v=18392506457316385783"></script>*@
+    <script src="/Scripts/bootstrap.min.js?v=3181118144235635664"></script>
+    @*<script src="/Scripts/plugins.js?v=9705284880735369052"></script>*@
+    <script src="/Scripts/jquery.elevateZoom-3.0.8.min.js?v=12329908928230330672"></script>
+    <script src="/Scripts/owl.carousel.min.js?v=9789144081155345425"></script>
+    <script src="/Scripts/swiper.min.js?v=12550984555132179135"></script>
+    <script src="/Scripts/jquery.mCustomScrollbar.min.js?v=14899918169480022422"></script>
+    <script src="/Scripts/elevatezoom.js?v=16801652029485679165"></script>
+    <script src="/Scripts/instafeed.min.js?v=1475843527569603045"></script>
+    <script src="/Scripts/jquery.magnific-popup.min.js?v=6295317422487296337"></script>
+    <script src="/Scripts/jquery.lazyload.min.js?v=5201772636533309769"></script>
+    <script src="/Scripts/imagesloaded.pkgd.min.js?v=5820985433317357554"></script>
+    @*<script src="/Scripts/jquery.isotope.min.js?v=9191186134714922501"></script>*@
+    @*<script src="/Scripts/theme.js?889"></script>*@
+    <!-- Ajax Cart js -->
+    @*<script src="/Scripts/cart.api.js?v=17225367975542956060"></script>*@
+    <script src="/Scripts/main.js?v=11045823444497398472"></script>
 </head>
 <body>
-    <header>
-        <!-- header-top-area-start -->
-        <div class="header-top-area blue-bg">
-            @{ Html.RenderAction("Header", "Shared"); }
-        </div>
-        <!-- header-top-area-end -->
-        <!-- main-menu-area-start -->
-        <div id="header-sticky" class="main-menu-area menu-style-1 white-header">
-            @{ Html.RenderAction("MenuMain", "Shared"); }
-        </div>
-        <!-- main-menu-area-end -->
-    </header>
+    <div id="shopify-section-header" class="shopify-section">
+        @{ Html.RenderAction("Header", "Shared"); }
+        @{ Html.RenderAction("MenuMain", "Shared"); }
+    </div>
+    <div id="shopify-section-category-menu" class="shopify-section">
+        <section class="category-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                        <div class="category-menu-area">
+                            <ul class="category-main-menu"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- header-area end -->
+        <style>
+            .category-menu {
+                display: none;
+            }
+
+            @@media (max-width : 767px) {
+            }
+        </style>
+    </div>
     @RenderBody()
-    <footer>
-        @{ Html.RenderAction("Footer", "Shared"); }
-    </footer>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    @Scripts.Render("~/bundles/othersrcipts")
-    @RenderSection("scripts", required: false)
+    @{ Html.RenderAction("Footer", "Shared"); }
 </body>
 </html>

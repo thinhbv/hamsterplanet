@@ -10,7 +10,7 @@
                     <div class="col">
                         <!-- section-title start -->
                         <div class="section-title">
-                            <h2>@item.group.Name</h2>
+                            <h2><a href="@StringClass.GeneralListUrl(Consts.SAN_PHAM, item.group.Name, item.group.Id.ToString())" title="@item.group.Name">@item.group.Name</a></h2>
                         </div>
                         <!-- section-title end -->
 
@@ -32,17 +32,12 @@
 
                                             </div>
                                             <div class="product-content">
-                                                <div class="product-ratting">
-                                                    <span class="shopify-product-reviews-badge" data-id="5359972778141"></span>
-                                                </div>
                                                 <h3>
                                                     <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">@product.Name</a>
                                                 </h3>
 
                                                 <div class="price-box">
-                                                    @*<span class="new-price">€27,00</span>*@
-
-                                                    <span class="old-price">@BizUtils.ConvertPrice(product.Price)</span>
+                                                    <span class="new-price">@product.Price</span>
 
                                                 </div>
                                                 <div class="product-description pro_details">

@@ -16,6 +16,7 @@ using Libs.Utils;
 using System.Threading;
 using OpenQA.Selenium.Interactions;
 using System.Data.SqlClient;
+using System.Drawing.Drawing2D;
 
 namespace Getdata
 {
@@ -242,6 +243,84 @@ namespace Getdata
                 }
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string path = textBox1.Text.Trim();
+            var imgs = Directory.GetFiles(path);
+            foreach (var item in imgs)
+            {
+                Image img = Image.FromFile(item);
+                Bitmap bitmap = ResizeImage(img, 250, 250);
+                bitmap.Save(path + @"/_thumbs/" + Path.GetFileName(item));
+            }
+        }
+        /// <summary>
+        /// Resize the image to the specified width and height.
+        /// </summary>
+        /// <param name="image">The image to resize.</param>
+        /// <param name="width">The width to resize to.</param>
+        /// <param name="height">The height to resize to.</param>
+        /// <returns>The resized image.</returns>
+        public static Bitmap ResizeImage(Image image, int newWidth, int newHeight)
+        {
+            Image imgPhoto = image;
+
+            int sourceWidth = imgPhoto.Width;
+            int sourceHeight = imgPhoto.Height;
+
+            //Consider vertical pics
+            if (sourceWidth < sourceHeight)
+            {
+                int buff = newWidth;
+
+                newWidth = newHeight;
+                newHeight = buff;
+            }
+
+            int sourceX = 0, sourceY = 0, destX = 0, destY = 0;
+            float nPercent = 0, nPercentW = 0, nPercentH = 0;
+
+            nPercentW = ((float)newWidth / (float)sourceWidth);
+            nPercentH = ((float)newHeight / (float)sourceHeight);
+            if (nPercentH < nPercentW)
+            {
+                nPercent = nPercentH;
+                destX = System.Convert.ToInt16((newWidth -
+                          (sourceWidth * nPercent)) / 2);
+            }
+            else
+            {
+                nPercent = nPercentW;
+                destY = System.Convert.ToInt16((newHeight -
+                          (sourceHeight * nPercent)) / 2);
+            }
+
+            int destWidth = (int)(sourceWidth * nPercent);
+            int destHeight = (int)(sourceHeight * nPercent);
+
+
+            Bitmap bmPhoto = new Bitmap(newWidth, newHeight,
+                          PixelFormat.Format24bppRgb);
+
+            bmPhoto.SetResolution(imgPhoto.HorizontalResolution,
+                         imgPhoto.VerticalResolution);
+
+            Graphics grPhoto = Graphics.FromImage(bmPhoto);
+            grPhoto.Clear(Color.White);
+            grPhoto.InterpolationMode =
+                System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+
+            grPhoto.DrawImage(imgPhoto,
+                new Rectangle(destX, destY, destWidth, destHeight),
+                new Rectangle(sourceX, sourceY, sourceWidth, sourceHeight),
+                GraphicsUnit.Pixel);
+
+            grPhoto.Dispose();
+            imgPhoto.Dispose();
+
+            return bmPhoto;
         }
     }
 

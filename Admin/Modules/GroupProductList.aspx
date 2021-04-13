@@ -37,8 +37,6 @@
 							</th>
 							<th>Tên nhóm dịch vụ</th>
 							<th>Hình ảnh</th>
-							<th>Hiển thị banner</th>
-							<th>Hiển thị trang chủ</th>
 							<th>Thứ tự</th>
 							<th>Kích hoạt</th>
 							<th>Thao tác</th>
@@ -56,8 +54,6 @@
 									</td>
 									<td><%#StringClass.ShowNameLevel(Eval("Name").ToString(), Eval("Level").ToString()) %></td>
 									<td><img src='<%#Eval("Image") %>' alt='<%#Eval("Name") %>' title='<%#Eval("Name") %>' width="100" /></td>
-									<td><%#BizUtils.ShowCheckBoxStatus(Eval("Priority").ToString()) %></td>
-									<td><%#BizUtils.ShowCheckBoxStatus(Eval("Position").ToString()) %></td>
 									<td><%#Eval("Ord") %></td>
 									<td><%#BizUtils.ShowStatus(Eval("Active").ToString()) %></td>
 									<td>

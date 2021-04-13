@@ -34,7 +34,7 @@ namespace Admin.Modules
 					imgImage.ImageUrl = objGr.Image;
 					txtKeywords.Value = objGr.Keywords;
 					txtDescription.Value = objGr.Description;
-					chkPriority.Checked = objGr.Priority == 1;
+					//chkPriority.Checked = objGr.Priority == 1;
 					//chkPosition.Checked = objGr.Position == 1;
 					txtOrd.Value = objGr.Ord.ToString();
 					chkActive.Checked = objGr.Active == 1;
@@ -55,7 +55,7 @@ namespace Admin.Modules
 					GroupProduct objGr = new GroupProduct();
 					objGr.Name = txtName.Value.Trim();
 					objGr.Image = txtImage.Value.Trim();
-					objGr.Priority = chkPriority.Checked ? 1 : 0;
+					objGr.Priority = 0;
 					objGr.Position = 0;
 					objGr.Keywords = txtKeywords.Value.Trim();
 					objGr.Description = txtDescription.Value.Trim();

@@ -48,17 +48,17 @@
 						<!-- /.col -->
 					</div>
 					<!-- /form-group -->
-					<div class="form-group">
-						<label class="col-lg-2 control-label">Hiển thị banner</label>
+					<%--<div class="form-group">
+						<label class="col-lg-2 control-label">Hiển thị trang chủ</label>
 						<div class="col-lg-10">
 							<input id="chkPriority" runat="server" type="checkbox" />
 							<span class="custom-checkbox"></span>
-								Hiển thị banner
+								Hiển thị trang chủ
 						</div>
 						<!-- /.col -->
-					</div>
+					</div>--%>
 					<!-- /form-group -->
-					<div class="form-group">
+					<%--<div class="form-group">
 						<label class="col-lg-2 control-label">Hiển thị trang chủ</label>
 						<div class="col-lg-10">
 							<input id="chkPosition" runat="server" type="checkbox" />
@@ -66,7 +66,7 @@
 								Hiển thị trang chủ
 						</div>
 						<!-- /.col -->
-					</div>
+					</div>--%>
 					<!-- /form-group -->
 					<div class="form-group">
 						<label class="col-lg-2 control-label">Keywords</label>

@@ -131,7 +131,7 @@
 						<!-- /.col -->
 					</div>
 					<!-- /form-group -->
-					<div class="form-group page-content">
+					<div class="form-group" style="display:none">
 						<label class="col-lg-2 control-label">Nội dung</label>
 						<div class="col-lg-10">
 							<FCKeditorV2:FCKeditor ID="fckKeywords" runat="server" Height="300" />

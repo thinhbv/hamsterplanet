@@ -1,8 +1,13 @@
-﻿@model MyWeb.Models.MenuModel
-<h2 class="footer-section">@Model.parent.Name</h2>
-<ul class="footer-menu">
-    @foreach (var item in Model.childs)
-    {
-        <li><a href="@item.Link" title="@item.Name"><i class="fa fa-handshake-o" aria-hidden="true"></i> @item.Name</a></li>
-    }
-</ul>
+﻿@model List<MyWeb.Entities.Page>
+
+<div class="col-lg-4 col-md-12 ftlink-li">
+    <ul class="footer-sublist collapse" id="collapse-Information" data-parent="#ft-parent">
+
+        @foreach (MyWeb.Entities.Page item in Model)
+        {
+            <li class="ftsublink-li">
+                <a href="@item.Link" title="@item.Name" class="ft-sublink">@item.Name</a>
+            </li>
+        }
+    </ul>
+</div>

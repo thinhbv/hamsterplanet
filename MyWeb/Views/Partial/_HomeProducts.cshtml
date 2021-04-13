@@ -15,12 +15,25 @@
                         <div class="cat-slider owl-carousel owl-theme" id="category-slider">
                             @foreach (MyWeb.Entities.Product product in Model)
                             {
-                                <div class="item">
-                                    <div class="category-wrap">
+                                <div class="swiper-slide product-list-item">
+                                    <div class="single-product-wrap">
                                         <div class="category-image">
                                             <a class="cat-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">
                                                 <img class="lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name" />
                                             </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3>
+                                                <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">@product.Name</a>
+                                            </h3>
+
+                                            <div class="price-box">
+                                                <span class="new-price">@product.Price</span>
+
+                                            </div>
+                                            <div class="product-description pro_details">
+                                                @BizUtils.SubStringByLength(product.Content, 100)
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

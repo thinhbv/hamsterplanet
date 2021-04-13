@@ -16,7 +16,7 @@
 	<div class="padding-md">
 		<div id="pnView" class="panel panel-default table-responsive">
 			<div class="panel-heading">
-				Quản lý dịch vụ
+				Quản lý sản phẩm
 				<asp:Label ID="lblCount" runat="server" CssClass="label label-info pull-right"></asp:Label>
 			</div>
 			<div class="padding-md alert-info">

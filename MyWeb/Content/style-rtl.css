@@ -100,7 +100,7 @@ h6 {
 
 .lazyload,
 .lazyloading {
-    background: url("loading-black-small.svg") center center no-repeat #fff !important;
+    /*background: url("loading-black-small.svg") center center no-repeat #fff !important;*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -616,7 +616,7 @@ body.hidden {
             z-index: 3;
         }
 
-        .header-area .header-main .header-element.logo .theme-logo:after {
+        /*.header-area .header-main .header-element.logo .theme-logo:after {
             position: absolute;
             content: '';
             width: 100%;
@@ -626,7 +626,7 @@ body.hidden {
             left: 0;
             bottom: -30px;
             z-index: 1;
-        }
+        }*/
 
     .header-area .header-main .header-element.left-block-box,
     .header-area .header-main .header-element.right-block-box {
@@ -926,10 +926,6 @@ body.hidden {
 
     .acc-desk a span.user-signin i {
         font-size: 24px;
-    }
-
-    .right-block-box ul li.search-wrap {
-        display: none;
     }
 }
 /* wishlist icon */
@@ -1567,7 +1563,7 @@ body.hidden {
 
     .slider-content .home-slider .slide-image {
         display: block;
-        height: 815px;
+        height: 500px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -2307,7 +2303,7 @@ body.hidden {
 .product-list-item .single-product-wrap .product-content h3 {
     margin-top: 6px;
     overflow: hidden;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     text-overflow: ellipsis;
     color: #333;
     width: 100%;
@@ -2564,7 +2560,7 @@ body.hidden {
 }
 
 .single-product-wrap .product-content {
-    padding: 10px;
+    /*padding: 10px;*/
     text-align: center;
 }
 
@@ -3142,6 +3138,7 @@ body.hidden {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
+    /*padding-top:10px;*/
 }
 
 .collection-img-wrap .collection-image {
@@ -3223,7 +3220,7 @@ body.hidden {
 /*=====================================
     collection page product css
 ======================================*/
-
+.product-grid-view{margin-bottom:50px;}
 .product-grid-view .shop-product-wrap.grid-3 .st-col-item,
 .product-grid-view .shop-product-wrap.grid-1 .st-col-item {
     flex: 0 0 100%;

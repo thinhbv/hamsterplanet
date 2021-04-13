@@ -79,18 +79,13 @@ namespace Admin.Modules
 						if (((HtmlInputCheckBox)item.FindControl("chkItem")).Checked)
 						{
 							string strId = ((HiddenField)item.FindControl("hdId")).Value;
-							listId = listId + strId + ",";
-						}
+                            Advertise objData = new Advertise();
+                            objData.Delete(strId);
+                        }
 					}
 				}
-				if (listId != "")
-				{
-					listId = listId.Substring(0, listId.Length - 1);
-					Advertise objData = new Advertise();
-					objData.Delete(listId);
-					BinData();
-				}
-			}
+                BinData();
+            }
 			catch (Exception)
 			{
 				throw;

@@ -35,10 +35,8 @@
 								</label>
 							</th>
 							<th>Tên khách hàng</th>
-							<th>Công ty</th>
 							<th>Email</th>
 							<th>Phone</th>
-							<th>Tiêu đề</th>
 							<th>Chi tiết</th>
 							<th>Ngày liên hệ</th>
 						</tr>
@@ -53,12 +51,10 @@
 											<span class="custom-checkbox"></span>
 										</label>
 									</td>
-									<td><%#Eval("Name").ToString() %></td>
-									<td><%#Eval("Company").ToString() %></td>
-									<td><%#Eval("Email").ToString() %></td>
-									<td><%#Eval("Phone").ToString() %></td>
-									<td><%#Eval("Title").ToString() %></td>
-									<td><%#Eval("Detail").ToString() %></td>
+									<td><%#Eval("Name") %></td>
+									<td><%#Eval("Email") %></td>
+									<td><%#Eval("Phone") %></td>
+									<td><%#Eval("Detail") %></td>
 									<td><%#string.Format("{0:dd/MM/yyyy}", Eval("Date")) %></td>
 									<td>
 										<asp:ImageButton ID="cmdDelete" runat="server" AlternateText="Xóa" CommandName="Delete" CssClass="Delete"

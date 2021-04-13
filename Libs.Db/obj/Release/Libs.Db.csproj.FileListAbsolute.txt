@@ -4,3 +4,9 @@ E:\dehun\Libs.Db\obj\Release\Libs.Db.csprojAssemblyReference.cache
 E:\dehun\Libs.Db\obj\Release\Libs.Db.csproj.CoreCompileInputs.cache
 E:\dehun\Libs.Db\obj\Release\Libs.Db.dll
 E:\dehun\Libs.Db\obj\Release\Libs.Db.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\bin\Release\Libs.Db.dll
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\bin\Release\Libs.Db.pdb
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Release\Libs.Db.csprojAssemblyReference.cache
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Release\Libs.Db.csproj.CoreCompileInputs.cache
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Release\Libs.Db.dll
+C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Release\Libs.Db.pdb

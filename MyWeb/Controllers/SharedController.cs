@@ -19,7 +19,7 @@ namespace MyWeb.Controllers
         [ChildActionOnly]
         public ActionResult MenuMain()
         {
-            ViewBag.LogoUrl = HeaderModel.GetLogoUrl();
+            //ViewBag.LogoUrl = HeaderModel.GetLogoUrl();
             List<Entities.Page> model = HeaderModel.GeneralMenuMain();
             return PartialView("../Partial/_MenuMain", model);
         }

@@ -11,7 +11,7 @@
 	<div class="padding-md">
 		<div id="pnView" class="panel panel-default table-responsive">
 			<div class="panel-heading">
-				Quản lý nhóm dịch vụ
+				Quản lý nhóm sản phẩm
 				<asp:Label ID="lblCount" runat="server" CssClass="label label-info pull-right"></asp:Label>
 			</div>
 			<div class="padding-md alert-info">
@@ -37,8 +37,6 @@
 							</th>
 							<th>Tên nhóm dịch vụ</th>
 							<th>Hình ảnh</th>
-							<th>Hiển thị banner</th>
-							<th>Hiển thị trang chủ</th>
 							<th>Thứ tự</th>
 							<th>Kích hoạt</th>
 							<th>Thao tác</th>
@@ -56,8 +54,6 @@
 									</td>
 									<td><%#StringClass.ShowNameLevel(Eval("Name").ToString(), Eval("Level").ToString()) %></td>
 									<td><img src='<%#Eval("Image") %>' alt='<%#Eval("Name") %>' title='<%#Eval("Name") %>' width="100" /></td>
-									<td><%#BizUtils.ShowCheckBoxStatus(Eval("Priority").ToString()) %></td>
-									<td><%#BizUtils.ShowCheckBoxStatus(Eval("Position").ToString()) %></td>
 									<td><%#Eval("Ord") %></td>
 									<td><%#BizUtils.ShowStatus(Eval("Active").ToString()) %></td>
 									<td>
