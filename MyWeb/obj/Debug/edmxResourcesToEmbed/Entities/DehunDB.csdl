@@ -18,17 +18,6 @@
     <Property Name="Ord" Type="Int32" />
     <Property Name="Active" Type="Int32" />
   </EntityType>
-  <EntityType Name="Category">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="Image" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Content" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
-    <Property Name="Ord" Type="Int32" Nullable="false" />
-    <Property Name="Active" Type="Int32" />
-  </EntityType>
   <EntityType Name="CommentNew">
     <Key>
       <PropertyRef Name="Id" />
@@ -118,7 +107,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Thumbnail" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Thumbnail" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="Image" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="GroupId" Type="Int32" />
     <Property Name="Priority" Type="Int32" />
@@ -208,17 +197,16 @@
     <Property Name="Image5" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Price" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="GroupId" Type="Int32" />
     <Property Name="GroupName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
     <Property Name="IsHot" Type="Int32" />
     <Property Name="IsPopular" Type="Int32" />
-    <Property Name="IsSpecial" Type="Int32" />
-    <Property Name="IsNew" Type="Int32" />
     <Property Name="Ord" Type="Int32" />
     <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="Keywords" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="Active" Type="Int32" />
+    <Property Name="Price1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Support">
     <Key>
@@ -267,7 +255,6 @@
   </EntityType>
   <EntityContainer Name="dehunEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Advertises" EntityType="Self.Advertise" />
-    <EntitySet Name="Categories" EntityType="Self.Category" />
     <EntitySet Name="CommentNews" EntityType="Self.CommentNew" />
     <EntitySet Name="Configs" EntityType="Self.Config" />
     <EntitySet Name="Contacts" EntityType="Self.Contact" />
@@ -285,7 +272,7 @@
     <EntitySet Name="TB_ThongKe" EntityType="Self.TB_ThongKe" />
     <EntitySet Name="Users" EntityType="Self.User" />
     <FunctionImport Name="sp_Advertise_Delete">
-      <Parameter Name="Id" Mode="In" Type="String" />
+      <Parameter Name="Id" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="sp_Advertise_GetByAll" ReturnType="Collection(dehunModel.sp_Advertise_GetByAll_Result)" />
     <FunctionImport Name="sp_Advertise_GetById" ReturnType="Collection(dehunModel.sp_Advertise_GetById_Result)">

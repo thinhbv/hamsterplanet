@@ -22,13 +22,12 @@
                                         <div class="single-product-wrap">
                                             <div class="product-image">
                                                 <a class="pro-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)">
-                                                    <img class="img-fluid img1 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
-                                                    <img class="img-fluid img2 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(product.Image2)" alt="@product.Name" />
+                                                    <img class="img-fluid img1 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.ThumbImage(product.Image1)" alt="@product.Name">
                                                 </a>
-                                                <div class="product-label">
+                                                @*<div class="product-label">
                                                     <span class="new-title">New</span>
-                                                    @*<span class="percent-count">-10%</span>*@
-                                                </div>
+                                                    <span class="percent-count">-10%</span>
+                                                </div>*@
 
                                             </div>
                                             <div class="product-content">
@@ -37,12 +36,20 @@
                                                 </h3>
 
                                                 <div class="price-box">
-                                                    <span class="new-price">@product.Price</span>
+                                                    @if (!string.IsNullOrEmpty(product.Price1))
+                                                    {
+                                                        <span class="old-price">@product.Price</span>
+                                                        <span class="new-price">@product.Price1</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="new-price">@product.Price</span>
+                                                    }
 
                                                 </div>
-                                                <div class="product-description pro_details">
+                                                @*<div class="product-description pro_details">
                                                     @BizUtils.SubStringByLength(product.Content, 100)
-                                                </div>
+                                                </div>*@
                                             </div>
                                         </div>
                                     </div>
@@ -61,6 +68,7 @@
         <script>
             var swiper = new Swiper('.swiper-container#feture_pro_tab', {
                 slidesPerColumn: 2,
+                slidesPerColumnFill: 'row',
                 slidesPerView: 4,
                 spaceBetween: 30,
                 observer: true,
@@ -101,7 +109,7 @@
             }
         </style>
     </div>
-    if (i < Model.Count - 1)
+    if (i < Model.Count - 1 && !string.IsNullOrEmpty(item.group.Image))
     {
         <div id="shopify-section-1594545773709" class="shopify-section">
             <img src="@StringClass.OriginalImage(item.group.Image)" width="100%" />

@@ -18,17 +18,6 @@
     <Property Name="Ord" Type="int" />
     <Property Name="Active" Type="int" />
   </EntityType>
-  <EntityType Name="Categories">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="255" />
-    <Property Name="Image" Type="varchar" MaxLength="255" />
-    <Property Name="Content" Type="nvarchar" MaxLength="2000" />
-    <Property Name="Ord" Type="int" Nullable="false" />
-    <Property Name="Active" Type="int" />
-  </EntityType>
   <EntityType Name="CommentNews">
     <Key>
       <PropertyRef Name="Id" />
@@ -118,7 +107,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Thumbnail" Type="varchar" MaxLength="250" />
+    <Property Name="Thumbnail" Type="nvarchar" MaxLength="250" />
     <Property Name="Image" Type="varchar" MaxLength="250" />
     <Property Name="GroupId" Type="int" />
     <Property Name="Priority" Type="int" />
@@ -208,13 +197,12 @@
     <Property Name="Image5" Type="varchar" MaxLength="250" />
     <Property Name="Content" Type="ntext" />
     <Property Name="Detail" Type="ntext" />
-    <Property Name="Price" Type="varchar" MaxLength="100" />
+    <Property Name="Price" Type="nvarchar" MaxLength="100" />
+    <Property Name="Price1" Type="nvarchar" MaxLength="100" />
     <Property Name="GroupId" Type="int" />
     <Property Name="GroupName" Type="nvarchar" MaxLength="256" />
     <Property Name="IsHot" Type="int" />
     <Property Name="IsPopular" Type="int" />
-    <Property Name="IsSpecial" Type="int" />
-    <Property Name="IsNew" Type="int" />
     <Property Name="Ord" Type="int" />
     <Property Name="Description" Type="nvarchar" MaxLength="500" />
     <Property Name="Keywords" Type="nvarchar" MaxLength="500" />
@@ -266,7 +254,7 @@
     <Property Name="Active" Type="int" />
   </EntityType>
   <Function Name="sp_Advertise_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="Id" Type="varchar" Mode="In" />
+    <Parameter Name="Id" Type="int" Mode="In" />
   </Function>
   <Function Name="sp_Advertise_GetByAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="sp_Advertise_GetById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -517,7 +505,7 @@
     <Parameter Name="Order" Type="nvarchar" Mode="In" />
   </Function>
   <Function Name="sp_Images_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="Thumbnail" Type="varchar" Mode="In" />
+    <Parameter Name="Thumbnail" Type="nvarchar" Mode="In" />
     <Parameter Name="Image" Type="varchar" Mode="In" />
     <Parameter Name="GroupId" Type="int" Mode="In" />
     <Parameter Name="Priority" Type="int" Mode="In" />
@@ -526,7 +514,7 @@
   </Function>
   <Function Name="sp_Images_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="Id" Type="int" Mode="In" />
-    <Parameter Name="Thumbnail" Type="varchar" Mode="In" />
+    <Parameter Name="Thumbnail" Type="nvarchar" Mode="In" />
     <Parameter Name="Image" Type="varchar" Mode="In" />
     <Parameter Name="GroupId" Type="int" Mode="In" />
     <Parameter Name="Priority" Type="int" Mode="In" />
@@ -857,7 +845,6 @@
   <Function Name="spThongKe_Edit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="dehunModelStoreContainer">
     <EntitySet Name="Advertise" EntityType="Self.Advertise" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CommentNews" EntityType="Self.CommentNews" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Config" EntityType="Self.Config" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />

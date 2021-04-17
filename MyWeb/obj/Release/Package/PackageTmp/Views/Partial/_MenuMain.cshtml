@@ -19,14 +19,39 @@
                                         <ul class="main-menu">
                                             @foreach (var item in Model.Where(r => r.Level.Length == 5).ToList())
                                             {
-                                                <li class="menu-link parant">
-                                                    <a class="link-title" href="@item.Link">
-                                                        <span>@item.Name</span>
-                                                    </a>
-                                                    <a href="@item.Link" class="link-title link-title-lg">
-                                                        <span>@item.Name</span>
-                                                    </a>
-                                                </li>
+                                                var subMenu = Model.Where(r => r.Level.Length == 10 && r.Level.Substring(0, 5) == item.Level);
+                                                if (subMenu.Count() > 0)
+                                                {
+                                                    <li class="menu-link parant">
+                                                        <a class="link-title" href="@item.Link" title="@item.Name">
+                                                            <span>@item.Name</span>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <a data-toggle="collapse" href="#collapse-@item.Id" class="link-title link-title-lg" title="@item.Name">
+                                                            <span>@item.Name</span>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-submenu collapse sub-menu" id="collapse-@item.Id">
+                                                            @foreach (var sub in subMenu)
+                                                            {
+                                                                <li class="submenu-li parant">
+                                                                    <a href="@sub.Link" class="sublink-title" title="@sub.Name">@sub.Name</a>
+                                                                </li>
+                                                            }
+                                                        </ul>
+                                                    </li>
+                                                }
+                                                else
+                                                {
+                                                    <li class="menu-link parant">
+                                                        <a class="link-title" href="@item.Link" title="@item.Name">
+                                                            <span>@item.Name</span>
+                                                        </a>
+                                                        <a href="@item.Link" class="link-title link-title-lg" title="@item.Name">
+                                                            <span>@item.Name</span>
+                                                        </a>
+                                                    </li>
+                                                }
                                             }
                                         </ul>
                                         <script>

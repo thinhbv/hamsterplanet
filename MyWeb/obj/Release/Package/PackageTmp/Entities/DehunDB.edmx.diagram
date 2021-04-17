@@ -4,9 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d6cfe8eda8334b53977e1e0399b012f7" Name="Diagram1">
+      <Diagram DiagramId="d6cfe8eda8334b53977e1e0399b012f7" Name="Diagram1" ZoomLevel="89">
         <EntityTypeShape EntityType="dehunModel.Advertise" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dehunModel.Category" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dehunModel.CommentNew" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dehunModel.Config" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dehunModel.Contact" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />

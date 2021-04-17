@@ -23,15 +23,18 @@ namespace MyWeb.Models
                 {
                     ProductsModel model;
                     GroupProduct group = entity.GroupProducts.Where(r => r.Priority == 1 && r.Active == 1).FirstOrDefault();
-                    productsModel = entity.Products.Where(r => r.Active == 1 && r.IsHot == 1).ToList();
+                    productsModel = entity.Products.Where(r => r.Active == 1 && r.IsHot == 1 && !string.IsNullOrEmpty(r.Image1)).ToList();
 
                     groups = entity.GroupProducts.Where(r => r.Active == 1).ToList();
                     foreach (var item in groups)
                     {
                         model = new ProductsModel();
                         model.group = item;
-                        model.products = entity.Products.Where(r => r.Active == 1 && r.GroupId == item.Id).ToList();
-                        productsAllModel.Add(model);
+                        model.products = entity.Products.Where(r => r.Active == 1 && r.GroupId == item.Id && !string.IsNullOrEmpty(r.Image1)).ToList();
+                        if (model.products.Count > 0)
+                        {
+                            productsAllModel.Add(model);
+                        }
                     }
                     productsOther.group = group;
                     productsOther.products = entity.Products.Where(r => r.GroupId == group.Id && r.Active == 1).ToList();

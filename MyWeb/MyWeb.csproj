@@ -138,9 +138,6 @@
     <Compile Include="Entities\Advertise.cs">
       <DependentUpon>DehunDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Category.cs">
-      <DependentUpon>DehunDB.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entities\CommentNew.cs">
       <DependentUpon>DehunDB.tt</DependentUpon>
     </Compile>

@@ -28,7 +28,6 @@ namespace MyWeb.Entities
         }
     
         public virtual DbSet<Advertise> Advertises { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<CommentNew> CommentNews { get; set; }
         public virtual DbSet<Config> Configs { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
@@ -46,11 +45,11 @@ namespace MyWeb.Entities
         public virtual DbSet<TB_ThongKe> TB_ThongKe { get; set; }
         public virtual DbSet<User> Users { get; set; }
     
-        public virtual int sp_Advertise_Delete(string id)
+        public virtual int sp_Advertise_Delete(Nullable<int> id)
         {
-            var idParameter = id != null ?
+            var idParameter = id.HasValue ?
                 new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(string));
+                new ObjectParameter("Id", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_Advertise_Delete", idParameter);
         }

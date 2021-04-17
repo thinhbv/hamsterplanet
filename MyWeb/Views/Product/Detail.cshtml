@@ -1,7 +1,7 @@
 ﻿@using Libs.Utils
 @model MyWeb.Models.ProductDetailModel
 @{
-    ViewBag.Title = "Detail";
+    ViewBag.Title = > @Model.product.Name;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <!-- breadcrumb-area start -->
@@ -54,7 +54,7 @@
                                                 {
                                                     <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
                                                         <li id="gallery_01" role="presentation" class="item ">
-                                                            <a class="product-single__thumbnail active" href="@StringClass.ThumbImage(Model.product.Image1)" data-image="@StringClass.ThumbImage(Model.product.Image1)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image1)" data-image-id="17842908102813">
+                                                            <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image1)" data-image="@StringClass.ThumbImage(Model.product.Image1)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image1)" data-image-id="17842908102813">
                                                                 <img src="@StringClass.ThumbImage(Model.product.Image1)" alt="@Model.product.Name" class="img-fluid">
                                                             </a>
                                                         </li>
@@ -64,7 +64,7 @@
                                                 {
                                                     <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
                                                         <li id="gallery_01" role="presentation" class="item ">
-                                                            <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image2)" data-image="@StringClass.OriginalImage(Model.product.Image2)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image2)" data-image-id="17842908102813">
+                                                            <a class="product-single__thumbnail" href="@StringClass.OriginalImage(Model.product.Image2)" data-image="@StringClass.OriginalImage(Model.product.Image2)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image2)" data-image-id="17842908102813">
                                                                 <img src="@StringClass.ThumbImage(Model.product.Image2)" alt="@Model.product.Name" class="img-fluid">
                                                             </a>
                                                         </li>
@@ -74,7 +74,7 @@
                                                 {
                                                     <div class="owl-item active" style="width: 115.333px; margin-right: 15px;">
                                                         <li id="gallery_01" role="presentation" class="item ">
-                                                            <a class="product-single__thumbnail active" href="@StringClass.OriginalImage(Model.product.Image3)" data-image="@StringClass.OriginalImage(Model.product.Image3)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image3)" data-image-id="17842908102813">
+                                                            <a class="product-single__thumbnail" href="@StringClass.OriginalImage(Model.product.Image3)" data-image="@StringClass.OriginalImage(Model.product.Image3)" data-zoom-image="@StringClass.OriginalImage(Model.product.Image3)" data-image-id="17842908102813">
                                                                 <img src="@StringClass.ThumbImage(Model.product.Image3)" alt="@Model.product.Name" class="img-fluid">
                                                             </a>
                                                         </li>
@@ -101,7 +101,17 @@
                                         </h2>
                                     </div>
                                     <div class="pro-price-label">
-                                        <div class="price-box" id="ProductPrice"><span class="new-price">@Model.product.Price</span></div>
+                                        <div class="price-box" id="ProductPrice">
+                                            @if (!string.IsNullOrEmpty(Model.product.Price1))
+                                            {
+                                                <span class="new-price">@Model.product.Price1</span>
+                                                <span class="old-price">@Model.product.Price</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="new-price">@Model.product.Price</span>
+                                            }
+                                        </div>
                                     </div>
                                     <div class="product-description">
                                         @Model.product.Content
@@ -185,12 +195,12 @@
                                                             <div class="single-product-wrap">
                                                                 <div class="product-image">
                                                                     <a class="pro-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)">
-                                                                        <img class="img-fluid img1 ls-is-cached lazyloaded" src="@StringClass.OriginalImage(product.Image1)" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
-                                                                        <img class="img-fluid img2 lazyloaded" src="@StringClass.OriginalImage(product.Image1)" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name">
+                                                                        <img class="img-fluid img1 ls-is-cached lazyloaded" src="@StringClass.ThumbImage(product.Image1)" data-src="@StringClass.ThumbImage(product.Image1)" alt="@product.Name">
+                                                                        
                                                                     </a>
-                                                                    <div class="product-label">
+                                                                    @*<div class="product-label">
                                                                         <span class="new-title">New</span>
-                                                                    </div>
+                                                                    </div>*@
                                                                 </div>
                                                                 <div class="product-content">
                                                                     <h3>
@@ -198,7 +208,15 @@
                                                                     </h3>
 
                                                                     <div class="price-box">
-                                                                        <span class="new-price">@product.Price</span>
+                                                                        @if (!string.IsNullOrEmpty(product.Price1))
+                                                                        {
+                                                                            <span class="new-price">@product.Price1</span>
+                                                                            <span class="old-price">@product.Price</span>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <span class="new-price">@product.Price</span>
+                                                                        }
 
                                                                     </div>
                                                                 </div>

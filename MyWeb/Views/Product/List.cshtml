@@ -1,7 +1,7 @@
 ﻿@using Libs.Utils
 @model MyWeb.Models.ProductsModel
 @{
-    ViewBag.Title = "List";
+    ViewBag.Title = @Model.group.Name;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -43,17 +43,21 @@
                             </div>
                             <div class="collection-img-wrap">
                                 @*<h1 class="st-title">
-                                    @Model.group.Name
-                                </h1>*@
-                                <div class="collection-image">
-                                    <img class="img-fluid lazyloaded" src="@StringClass.OriginalImage(Model.group.Image)" data-src="@StringClass.OriginalImage(Model.group.Image)" alt="@Model.group.Name">
-                                </div>
-                            @if (!string.IsNullOrEmpty(@Model.group.Keywords))
-                            {
-                                <div class="description">
-                                    <p class="collection-description"><span>@Model.group.Keywords</span></p>
-                                </div>
-                            }
+            @Model.group.Name
+        </h1>*@
+                                @if (!string.IsNullOrEmpty(Model.group.Image))
+                                {
+                                    <div class="collection-image">
+                                        <img class="img-fluid lazyloaded" src="@StringClass.OriginalImage(Model.group.Image)" data-src="@StringClass.OriginalImage(Model.group.Image)" alt="@Model.group.Name">
+                                    </div>
+                                }
+
+                                @if (!string.IsNullOrEmpty(@Model.group.Keywords))
+                                {
+                                    <div class="description">
+                                        <p class="collection-description"><span>@Model.group.Keywords</span></p>
+                                    </div>
+                                }
 
                             </div><!-- shop-top-bar start -->
                             <div class="shop-top-bar collection-img-wrap">
@@ -62,7 +66,7 @@
                                 </h1>
                             </div>
                             <!-- shop-top-bar end -->
-<script>
+@*<script>
   $('.list-change-view').on("click",function () {
     event.preventDefault();
     var data_grid = $(this).attr('data-grid-view');
@@ -78,7 +82,7 @@
     }
   });
 
-</script>
+</script>*@
                             <div class="get-data-products">
                                 <div class="shop-grid">
                                     <div class="product-grid-view">
@@ -92,24 +96,27 @@
                                                             <div class="single-product-wrap">
                                                                 <div class="product-image">
                                                                     <a class="pro-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, item.GroupName, item.Id.ToString(), item.Name)">
-                                                                        <img class="img-fluid img1 ls-is-cached lazyloaded" src="@StringClass.OriginalImage(item.Image1)" data-src="@StringClass.OriginalImage(item.Image1)" alt="@item.Name">
+                                                                        <img class="img-fluid img1 ls-is-cached lazyloaded" src="@StringClass.ThumbImage(item.Image1)" data-src="@StringClass.ThumbImage(item.Image1)" alt="@item.Name">
                                                                     </a>
-                                                                    <div class="product-label">
+                                                                    @*<div class="product-label">
                                                                         <span class="new-title">Mới</span>
-                                                                    </div>
+                                                                    </div>*@
                                                                 </div>
                                                                 <div class="product-content">
-                                                                    <div class="product-ratting">
-                                                                        <span class="spr-badge" id="spr_badge_5359972778141" data-rating="4.0">
-                                                                            <span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star-empty"></i></span><span class="spr-badge-caption">1 review</span>
-                                                                        </span>
-                                                                    </div>
                                                                     <h3>
                                                                         <a href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, item.GroupName, item.Id.ToString(), item.Name)" title="@item.Name">@item.Name</a>
                                                                     </h3>
 
                                                                     <div class="price-box">
-                                                                        <span class="new-price">@item.Price</span>
+                                                                        @if (!string.IsNullOrEmpty(item.Price1))
+                                                                        {
+                                                                            <span class="new-price">@item.Price1</span>
+                                                                            <span class="old-price">@item.Price</span>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <span class="new-price">@item.Price</span>
+                                                                        }
                                                                     </div>
                                                                 </div>
                                                             </div>

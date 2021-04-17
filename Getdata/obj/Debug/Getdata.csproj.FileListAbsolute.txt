@@ -13,3 +13,10 @@ C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.exe
 C:\WorkSpace\SURDIAL_M32C\Getdata\obj\Debug\Getdata.pdb
 C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Libs.Utils.dll
 C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Libs.Utils.pdb
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Spire.License.dll
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Spire.XLS.dll
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Spire.Pdf.dll
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Microsoft.mshtml.dll
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Spire.License.xml
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Spire.XLS.xml
+C:\WorkSpace\SURDIAL_M32C\Getdata\bin\Debug\Spire.Pdf.xml

@@ -364,10 +364,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/MyWeb.dll">
-      <publishTime>04/13/2021 21:47:58</publishTime>
+      <publishTime>04/17/2021 14:56:17</publishTime>
     </File>
     <File Include="bin/MyWeb.pdb">
-      <publishTime>04/13/2021 21:47:58</publishTime>
+      <publishTime>04/17/2021 14:56:17</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>02/18/2018 09:44:54</publishTime>
@@ -619,7 +619,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/07/2021 22:01:31</publishTime>
     </File>
     <File Include="Content/style-rtl.css">
-      <publishTime>04/11/2021 14:33:02</publishTime>
+      <publishTime>04/17/2021 14:49:54</publishTime>
     </File>
     <File Include="Content/style.css">
       <publishTime>11/10/2019 14:21:28</publishTime>
@@ -658,7 +658,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Entities/DehunDB.edmx.diagram">
-      <publishTime>04/02/2021 22:13:08</publishTime>
+      <publishTime>04/17/2021 10:05:42</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>04/10/2021 23:09:51</publishTime>
@@ -874,7 +874,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2021 14:35:45</publishTime>
     </File>
     <File Include="Views/Partial/_HomeAll.cshtml">
-      <publishTime>04/11/2021 14:37:43</publishTime>
+      <publishTime>04/17/2021 14:18:55</publishTime>
     </File>
     <File Include="Views/Partial/_HomeImage.cshtml">
       <publishTime>04/04/2021 13:04:17</publishTime>
@@ -886,7 +886,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/05/2021 21:07:44</publishTime>
     </File>
     <File Include="Views/Partial/_HomeProducts.cshtml">
-      <publishTime>04/11/2021 14:41:52</publishTime>
+      <publishTime>04/17/2021 14:13:16</publishTime>
     </File>
     <File Include="Views/Partial/_HomeService.cshtml">
       <publishTime>11/10/2019 10:17:51</publishTime>
@@ -895,7 +895,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2021 23:07:17</publishTime>
     </File>
     <File Include="Views/Partial/_MenuMain.cshtml">
-      <publishTime>04/11/2021 14:27:00</publishTime>
+      <publishTime>04/17/2021 13:52:35</publishTime>
     </File>
     <File Include="Views/Partial/_OurService.cshtml">
       <publishTime>11/10/2019 00:56:55</publishTime>
@@ -910,10 +910,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Product/Detail.cshtml">
-      <publishTime>04/13/2021 21:35:36</publishTime>
+      <publishTime>04/17/2021 14:56:07</publishTime>
     </File>
     <File Include="Views/Product/List.cshtml">
-      <publishTime>04/11/2021 15:30:28</publishTime>
+      <publishTime>04/17/2021 14:55:44</publishTime>
     </File>
     <File Include="Views/Service/Details.cshtml">
       <publishTime>04/02/2021 22:13:08</publishTime>
@@ -925,7 +925,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/13/2021 21:42:16</publishTime>
+      <publishTime>04/17/2021 14:50:02</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>04/02/2021 22:13:08</publishTime>
@@ -934,7 +934,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2021 22:13:08</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/11/2021 06:45:31</publishTime>
+      <publishTime>04/17/2021 14:55:16</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -17,6 +17,7 @@ using System.Threading;
 using OpenQA.Selenium.Interactions;
 using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
+using Spire.Xls;
 
 namespace Getdata
 {
@@ -244,7 +245,37 @@ namespace Getdata
 
             }
         }
+        public void UpdateImage(string image, string name)
+        {
+            string connectionString = "data source=THINHBV;initial catalog=hamster;user id=sa;password=1qaz2wsx;MultipleActiveResultSets=True";
 
+            string queryString = @"Update [dbo].[Product]
+                         SET Image1 = @Image1 WHERE Name = @Name";
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlCommand sqlCommand = new SqlCommand(queryString, sqlConnection))
+            {
+                try
+                {
+                    //This example assumes all the columns are varchar(500) in your database table design, you may
+                    //likewise modify these to SqlDbType.Float, SqlDbType.DateTime etc. based on your design
+
+                    sqlCommand.Parameters.Add("@Name", SqlDbType.NVarChar, 500).Value = name;
+                    sqlCommand.Parameters.Add("@Image1", SqlDbType.VarChar, 500).Value = image;
+
+                    sqlCommand.CommandType = CommandType.Text;
+                    sqlConnection.Open();
+                    int i = sqlCommand.ExecuteNonQuery();
+                    sqlConnection.Close();
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             string path = textBox1.Text.Trim();
@@ -321,6 +352,41 @@ namespace Getdata
             imgPhoto.Dispose();
 
             return bmPhoto;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\WorkSpace\SURDIAL_M32C\Admin\";
+            string pathThumb = @"C:\WorkSpace\SURDIAL_M32C\Admin\";
+            Workbook workbook = new Workbook();
+            workbook.LoadFromFile(textBox1.Text.Trim());
+            for (int j = 1; j < workbook.Worksheets.Count; j++)
+            {
+                Worksheet sheet = workbook.Worksheets[j];
+                int i = 5;
+                foreach (var item in sheet.Pictures)
+                {
+                    ExcelPicture picture = (ExcelPicture)item;
+                    CellRange cell = sheet.Range["B" + i];
+                    string name = StringClass.NameToTag(cell.Value).Replace("\r\n", "");
+                    string groupname = StringClass.NameToTag(sheet.Name);
+                    if (!Directory.Exists(string.Format(path + @"{0}", groupname)))
+                    {
+                        Directory.CreateDirectory(string.Format(path + @"uploads\images\{0}", groupname));
+                    }
+                    picture.Picture.Save(string.Format(path + @"uploads\images\{0}\{1}.jpg", groupname, name), ImageFormat.Jpeg);
+                    Bitmap bitmap = ResizeImage(picture.Picture, 250, 250);
+                    if (!Directory.Exists(string.Format(pathThumb + @"{0}", groupname)))
+                    {
+                        Directory.CreateDirectory(string.Format(pathThumb + @"uploads\_thumbs\images\{0}", groupname));
+                    }
+                    bitmap.Save(string.Format(pathThumb + @"uploads\_thumbs\images\{0}\{1}.jpg", groupname, name));
+                    UpdateImage(string.Format(@"uploads\images\{0}\{1}.jpg", groupname, name), cell.Value.Replace("\r\n", ""));
+                    i++;
+                }
+            }
+            
+            MessageBox.Show("Done");
         }
     }
 

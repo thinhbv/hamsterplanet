@@ -19,7 +19,7 @@
                                     <div class="single-product-wrap">
                                         <div class="category-image">
                                             <a class="cat-img" href="@StringClass.GeneralDetailUrl(Consts.SAN_PHAM, product.GroupName, product.Id.ToString(), product.Name)" title="@product.Name">
-                                                <img class="lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.OriginalImage(product.Image1)" alt="@product.Name" />
+                                                <img class="lazyload" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20360%20459%22%3E%3C/svg%3E" data-src="@StringClass.ThumbImage(product.Image1)" alt="@product.Name" />
                                             </a>
                                         </div>
                                         <div class="product-content">
@@ -28,7 +28,15 @@
                                             </h3>
 
                                             <div class="price-box">
-                                                <span class="new-price">@product.Price</span>
+                                                @if (!string.IsNullOrEmpty(product.Price1))
+                                                {
+                                                    <span class="new-price">@product.Price1</span>
+                                                    <span class="old-price">@product.Price</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="new-price">@product.Price</span>
+                                                }
 
                                             </div>
                                             <div class="product-description pro_details">

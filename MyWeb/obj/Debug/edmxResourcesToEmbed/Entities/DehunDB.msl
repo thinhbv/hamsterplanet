@@ -20,18 +20,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Categories">
-      <EntityTypeMapping TypeName="dehunModel.Category">
-        <MappingFragment StoreEntitySet="Categories">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Image" ColumnName="Image" />
-          <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="Ord" ColumnName="Ord" />
-          <ScalarProperty Name="Active" ColumnName="Active" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="CommentNews">
       <EntityTypeMapping TypeName="dehunModel.CommentNew">
         <MappingFragment StoreEntitySet="CommentNews">
@@ -212,6 +200,7 @@
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="dehunModel.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Price1" ColumnName="Price1" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Image1" ColumnName="Image1" />
@@ -226,8 +215,6 @@
           <ScalarProperty Name="GroupName" ColumnName="GroupName" />
           <ScalarProperty Name="IsHot" ColumnName="IsHot" />
           <ScalarProperty Name="IsPopular" ColumnName="IsPopular" />
-          <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
-          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
           <ScalarProperty Name="Ord" ColumnName="Ord" />
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Keywords" ColumnName="Keywords" />

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="dehunModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="dehunModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Advertise">
           <Key>
             <PropertyRef Name="Id" />
@@ -21,17 +21,6 @@
           <Property Name="PageId" Type="int" />
           <Property Name="Click" Type="int" />
           <Property Name="Ord" Type="int" />
-          <Property Name="Active" Type="int" />
-        </EntityType>
-        <EntityType Name="Categories">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="255" />
-          <Property Name="Image" Type="varchar" MaxLength="255" />
-          <Property Name="Content" Type="nvarchar" MaxLength="2000" />
-          <Property Name="Ord" Type="int" Nullable="false" />
           <Property Name="Active" Type="int" />
         </EntityType>
         <EntityType Name="CommentNews">
@@ -123,7 +112,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Thumbnail" Type="varchar" MaxLength="250" />
+          <Property Name="Thumbnail" Type="nvarchar" MaxLength="250" />
           <Property Name="Image" Type="varchar" MaxLength="250" />
           <Property Name="GroupId" Type="int" />
           <Property Name="Priority" Type="int" />
@@ -213,13 +202,12 @@
           <Property Name="Image5" Type="varchar" MaxLength="250" />
           <Property Name="Content" Type="ntext" />
           <Property Name="Detail" Type="ntext" />
-          <Property Name="Price" Type="varchar" MaxLength="100" />
+          <Property Name="Price" Type="nvarchar" MaxLength="100" />
+          <Property Name="Price1" Type="nvarchar" MaxLength="100" />
           <Property Name="GroupId" Type="int" />
           <Property Name="GroupName" Type="nvarchar" MaxLength="256" />
           <Property Name="IsHot" Type="int" />
           <Property Name="IsPopular" Type="int" />
-          <Property Name="IsSpecial" Type="int" />
-          <Property Name="IsNew" Type="int" />
           <Property Name="Ord" Type="int" />
           <Property Name="Description" Type="nvarchar" MaxLength="500" />
           <Property Name="Keywords" Type="nvarchar" MaxLength="500" />
@@ -271,7 +259,7 @@
           <Property Name="Active" Type="int" />
         </EntityType>
         <Function Name="sp_Advertise_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Id" Type="varchar" Mode="In" />
+          <Parameter Name="Id" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_Advertise_GetByAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_Advertise_GetById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -522,7 +510,7 @@
           <Parameter Name="Order" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="sp_Images_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Thumbnail" Type="varchar" Mode="In" />
+          <Parameter Name="Thumbnail" Type="nvarchar" Mode="In" />
           <Parameter Name="Image" Type="varchar" Mode="In" />
           <Parameter Name="GroupId" Type="int" Mode="In" />
           <Parameter Name="Priority" Type="int" Mode="In" />
@@ -531,7 +519,7 @@
         </Function>
         <Function Name="sp_Images_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Id" Type="int" Mode="In" />
-          <Parameter Name="Thumbnail" Type="varchar" Mode="In" />
+          <Parameter Name="Thumbnail" Type="nvarchar" Mode="In" />
           <Parameter Name="Image" Type="varchar" Mode="In" />
           <Parameter Name="GroupId" Type="int" Mode="In" />
           <Parameter Name="Priority" Type="int" Mode="In" />
@@ -862,7 +850,6 @@
         <Function Name="spThongKe_Edit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="dehunModelStoreContainer">
           <EntitySet Name="Advertise" EntityType="Self.Advertise" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CommentNews" EntityType="Self.CommentNews" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Config" EntityType="Self.Config" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
@@ -880,8 +867,7 @@
           <EntitySet Name="TB_ThongKe" EntityType="Self.TB_ThongKe" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="dehunModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -901,17 +887,6 @@
           <Property Name="PageId" Type="Int32" />
           <Property Name="Click" Type="Int32" />
           <Property Name="Ord" Type="Int32" />
-          <Property Name="Active" Type="Int32" />
-        </EntityType>
-        <EntityType Name="Category">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="Image" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="Content" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
-          <Property Name="Ord" Type="Int32" Nullable="false" />
           <Property Name="Active" Type="Int32" />
         </EntityType>
         <EntityType Name="CommentNew">
@@ -1003,7 +978,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Thumbnail" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Thumbnail" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Image" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="GroupId" Type="Int32" />
           <Property Name="Priority" Type="Int32" />
@@ -1093,17 +1068,16 @@
           <Property Name="Image5" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Price" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="GroupId" Type="Int32" />
           <Property Name="GroupName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
           <Property Name="IsHot" Type="Int32" />
           <Property Name="IsPopular" Type="Int32" />
-          <Property Name="IsSpecial" Type="Int32" />
-          <Property Name="IsNew" Type="Int32" />
           <Property Name="Ord" Type="Int32" />
           <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="Keywords" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="Active" Type="Int32" />
+          <Property Name="Price1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Support">
           <Key>
@@ -1152,7 +1126,6 @@
         </EntityType>
         <EntityContainer Name="dehunEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Advertises" EntityType="Self.Advertise" />
-          <EntitySet Name="Categories" EntityType="Self.Category" />
           <EntitySet Name="CommentNews" EntityType="Self.CommentNew" />
           <EntitySet Name="Configs" EntityType="Self.Config" />
           <EntitySet Name="Contacts" EntityType="Self.Contact" />
@@ -1170,11 +1143,11 @@
           <EntitySet Name="TB_ThongKe" EntityType="Self.TB_ThongKe" />
           <EntitySet Name="Users" EntityType="Self.User" />
           <FunctionImport Name="sp_Advertise_Delete">
-            <Parameter Name="Id" Mode="In" Type="String" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Advertise_GetByAll" ReturnType="Collection(dehunModel.sp_Advertise_GetByAll_Result)" />
           <FunctionImport Name="sp_Advertise_GetById" ReturnType="Collection(dehunModel.sp_Advertise_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Advertise_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1211,11 +1184,11 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_CommentNews_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_CommentNews_GetByAll" ReturnType="Collection(dehunModel.sp_CommentNews_GetByAll_Result)" />
           <FunctionImport Name="sp_CommentNews_GetById" ReturnType="Collection(dehunModel.sp_CommentNews_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_CommentNews_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1244,11 +1217,11 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Config_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Config_GetByAll" ReturnType="Collection(dehunModel.sp_Config_GetByAll_Result)" />
           <FunctionImport Name="sp_Config_GetById" ReturnType="Collection(dehunModel.sp_Config_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Config_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1281,11 +1254,11 @@
             <Parameter Name="Keyword" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_Contact_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Contact_GetByAll" ReturnType="Collection(dehunModel.sp_Contact_GetByAll_Result)" />
           <FunctionImport Name="sp_Contact_GetById" ReturnType="Collection(dehunModel.sp_Contact_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Contact_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1314,11 +1287,11 @@
             <Parameter Name="Date" Mode="In" Type="DateTime" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupImages_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupImages_GetByAll" ReturnType="Collection(dehunModel.sp_GroupImages_GetByAll_Result)" />
           <FunctionImport Name="sp_GroupImages_GetById" ReturnType="Collection(dehunModel.sp_GroupImages_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupImages_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1339,11 +1312,11 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupNews_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupNews_GetByAll" ReturnType="Collection(dehunModel.sp_GroupNews_GetByAll_Result)" />
           <FunctionImport Name="sp_GroupNews_GetById" ReturnType="Collection(dehunModel.sp_GroupNews_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupNews_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1372,11 +1345,11 @@
             <Parameter Name="Index" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupProduct_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupProduct_GetByAll" ReturnType="Collection(dehunModel.sp_GroupProduct_GetByAll_Result)" />
           <FunctionImport Name="sp_GroupProduct_GetById" ReturnType="Collection(dehunModel.sp_GroupProduct_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_GroupProduct_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1409,11 +1382,11 @@
             <Parameter Name="Priority" Mode="In" Type="Byte" />
           </FunctionImport>
           <FunctionImport Name="sp_Images_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Images_GetByAll" ReturnType="Collection(dehunModel.sp_Images_GetByAll_Result)" />
           <FunctionImport Name="sp_Images_GetById" ReturnType="Collection(dehunModel.sp_Images_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Images_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1438,11 +1411,11 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_News_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_News_GetByAll" ReturnType="Collection(dehunModel.sp_News_GetByAll_Result)" />
           <FunctionImport Name="sp_News_GetById" ReturnType="Collection(dehunModel.sp_News_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_News_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1450,7 +1423,7 @@
             <Parameter Name="Order" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_News_GetCount" ReturnType="Collection(Int32)">
-            <Parameter Name="Level" Mode="In" Type="String" />
+          <Parameter Name="Level" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_News_Insert">
             <Parameter Name="Name" Mode="In" Type="String" />
@@ -1490,10 +1463,10 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_OrderDetail_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_OrderDetail_GetById" ReturnType="Collection(dehunModel.sp_OrderDetail_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_OrderDetail_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1520,10 +1493,10 @@
             <Parameter Name="Quantity" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Orders_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Orders_GetById" ReturnType="Collection(dehunModel.sp_Orders_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Orders_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1558,11 +1531,11 @@
             <Parameter Name="DeliveryDate" Mode="In" Type="DateTime" />
           </FunctionImport>
           <FunctionImport Name="sp_Page_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Page_GetByAll" ReturnType="Collection(dehunModel.sp_Page_GetByAll_Result)" />
           <FunctionImport Name="sp_Page_GetById" ReturnType="Collection(dehunModel.sp_Page_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Page_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1599,11 +1572,11 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Product_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Product_GetByAll" ReturnType="Collection(dehunModel.sp_Product_GetByAll_Result)" />
           <FunctionImport Name="sp_Product_GetById" ReturnType="Collection(dehunModel.sp_Product_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Product_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1611,7 +1584,7 @@
             <Parameter Name="Order" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_Product_GetCount" ReturnType="Collection(Int32)">
-            <Parameter Name="Level" Mode="In" Type="String" />
+          <Parameter Name="Level" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_Product_GetCountByGroupId" ReturnType="Collection(dehunModel.sp_Product_GetCountByGroupId_Result)" />
           <FunctionImport Name="sp_Product_Insert">
@@ -1658,11 +1631,11 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Support_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Support_GetByAll" ReturnType="Collection(dehunModel.sp_Support_GetByAll_Result)" />
           <FunctionImport Name="sp_Support_GetById" ReturnType="Collection(dehunModel.sp_Support_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Support_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1688,7 +1661,7 @@
           </FunctionImport>
           <FunctionImport Name="sp_Tags_GetByAll" ReturnType="Collection(dehunModel.sp_Tags_GetByAll_Result)" />
           <FunctionImport Name="sp_Tags_GetById" ReturnType="Collection(dehunModel.sp_Tags_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_Tags_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -1711,11 +1684,11 @@
             <Parameter Name="Active" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_User_Delete">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_User_GetByAll" ReturnType="Collection(dehunModel.sp_User_GetByAll_Result)" />
           <FunctionImport Name="sp_User_GetById" ReturnType="Collection(dehunModel.sp_User_GetById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_User_GetByTop">
             <Parameter Name="Top" Mode="In" Type="String" />
@@ -2206,18 +2179,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Categories">
-            <EntityTypeMapping TypeName="dehunModel.Category">
-              <MappingFragment StoreEntitySet="Categories">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Image" ColumnName="Image" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="Ord" ColumnName="Ord" />
-                <ScalarProperty Name="Active" ColumnName="Active" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="CommentNews">
             <EntityTypeMapping TypeName="dehunModel.CommentNew">
               <MappingFragment StoreEntitySet="CommentNews">
@@ -2398,6 +2359,7 @@
           <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="dehunModel.Product">
               <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Price1" ColumnName="Price1" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Image1" ColumnName="Image1" />
@@ -2412,8 +2374,6 @@
                 <ScalarProperty Name="GroupName" ColumnName="GroupName" />
                 <ScalarProperty Name="IsHot" ColumnName="IsHot" />
                 <ScalarProperty Name="IsPopular" ColumnName="IsPopular" />
-                <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
-                <ScalarProperty Name="IsNew" ColumnName="IsNew" />
                 <ScalarProperty Name="Ord" ColumnName="Ord" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Keywords" ColumnName="Keywords" />

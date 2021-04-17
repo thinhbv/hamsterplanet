@@ -28,11 +28,10 @@ namespace MyWeb.Entities
         public string GroupName { get; set; }
         public Nullable<int> IsHot { get; set; }
         public Nullable<int> IsPopular { get; set; }
-        public Nullable<int> IsSpecial { get; set; }
-        public Nullable<int> IsNew { get; set; }
         public Nullable<int> Ord { get; set; }
         public string Description { get; set; }
         public string Keywords { get; set; }
         public Nullable<int> Active { get; set; }
+        public string Price1 { get; set; }
     }
 }

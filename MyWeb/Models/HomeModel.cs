@@ -111,27 +111,6 @@ namespace MyWeb.Models
             }
         }
 
-        public List<Product> GetOurServices()
-        {
-            try
-            {
-                using (var entity = new dehunEntities())
-                {
-                    List<Product> ourservice = (from p in entity.Products
-                                                where p.Active == (int)Active.Show && p.IsPopular == (int)Active.Show && p.IsNew == 0
-                                                select p)
-                                              .ToList();
-
-                    return ourservice;
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
         public List<ImagesModel> GetCompletedProject()
         {
             List<ImagesModel> models = new List<ImagesModel>();
