@@ -37,7 +37,7 @@ namespace MyWeb.Models
                         }
                     }
                     productsOther.group = group;
-                    productsOther.products = entity.Products.Where(r => r.GroupId == group.Id && r.Active == 1).ToList();
+                    productsOther.products = entity.Products.Where(r => r.GroupId == group.Id && r.Active == 1 && !string.IsNullOrEmpty(r.Image1)).ToList();
                 }
             }
             catch (Exception)

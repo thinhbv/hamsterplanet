@@ -192,7 +192,14 @@ namespace Libs.Utils
 			{
 				return string.Empty;
 			}
-            return BizUtils.GetConfig(Consts.KeyName.AdminServer.ToString()) + ImagePath.ToString().ToLower().Replace("uploads/", "uploads/_thumbs/");
+            if (ImagePath.ToString().StartsWith("/"))
+            {
+                return BizUtils.GetConfig(Consts.KeyName.AdminServer.ToString()) + ImagePath.ToString().ToLower().Replace("uploads/", "uploads/_thumbs/");
+            }
+            else
+            {
+                return BizUtils.GetConfig(Consts.KeyName.AdminServer.ToString()) + ImagePath.ToString().ToLower().Replace("uploads/", "/uploads/_thumbs/");
+            }
         }
         #endregion
 		#region OriginalImage

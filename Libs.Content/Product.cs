@@ -20,12 +20,11 @@ namespace Libs.Content
 		public string Content { get; set; }
 		public string Detail { get; set; }
 		public string Price { get; set; }
-		public int GroupId { get; set; }
+        public string Price1 { get; set; }
+        public int GroupId { get; set; }
 		public string GroupName { get; set; }
-		public int IsHot { get; set; }
-		public int IsPopular { get; set; }
-		public int IsSpecial { get; set; }
-		public int IsNew { get; set; }
+        public int IsHot { get; set; }
+        public int IsPopular { get; set; }
 		public int Ord { get; set; }
 		public string Description { get; set; }
 		public string Keywords { get; set; }
@@ -134,7 +133,7 @@ namespace Libs.Content
 		public void Insert()
 		{
 			DbHelper db = new DbHelper(Config.ConnectionStrings);
-			SqlParameter[] pars = new SqlParameter[19];
+			SqlParameter[] pars = new SqlParameter[18];
 			pars[0] = new SqlParameter("@Name", Name);
 			pars[1] = new SqlParameter("@Image1", Image1);
 			pars[2] = new SqlParameter("@Image2", Image2);
@@ -144,16 +143,15 @@ namespace Libs.Content
 			pars[6] = new SqlParameter("@Content", Content);
 			pars[7] = new SqlParameter("@Detail", Detail);
 			pars[8] = new SqlParameter("@Price", Price);
-			pars[9] = new SqlParameter("@GroupId", GroupId);
-			pars[10] = new SqlParameter("@GroupName", GroupName);
-			pars[11] = new SqlParameter("@IsHot", IsHot);
-			pars[12] = new SqlParameter("@IsPopular", IsPopular);
-			pars[13] = new SqlParameter("@IsSpecial", IsSpecial);
-			pars[14] = new SqlParameter("@IsNew", IsNew);
-			pars[15] = new SqlParameter("@Ord", Ord);
-			pars[16] = new SqlParameter("@Description", Description);
-			pars[17] = new SqlParameter("@Keywords", Keywords);
-			pars[18] = new SqlParameter("@Active", Active);
+            pars[9] = new SqlParameter("@Price1", Price1);
+            pars[10] = new SqlParameter("@GroupId", GroupId);
+			pars[11] = new SqlParameter("@GroupName", GroupName);
+			pars[12] = new SqlParameter("@IsHot", IsHot);
+			pars[13] = new SqlParameter("@IsPopular", IsPopular);
+			pars[14] = new SqlParameter("@Ord", Ord);
+			pars[15] = new SqlParameter("@Description", Description);
+			pars[16] = new SqlParameter("@Keywords", Keywords);
+			pars[17] = new SqlParameter("@Active", Active);
 			db.ExecuteNonQuerySP("sp_Product_Insert", pars);
 
 			//
@@ -161,7 +159,7 @@ namespace Libs.Content
 		public void Update()
 		{
 			DbHelper db = new DbHelper(Config.ConnectionStrings);
-			SqlParameter[] pars = new SqlParameter[20];
+			SqlParameter[] pars = new SqlParameter[19];
 			pars[0] = new SqlParameter("@Id", Id);
 			pars[1] = new SqlParameter("@Name", Name);
 			pars[2] = new SqlParameter("@Image1", Image1);
@@ -172,16 +170,15 @@ namespace Libs.Content
 			pars[7] = new SqlParameter("@Content", Content);
 			pars[8] = new SqlParameter("@Detail", Detail);
 			pars[9] = new SqlParameter("@Price", Price);
-			pars[10] = new SqlParameter("@GroupId", GroupId);
-			pars[11] = new SqlParameter("@GroupName", GroupName);
-			pars[12] = new SqlParameter("@IsHot", IsHot);
-			pars[13] = new SqlParameter("@IsPopular", IsPopular);
-			pars[14] = new SqlParameter("@IsSpecial", IsSpecial);
-			pars[15] = new SqlParameter("@IsNew", IsNew);
-			pars[16] = new SqlParameter("@Ord", Ord);
-			pars[17] = new SqlParameter("@Description", Description);
-			pars[18] = new SqlParameter("@Keywords", Keywords);
-			pars[19] = new SqlParameter("@Active", Active);
+            pars[10] = new SqlParameter("@Price1", Price1);
+            pars[11] = new SqlParameter("@GroupId", GroupId);
+			pars[12] = new SqlParameter("@GroupName", GroupName);
+			pars[13] = new SqlParameter("@IsHot", IsHot);
+			pars[14] = new SqlParameter("@IsPopular", IsPopular);
+			pars[15] = new SqlParameter("@Ord", Ord);
+			pars[16] = new SqlParameter("@Description", Description);
+			pars[17] = new SqlParameter("@Keywords", Keywords);
+			pars[18] = new SqlParameter("@Active", Active);
 
 			db.ExecuteNonQuerySP("sp_Product_Update", pars);
 		}

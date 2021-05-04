@@ -24,7 +24,7 @@ namespace MyWeb.Models
                 {
                     group = entity.GroupProducts.SingleOrDefault(r => r.Id == id);
                     List<int> groups = entity.GroupProducts.Where(r => r.Level.StartsWith(group.Level) && r.Active == 1).Select(r => r.Id).ToList();
-                    products = entity.Products.AsEnumerable().Where(r => r.Active == 1 && groups.Any(c => c.CompareTo(r.GroupId) == 0)).ToList();
+                    products = entity.Products.AsEnumerable().Where(r => r.Active == 1 && groups.Any(c => c.CompareTo(r.GroupId) == 0 && !string.IsNullOrEmpty(r.Image1))).ToList();
                 }
             }
             catch (Exception)

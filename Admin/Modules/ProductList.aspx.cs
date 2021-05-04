@@ -42,7 +42,7 @@ namespace Admin.Modules
 			List<Product> lstData = new List<Product>();
 			if (string.IsNullOrEmpty(where))
 			{
-				lstData = Product.SelectByTop("","IsNew = 1","");
+				lstData = Product.SelectByTop("","","");
 			}
 			else
 			{

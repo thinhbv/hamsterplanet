@@ -3927,7 +3927,7 @@ body.hidden {
 }
 
     .product_detail_img .product_img_top .zoomWrapper img {
-        min-width: 100%;
+        min-width: 50%;
         display: block;
     }
 

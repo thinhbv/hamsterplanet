@@ -72,7 +72,7 @@
 									</td>
 									<td><%#Eval("Name") %></td>
 									<td>
-										<img src='<%#StringClass.ThumbImage(Eval("Image1").ToString()) %>' alt='<%#Eval("Name") %>' title='<%#Eval("Name") %>' width="100" /></td>
+										<img src='<%#StringClass.ThumbImage(Eval("Image1")) %>' alt='<%#Eval("Name") %>' title='<%#Eval("Name") %>' width="100" /></td>
 									<td><%#BizUtils.ShowCheckBoxStatus(Eval("IsPopular").ToString()) %></td>
 									<td><%#Eval("Ord") %></td>
 									<td><%#BizUtils.ShowStatus(Eval("Active").ToString()) %></td>

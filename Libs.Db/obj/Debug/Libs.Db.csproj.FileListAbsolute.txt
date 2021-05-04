@@ -11,4 +11,3 @@ C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.csproj.CoreCompileInputs.cac
 C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.csproj.CopyComplete
 C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.dll
 C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.pdb
-C:\WorkSpace\SURDIAL_M32C\Libs.Db\obj\Debug\Libs.Db.csprojAssemblyReference.cache

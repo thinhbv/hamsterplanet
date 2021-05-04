@@ -41,14 +41,57 @@ namespace Admin.Modules
 						objPr.Id = int.Parse(id);
 						objPr = objPr.SelectById();
 						txtName.Value = objPr.Name;
-						txtImage1.Value = objPr.Image1;
-						imgImage1.ImageUrl = objPr.Image1;
-						txtImage2.Value = objPr.Image2;
-						imgImage2.ImageUrl = objPr.Image2;
-						txtImage3.Value = objPr.Image3;
-						imgImage3.ImageUrl = objPr.Image3;
-						txtImage4.Value = objPr.Image4;
-						imgImage4.ImageUrl = objPr.Image4;
+                        if (!string.IsNullOrEmpty(objPr.Image1))
+                        {
+                            txtImage1.Value = objPr.Image1;
+                            if (objPr.Image1.StartsWith("/"))
+                            {
+                                imgImage1.ImageUrl = objPr.Image1;
+                            }
+                            else
+                            {
+                                imgImage1.ImageUrl = "/" + objPr.Image1;
+                            }
+                        }
+                        if (!string.IsNullOrEmpty(objPr.Image2))
+                        {
+                            txtImage2.Value = objPr.Image2;
+                            if (objPr.Image2.StartsWith("/"))
+                            {
+                                imgImage2.ImageUrl = objPr.Image2;
+                            }
+                            else
+                            {
+                                imgImage2.ImageUrl = "/" + objPr.Image2;
+                            }
+                        }
+                        if (!string.IsNullOrEmpty(objPr.Image3))
+                        {
+                            txtImage3.Value = objPr.Image3;
+                            if (objPr.Image3.StartsWith("/"))
+                            {
+                                imgImage3.ImageUrl = objPr.Image3;
+                            }
+                            else
+                            {
+                                imgImage3.ImageUrl = "/" + objPr.Image3;
+                            }
+                        }
+
+                        if (!string.IsNullOrEmpty(objPr.Image4))
+                        {
+                            txtImage4.Value = objPr.Image4;
+                            if (objPr.Image4.StartsWith("/"))
+                            {
+                                imgImage4.ImageUrl = objPr.Image4;
+                            }
+                            else
+                            {
+                                imgImage4.ImageUrl = "/" + objPr.Image4;
+                            }
+                        }
+                        txtPrice.Value = objPr.Price;
+                        txtPrice1.Value = objPr.Price1;
 						txtContent.Value = objPr.Content;
 						ddlGroup.Value = objPr.GroupId.ToString();
 						fckDetail.Value = objPr.Detail;
@@ -84,15 +127,13 @@ namespace Admin.Modules
 					objPr.Image3 = txtImage3.Value.Trim();
 					objPr.Image4 = txtImage4.Value.Trim();
 					objPr.Image5 = "";
-					objPr.Price = "0";
-					objPr.IsHot = 0;
-					objPr.IsSpecial = 0;
-					objPr.Content = txtContent.Value.Trim();
+					objPr.Price = txtPrice.Value.Trim();
+                    objPr.Price1 = txtPrice1.Value.Trim();
+                    objPr.Content = txtContent.Value.Trim();
 					objPr.Detail = fckDetail.Value;
 					objPr.GroupId = int.Parse(ddlGroup.Value);
 					objPr.GroupName = ddlGroup.Items[ddlGroup.SelectedIndex].Text.Replace(".","");
 					objPr.IsPopular = chkPopular.Checked ? 1 : 0;
-					objPr.IsNew = 1;
 					objPr.Keywords = txtKeywords.Value.Trim();
 					objPr.Description = txtDescription.Value.Trim();
 					objPr.Ord = txtOrd.Value.Trim() != "" ? int.Parse(txtOrd.Value.Trim()) : 1;

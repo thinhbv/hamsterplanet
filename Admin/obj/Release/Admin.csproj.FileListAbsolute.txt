@@ -26,3 +26,10 @@ C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.csproj.CoreCompileInputs.cache
 C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.csproj.CopyComplete
 C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.dll
 C:\WorkSpace\SURDIAL_M32C\Admin\obj\Release\Admin.pdb
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Spire.License.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Spire.Pdf.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Spire.XLS.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Microsoft.mshtml.dll
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Spire.License.xml
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Spire.Pdf.xml
+C:\WorkSpace\SURDIAL_M32C\Admin\bin\Spire.XLS.xml

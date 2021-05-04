@@ -23,15 +23,8 @@ namespace Admin.Controls
 			}
 			else
 			{
-				if (Request.UrlReferrer != null)
-				{
-					Response.Redirect("/login?url=" + Server.UrlEncode(Request.UrlReferrer.PathAndQuery), false);
-				}
-				else
-				{
-					Response.Redirect("/login", false);
-				}
-			}
+                Response.Redirect("/login", false);
+            }
 		}
 	}
 }

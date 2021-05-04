@@ -6,7 +6,7 @@
 	<div class="padding-md">
 		<div id="pnView" class="panel panel-default table-responsive">
 			<div class="panel-heading">
-				<asp:Label ID="lblTitle" runat="server" Text="Thêm mới dịch vụ"></asp:Label>
+				<asp:Label ID="lblTitle" runat="server" Text="Thêm mới sản phẩm"></asp:Label>
 			</div>
 			<div class="padding-md alert-info">
 				<div class="row">
@@ -24,7 +24,7 @@
 			<div class="padding-md clearfix">
 				<div class="form-horizontal no-margin">
 					<div class="form-group">
-						<label class="col-lg-2 control-label">Nhóm dịch vụ</label>
+						<label class="col-lg-2 control-label">Nhóm sản phẩm</label>
 						<div class="col-lg-10">
 							<select id="ddlGroup" runat="server" class="form-control">
 							</select>
@@ -34,7 +34,7 @@
 					</div>
 					<!-- /form-group -->
 					<div class="form-group">
-						<label class="col-lg-2 control-label">Tên dịch vụ</label>
+						<label class="col-lg-2 control-label">Tên sản phẩm</label>
 						<div class="col-lg-10">
 							<input type="text" id="txtName" runat="server" class="form-control input-sm" data-required="true"/>
 							<asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" Display="Dynamic" ErrorMessage="Vui lòng nhập giá trị" SetFocusOnError="True"></asp:RequiredFieldValidator>
@@ -121,6 +121,26 @@
 						</div>
 						<!-- /.col -->
 					</div>
+                    <!-- /form-group -->
+					<div class="form-group">
+						<label class="col-lg-2 control-label">Giá</label>
+						<div class="col-lg-8">
+							<div class="input-group">
+								<input type="text" id="txtPrice" runat="server" class="form-control input-sm" data-required="true"/>
+							</div>
+						</div>
+						<!-- /.col -->
+					</div>
+                    <!-- /form-group -->
+					<div class="form-group">
+						<label class="col-lg-2 control-label">Giá mới</label>
+						<div class="col-lg-8">
+							<div class="input-group">
+								<input type="text" id="txtPrice1" runat="server" class="form-control input-sm" data-required="true"/>
+							</div>
+						</div>
+						<!-- /.col -->
+					</div>
 					<!-- /form-group -->
 					<div class="form-group">
 						<label class="col-lg-2 control-label">Hiển thị trang chủ</label>
@@ -133,7 +153,7 @@
 					</div>
 					<%--<!-- /form-group -->
 					<div class="form-group">
-						<label class="col-lg-2 control-label">Dịch vụ mới</label>
+						<label class="col-lg-2 control-label">sản phẩm mới</label>
 						<div class="col-lg-10">
 							<input id="chkNew" runat="server" type="checkbox" />
 							<span class="custom-checkbox"></span>

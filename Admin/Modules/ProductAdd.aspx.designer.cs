@@ -166,6 +166,24 @@ namespace Admin.Modules {
         protected global::FredCK.FCKeditorV2.FCKeditor fckDetail;
         
         /// <summary>
+        /// txtPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPrice;
+        
+        /// <summary>
+        /// txtPrice1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPrice1;
+        
+        /// <summary>
         /// chkPopular control.
         /// </summary>
         /// <remarks>

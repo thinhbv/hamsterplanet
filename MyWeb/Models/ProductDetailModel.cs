@@ -17,7 +17,7 @@ namespace MyWeb.Models
                 using (var entity = new dehunEntities())
                 {
                     product = entity.Products.SingleOrDefault(r => r.Id == id);
-                    productsRelate = entity.Products.Where(r => r.GroupId == product.GroupId && r.Active == 1 && r.Id != id).Take(10).ToList();
+                    productsRelate = entity.Products.Where(r => r.GroupId == product.GroupId && r.Active == 1 && r.Id != id && !string.IsNullOrEmpty(r.Image1)).Take(10).ToList();
                 }
             }
             catch (Exception)

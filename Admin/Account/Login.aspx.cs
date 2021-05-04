@@ -62,7 +62,9 @@ namespace Admin.Account
 					Session["Email"] = objUser.Email.Trim();
 					Session["IsAdmin"] = objUser.Admin;
 					Session["IsAuthorized"] = true;
-					if (string.IsNullOrEmpty(url))
+                    Session.Timeout = 2880;
+
+                    if (string.IsNullOrEmpty(url))
 					{
 						Response.Redirect("/Modules/ConfigSystem.aspx", false);
 					}
@@ -78,7 +80,8 @@ namespace Admin.Account
 					Session["UserName"] = "admin";
 					Session["IsAdmin"] = "1";
 					Session["IsAuthorized"] = true;
-					if (string.IsNullOrEmpty(url))
+                    Session.Timeout = 2880;
+                    if (string.IsNullOrEmpty(url))
 					{
 						Response.Redirect("/Modules/ConfigSystem.aspx", false);
 					}

@@ -85,14 +85,11 @@ namespace Admin.Modules
                     objPr.Image4 = txtImage4.Value.Trim();
                     objPr.Image5 = "";
                     objPr.Price = "0";
-                    objPr.IsHot = 0;
-                    objPr.IsSpecial = 0;
                     objPr.Content = txtContent.Value.Trim();
                     objPr.Detail = fckDetail.Value;
                     objPr.GroupId = int.Parse(ddlGroup.Value);
                     objPr.GroupName = ddlGroup.Items[ddlGroup.SelectedIndex].Text.Replace(".", "");
                     objPr.IsPopular = chkPopular.Checked ? 1 : 0;
-                    objPr.IsNew = 0;
                     objPr.Keywords = txtKeywords.Value.Trim();
                     objPr.Description = txtDescription.Value.Trim();
                     objPr.Ord = txtOrd.Value.Trim() != "" ? int.Parse(txtOrd.Value.Trim()) : 1;
